@@ -1,0 +1,143 @@
+case 1:
+===========
+request : 
+
+[
+    {
+        "deviceManagementIpAddress": "10.195.187.194",
+        "siteNameHierarchy": "Global/India/Bangalore/Building 1",
+        "deviceRole": ["Border_Node"],<---------------------
+        "externalDomainRoutingProtocolName": "BGP",
+        "externalConnectivityIpPoolName": "11lan",
+        "internalAutonomouSystemNumber": "65007",
+        "borderSessionType": "External",
+        "connectedToInternet": false,
+        "borderWithExternalConnectivity": true,
+        "externalConnectivitySettings": [
+            {
+                "interfaceName": "GigabitEthernet1/0/4",
+                "interfaceDescription": "this intf has  l2 Handoff",
+                "l2Handoff": [
+                    {
+                        "virtualNetworkName": "vn_2",
+                        "vlanName": "l2_vlan_3"
+                       
+                    },
+                    {
+                        "virtualNetworkName": "vn_2",
+                        "vlanName": "l2_vlan_2"
+                       
+                    },
+                    {
+                        "virtualNetworkName": "vn_2",
+                        "vlanName": "l2_vlan_1",
+                        "vlanId": "1022"
+                    }
+                ]
+            }
+        ]
+    }
+]
+
+response:
+------------
+{
+    "status": "pending",
+    "description": "API execution is in progress.",
+    "taskId": "662ba9ee-cabc-40df-8e5b-964241ddb9f7",
+    "taskStatusUrl": "/dna/intent/api/v1/task/662ba9ee-cabc-40df-8e5b-964241ddb9f7",
+    "executionStatusUrl": "/dna/intent/api/v1/dnacaap/management/execution-status/858045c3-738c-4b30-8e0b-d2e1c3da87fd",
+    "executionId": "858045c3-738c-4b30-8e0b-d2e1c3da87fd"
+}
+
+
+case 2:
+=============
+request
+--------
+[
+    {
+        "deviceManagementIpAddress": "10.195.187.194",
+        "siteNameHierarchy": "Global/India/Bangalore",
+        "deviceRole": ["Border_Node","Control_Plane_Node"],<----------------------------
+        "externalDomainRoutingProtocolName": "BGP",
+        "externalConnectivityIpPoolName": "11lan",
+        "internalAutonomouSystemNumber": "65007",
+        "borderSessionType": "External",
+        "connectedToInternet": false,
+        "borderWithExternalConnectivity": false,
+        "externalConnectivitySettings": [
+            {
+                "interfaceName": "GigabitEthernet1/0/1",
+                "interfaceDescription": "this intf has both L3 and l2 Handoff",
+                "externalAutonomouSystemNumber": "65009",
+                "l3Handoff": [
+                    {
+                        "virtualNetwork": {
+                            "virtualNetworkName": "vn_4",
+                            "vlanId": "2121"
+                        }
+                    }
+                ]
+               
+            }
+        ]
+    }
+]
+
+response:
+----------
+{
+    "status": "pending",
+    "description": "API execution is in progress.",
+    "taskId": "d4ac435e-03e7-4df5-aef3-d5186e5d2a32",
+    "taskStatusUrl": "/dna/intent/api/v1/task/d4ac435e-03e7-4df5-aef3-d5186e5d2a32",
+    "executionStatusUrl": "/dna/intent/api/v1/dnacaap/management/execution-status/c590de43-c3a8-493a-a131-37988b6a8eb9",
+    "executionId": "c590de43-c3a8-493a-a131-37988b6a8eb9"
+}
+=====================================================================================================================================
+case 3
+=========
+
+request :
+-----------
+[
+    {
+        "deviceManagementIpAddress": "10.195.187.194",
+        "siteNameHierarchy": "Global/India/Bangalore/Building 1",
+        "deviceRole":["Border_Node", "Control_Plane_Node","Edge_Node"],<--------------------
+        "externalDomainRoutingProtocolName": "BGP",
+        "externalConnectivityIpPoolName": "11lan",
+        "internalAutonomouSystemNumber": "65007",
+        "borderSessionType": "External",
+        "connectedToInternet": false,
+        "borderWithExternalConnectivity": true,
+        "externalConnectivitySettings": [
+            {
+                "interfaceName": "GigabitEthernet1/0/1",
+                "interfaceDescription": "this intf has both L3 and l2 Handoff",
+                "externalAutonomouSystemNumber": "65009",
+                "l3Handoff": [
+                    {
+                        "virtualNetwork": {
+                            "virtualNetworkName": "vn_4",
+                            "vlanId": "2121"
+                        }
+                    }
+                ]
+               
+            }
+        ]
+    }
+]
+
+response:
+----------------
+{
+    "status": "pending",
+    "description": "API execution is in progress.",
+    "taskId": "eb5f0e47-9f22-4cd3-a025-1c912056a64e",
+    "taskStatusUrl": "/dna/intent/api/v1/task/eb5f0e47-9f22-4cd3-a025-1c912056a64e",
+    "executionStatusUrl": "/dna/intent/api/v1/dnacaap/management/execution-status/5269050e-b508-4efa-9918-b4ae289acff8",
+    "executionId": "5269050e-b508-4efa-9918-b4ae289acff8"
+}

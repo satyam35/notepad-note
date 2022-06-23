@@ -1,0 +1,261 @@
+All get APIs respose
+-----------------------------------------------------------------------
+1. Globan VN : https://10.195.192.178/dna/intent/api/v1/virtual-network?virtualNetworkName=vn_1
+
+respose: 
+---------------
+{
+    "virtualNetworkName": "vn_1",
+    "isGuestVirtualNetwork": false,
+    "scalableGroupNames": [
+        "Auditors"
+    ],
+    "status": "success",
+    "description": "Virtual network info retrieved successfully.",
+    "executionId": "f365b43f-51a3-428e-af7c-7a6088d3fb5f"
+}
+--------------------------------------------------------------------------
+2. Provision : https://10.195.192.178/dna/intent/api/v1/business/sda/provision-device?deviceManagementIpAddress=10.195.187.192
+
+respose:
+-------------
+{
+    "deviceManagementIpAddress": "10.195.187.192",
+    "siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 1",
+    "siteId": "3e71826e-08b1-43ef-8447-6bbb12929378",
+    "status": "success",
+    "description": "Wired Provisioned device detail retrieved successfully.",
+    "executionId": "6e29d0ff-6178-468c-bbd0-1d7e0aae5612"
+}
+
+-------------------------------------------------------------------------
+3. Fabric : https://10.195.192.178/dna/intent/api/v1/business/sda/fabric?fabricName=Default LAN Fabric
+  
+ 
+respose:
+----------------
+{
+    "fabricName": "Default LAN Fabric",
+    "fabricType": "ConnectivityDomain",
+    "fabricDomainType": "FABRIC_LAN",
+    "status": "success",
+    "description": "Fabric info successfully retrieved from sda fabric.",
+    "executionId": "422bd5e4-b64d-4336-8f8e-a9daf869e7d6"
+}
+
+-------------------------------------------------------------------------
+4. Fabric Site : https://10.195.192.178/dna/intent/api/v1/business/sda/fabric-site?siteNameHierarchy=Global/India/Bangalore/Building 1
+
+respose:
+-------------
+{
+    "siteNameHierarchy": "Global/India/Bangalore/Building 1",
+    "fabricName": "Default LAN Fabric",
+    "fabricType": "FABRIC_LAN",
+    "fabricDomainType": "ConnectivityDomain",
+    "status": "success",
+    "description": "Fabric Site info successfully retrieved from sda fabric.",
+    "executionId": "7b82a5ae-a6e5-42b6-bb3a-f1f8b910055c"
+}
+---------------------------------------------------------------------------------
+5. Vertual Network : https://10.195.192.178/dna/intent/api/v1/business/sda/virtual-network?
+                     virtualNetworkName=vn_1&siteNameHierarchy=Global/India/Bangalore/Building 1/Floor 1
+
+respose:
+----------------
+{
+    "siteNameHierarchy": "Global/India/Bangalore/Building 1",
+    "virtualNetworkName": "vn_1",
+    "fabricName": "Default_LAN_Fabric",
+    "isInfraVN": false,
+    "isDefaultVN": false,
+    "virtualNetworkContextId": "5ab07ab7-0952-467e-a762-1cefb858b2fc",
+    "status": "success",
+    "description": "Virtual Network info retrieved successfully from SDA Fabric.",
+    "executionId": "c1b8e0b7-4a30-4b3a-a051-362a5de81396"
+}
+-----------------------------------------------------------------------------------------------
+6. Control Device : https://10.195.192.178/dna/intent/api/v1/business/sda/edge-device?deviceManagementIpAddress=10.195.187.194
+
+respose:
+------------
+{
+    "deviceManagementIpAddress": "10.195.187.194",
+    "deviceName": "Cat9k-10.195.187.194",
+    "roles": "EDGENODE",
+    "siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 2",
+    "fabricSiteNameHierarchy": "Global/India/Bangalore/Building 1",
+    "status": "success",
+    "description": "Edge device info retrieved successfully from sda fabric.",
+    "executionId": "1e21424f-d09e-4624-9997-90186ae1ec03"
+}
+---------------------------------------------------------------------------------------------
+7. Edge Device : https://10.195.192.178/dna/intent/api/v1/business/sda/edge-device?deviceManagementIpAddress=10.195.187.194
+
+respose:
+----------
+{
+    "deviceManagementIpAddress": "10.195.187.194",
+    "deviceName": "Cat9k-10.195.187.194",
+    "roles": "EDGENODE",
+    "siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 2",
+    "fabricSiteNameHierarchy": "Global/India/Bangalore/Building 1",
+    "status": "success",
+    "description": "Edge device info retrieved successfully from sda fabric.",
+    "executionId": "1e21424f-d09e-4624-9997-90186ae1ec03"
+}
+--------------------------------------------------------------------------------------------
+8.Border Device : https://10.195.192.178/dna/intent/api/v1/business/sda/border-device?deviceManagementIpAddress=10.195.187.194
+
+respose:
+---------------
+{
+    "deviceManagementIpAddress": "10.195.187.194",
+    "deviceName": "Cat9k-10.195.187.194",
+    "roles": "BORDERNODE",
+    "siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 2",
+    "fabricSiteNameHierarchy": "Global/India/Bangalore/Building 1",
+    "status": "success",
+    "description": "Border device info retrieved successfully from sda fabric.",
+    "executionId": "92bc0689-ad15-4053-b142-83caf335dfae"
+}
+------------------------------------------------------------------------------------------
+9.Authentication-profile : https://10.195.192.178/dna/intent/api/v1/business/sda/authentication-profile?siteNameHierarchy
+                           =Global/India/Bangalore/Building 1
+
+respose:
+----------
+{
+    "siteNameHierarchy": "Global/India/Bangalore/Building 1",
+    "authenticateTemplateName": "No Authentication",
+    "authenticationOrder": "",
+    "dot1xToMabFallbackTimeout": "",
+    "wakeOnLan": "",
+    "numberOfHosts": "",
+    "status": "success",
+    "description": "Authenticate Template info reterieved successfully in sda fabric site.",
+    "executionId": "4cb5204c-8941-42b3-8e52-0cbb028a0d84"
+}
+-------------------------------------------------------------------------------
+10.Ippool assign to VN : https://10.195.192.178/dna/intent/api/v1/business/sda/virtualnetwork/ippool?siteNameHierarchy=
+                         Global/India/Bangalore/Building 1&virtualNetworkName=INFRA_VN&ipPoolNameOrVlanName=6lan
+
+respose :
+-----------------
+{
+    "siteNameHierarchy": "Global/India/Bangalore/Building 1",
+    "virtualNetworkName": "INFRA_VN",
+    "vlanName": "segment_12",
+    "ipPoolName": "6lan",
+    "vlanId": "12",
+    "trafficType": "DATA",
+    "scalableGroupName": "",
+    "isCommonPool": false,
+    "isWirelessPool": false,
+    "isLayer2OnlyPool": false,
+    "isIpDirectedBroadcast": false,
+    "isSelectiveFloodingEnabled": false,
+    "status": "success",
+    "description": "Segment info retrieved successfully from SDA Fabric.",
+    "executionId": "1cf5c39a-5f66-47c6-94eb-da4d6f2299b3"
+}
+----------------------------------------------------------------------------------
+11.HSB for user : https://10.195.192.178/dna/intent/api/v1/business/sda/hostonboarding/user-device?deviceManagementIpAddress=
+                  10.195.187.194&interfaceName=GigabitEthernet1/0/1
+
+respose:
+------------
+{
+    "deviceManagementIpAddress": "10.195.187.194",
+    "siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 2",
+    "interfaceName": "GigabitEthernet1/0/1",
+    "dataIpAddressPoolName": "6lan",
+    "voiceIpAddressPoolName": "",
+    "authenticateTemplateName": "No Authentication",
+    "scalableGroupName": "",
+    "interfaceDescription": "port assingnment descrption",
+    "status": "success",
+    "description": "Port assignment data successfully retrieved from SDA fabric.",
+    "executionId": "2b66ebdb-fe8c-40db-9417-ab267152e0d3"
+}
+--------------------------------------------------------------------------------------------
+12. HSB for access : https://10.195.192.178/dna/intent/api/v1/business/sda/hostonboarding/access
+                     -point?deviceManagementIpAddress=10.195.187.194&interfaceName=GigabitEthernet1/0/7
+					 
+respose : 
+-----------
+{
+    "deviceManagementIpAddress": "10.195.187.194",
+    "siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 2",
+    "interfaceName": "GigabitEthernet1/0/7",
+    "dataIpAddressPoolName": "6lan",
+    "authenticateTemplateName": "No Authentication",
+    "interfaceDescription": "ap port assignment",
+    "status": "success",
+    "description": "Port assignment data successfully retrieved from SDA fabric.",
+    "executionId": "00efea0b-775c-4364-93c5-0b27a2facb51"
+}
+
+------------------------------------------------------------------------------------------
+13. Get Device : https://10.195.192.178/dna/intent/api/v1/business/sda/device?deviceManagementIpAddress=10.195.187.192
+
+respose : 
+-----------------
+{
+    "status": "success",
+    "description": "Fabric device info successfully retrieved from sda fabric.",
+    "name": "Cat9k-10.195.187.192",
+    "roles": [
+        "Control Plane"
+    ],
+    "deviceManagementIpAddress": "10.195.187.192",
+    "siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 1",
+    "executionId": "43908c20-5463-4360-8059-d5ef9c2e8b90"
+}
+-------------------------------------------------------------------------------------------
+14. Multicast : https://10.195.192.178/dna/intent/api/v1/business/sda/multicast?siteNameHierarchy=Global/India/Bangalore/Building 1
+
+respose:
+---------------
+{
+    "multicastMethod": "native_multicast",
+    "muticastType": "ssm",
+    "multicastVnInfo": [
+        {
+            "virtualNetworkName": "vn_1",
+            "ipPoolName": "2lan",
+            "externalRpIpAddress": "",
+            "ssmInfo": [
+                {
+                    "ssmGroupRange": "235.0.0.0",
+                    "ssmWildcardMask": "0.255.255.255"
+                },
+                {
+                    "ssmGroupRange": "234.0.0.0",
+                    "ssmWildcardMask": "1.255.255.255"
+                }
+            ]
+        }
+    ],
+    "status": "success",
+    "description": "multicast configuration info retrieved successfully from sda fabric.",
+    "executionId": "1311cadf-190f-44e4-9279-efc36a9e1303"
+}
+--------------------------------------------------------------------------------------
+15. Fabric Count: https://10.195.192.165/dna/intent/api/v1/business/sda/fabric/count
+
+respose:
+-------------
+{
+    "response": {
+        "status": "success",
+        "description": "Fabric count successfully retrieved from sda fabric.",
+        "fabricCount": "10"
+    },
+    "version": "1.0"
+}
+
+---------------------------------------------------------------------------------------
+
+ 
+

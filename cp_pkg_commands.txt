@@ -1,0 +1,40 @@
+ssh -p 2222 maglev@10.195.187.58
+ssh -p 2222 maglev@10.195.187.58 -o ServerAliveInterval=30
+----------------------------------------------------------------
+sudo mkdir /data/my_work
+sudo chown -R maglev:maglev /data/my_work
+cd /data/my_work
+
+
+sudo mkdir dnacaap
+sudo chown -R maglev:maglev /data/my_work/dnacaap
+cd /data/my_work/dnacaap
+cd /data/my_work
+sudo ls -l
+
+cd /data/my_work/dnacaap
+sudo ls -l
+
+
+package_name=dnacaap-stable-1.6.1.135.tar.gz
+sudo wget http://172.22.230.25/QA/daily-regression/1.6.1/dnacaap-stable-1.6.1.135.tar.gz
+
+
+sudo tar -xvf $package_name -C /
+sleep 15
+cd /opt/maglev/catalog/dnacaap
+sleep 15
+
+maglev catalog push .
+
+sleep 180
+
+maglev package deploy dnac-platform
+
+sleep 5
+
+maglev package status | grep dnac-platform
+---------------------------------------------------------------------
+
+maglev package undeploy dnac-platform
+maglev catalog package delete dnac-platform:1.5.1.90

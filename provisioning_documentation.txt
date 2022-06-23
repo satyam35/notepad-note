@@ -1,0 +1,135 @@
+"/dna/intent/api/v1/business/sda/provision-device": {
+            "delete": {
+                "operationId": "deleteProvisionDevice",
+                "tags": [
+                    "SDA"
+                ],
+                "summary": "Delete Provision Device",
+                "description": "Delete Provision Device",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "deviceIPAddress",
+                        "description": "Device IP Address",
+                        "default": "",
+                        "required": true,
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The request was successful. The result is contained in the response body.",
+                        "schema": {
+                            "$ref": "#/definitions/DeleteProvisionDeviceResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "The client made a request that the server could not understand (for example, the request syntax is incorrect)."
+                    },
+                    "401": {
+                        "description": "The client's authentication credentials included with the request are missing or invalid."
+                    },
+                    "404": {
+                        "description": "The client made a request for a resource that does not exist."
+                    },
+                    "500": {
+                        "description": "The server could not fulfill the request."
+                    }
+                }
+            },
+            "get": {
+                "operationId": "getProvisionDevice",
+                "tags": [
+                    "SDA"
+                ],
+                "summary": "Get Provision Device",
+                "description": "Get device which is Provisioned successefully",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "deviceIPAddress",
+                        "description": " Management Ip Address of the Device which is provisioned successfully",
+                        "default": "",
+                        "required": true,
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The request was successful. The result is contained in the response body.",
+                        "schema": {
+                            "$ref": "#/definitions/GetProvisionDeviceResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "The client made a request that the server could not understand (for example, the request syntax is incorrect)."
+                    },
+                    "401": {
+                        "description": "The client's authentication credentials included with the request are missing or invalid."
+                    },
+                    "404": {
+                        "description": "The client made a request for a resource that does not exist."
+                    },
+                    "500": {
+                        "description": "The server could not fulfill the request."
+                    }
+                }
+            },
+            "post": {
+                "operationId": "addProvisionDevice",
+                "tags": [
+                    "SDA"
+                ],
+                "summary": "Add Provision Device",
+                "description": "Add Provision Device",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "request",
+                        "description": "request",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/AddProvisionDeviceRequest"
+                        },
+                        "in": "body"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The request was successful. The result is contained in the response body.",
+                        "schema": {
+                            "$ref": "#/definitions/AddProvisionDeviceResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "The client made a request that the server could not understand (for example, the request syntax is incorrect)."
+                    },
+                    "401": {
+                        "description": "The client's authentication credentials included with the request are missing or invalid."
+                    },
+                    "404": {
+                        "description": "The client made a request for a resource that does not exist."
+                    },
+                    "500": {
+                        "description": "The server could not fulfill the request."
+                    }
+                }
+            }
+        },

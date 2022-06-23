@@ -1,0 +1,68 @@
+Sample SDA Device Config:
+Sample fresh config for a device
+
+conf t ---> is for adding configs
+exit ----> to end adding configs
+to see the configs-->sh running-config
+see all the ports-->sh ip int br
+conf t--->terminal where we add all our configs
+clear line 38--->log out from old login where 38 is the last digit of port 
+Cat9k-10.195.192.89(config)#no router lisp for remove lisp config
+
+--------------------------------------------------------
+
+step 1: wr er
+step2 : reload
+step3: switch will come to switch: prompt
+step4: enter command -->dir flash:
+step5: copy image from flash
+example: boot flash:<image.bin>
+step6: once reload is done make sure device is in Switch# prompt
+Step7: load basic configs-----------------------------|
+
+
+Step8: make sure both management and loopack are up
+step9: ready to discover
+device
+
+>>>do use for config mode
+>>>>terminal length 0 remore more concept
+
+_____________________________________________________________________________________
+
+
+===== # 1 Cat9k-10.195.192.89
+
+telnet 10.195.192.18 2068
+conf t
+interface range gigabitEthernet 1/0/1-24
+shut
+end
+conf t
+
+hostname Cat9k-10.195.192.89
+ip routing
+interface GigabitEthernet1/0/10
+ no switchport
+ ip address 10.195.192.89  255.255.255.0
+no shut
+
+exit
+
+username cisco privilege 15 password uci123!
+enable password lab
+snmp-server community public rw
+line vty 0 4
+login local
+
+exit
+
+ interface Loopback0
+
+ ip address 11.11.11.11 255.255.255.255
+
+end
+
+write memory
+
+-----------------------------------------------------------------------------

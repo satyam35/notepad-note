@@ -1,0 +1,591 @@
+{
+    "bapiKey": "8b90-8a4e-4c5a-9a23",
+    "bapiName": "Get default authentication profile from SDA Fabric",
+    "bapiExecutionId": "865af0af-501d-4386-bc29-20d311718193",
+    "startTime": "Tue Feb 23 09:14:24 UTC 2021",
+    "startTimeEpoch": 1614071664470,
+    "endTime": "Tue Feb 23 09:14:24 UTC 2021",
+    "endTimeEpoch": 1614071664607,
+    "timeDuration": 137,
+    "status": "SUCCESS",
+    "runtimeInstanceId": "DNACP_Runtime_a2032d84-d919-4dbe-a9e0-024fc1b37b9f",
+    "hideArtifact": false,
+    "tasks": [
+        {
+            "taskId": "uuida9984a65",
+            "taskName": "Parse Bapi inputs",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "b6dcafc7-cae0-41b9-8821-a5de47b95326",
+            "startTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "startTimeEpoch": 1614071664479,
+            "endTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "endTimeEpoch": 1614071664482,
+            "taskExecTime": 3,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.0,
+            "taskExternalExecTime": 2,
+            "taskLogs": [
+                "865af0af-501d-4386-bc29-20d311718193 | b6dcafc7-cae0-41b9-8821-a5de47b95326 | 8b90-8a4e-4c5a-9a23: siteNameHierarchy = Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12",
+                "865af0af-501d-4386-bc29-20d311718193 | b6dcafc7-cae0-41b9-8821-a5de47b95326 | 8b90-8a4e-4c5a-9a23: bapi_siteNameHierarchy=Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12",
+                "865af0af-501d-4386-bc29-20d311718193 | b6dcafc7-cae0-41b9-8821-a5de47b95326 | 8b90-8a4e-4c5a-9a23: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "path",
+                    "value": null
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "siteNameHierarchy",
+                    "value": "\"Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid6ab34bdb",
+            "taskName": "Prepare Payload for Group Info Call",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "279582fa-0063-4608-857c-c3f860e6e6bb",
+            "startTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "startTimeEpoch": 1614071664482,
+            "endTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "endTimeEpoch": 1614071664483,
+            "taskExecTime": 1,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.21875,
+            "taskExternalExecTime": 1,
+            "taskLogs": [
+                "865af0af-501d-4386-bc29-20d311718193 | 279582fa-0063-4608-857c-c3f860e6e6bb | 8b90-8a4e-4c5a-9a23: path=?groupNameHierarchy=Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12",
+                "865af0af-501d-4386-bc29-20d311718193 | 279582fa-0063-4608-857c-c3f860e6e6bb | 8b90-8a4e-4c5a-9a23: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "path",
+                    "value": "?groupNameHierarchy=Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12"
+                }
+            ],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuidd98c41d0",
+            "taskName": "Invoke Get Group Info API",
+            "taskType": "DNA_REST_SERVICE",
+            "taskExecutionId": "3c7af416-430c-491f-ae23-769c26ebb022",
+            "startTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "startTimeEpoch": 1614071664483,
+            "endTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "endTimeEpoch": 1614071664496,
+            "taskExecTime": 13,
+            "status": "SUCCESS",
+            "memoryConsumed": 4.4453125,
+            "taskExternalExecTime": 12,
+            "taskLogs": [
+                ": tokenType X_AUTH",
+                "865af0af-501d-4386-bc29-20d311718193 | 3c7af416-430c-491f-ae23-769c26ebb022 | 8b90-8a4e-4c5a-9a23: tokenType X_AUTH"
+            ],
+            "taskOutput": [
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Expires",
+                    "value": "Thu, 01 Jan 1970 00:00:00 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS",
+                    "value": "{\"Transfer-Encoding\":\"chunked\",\"Server\":\"Jetty(9.3.z-SNAPSHOT)\",\"Set-Cookie\":\"JSESSIONID=y4m2bf5evprrjpscczb5i6if;Path=/\",\"Expires\":\"Thu, 01 Jan 1970 00:00:00 GMT\",\"Date\":\"Tue, 23 Feb 2021 09:14:24 GMT\",\"Content-Type\":\"application/json;charset=utf-8\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Transfer-Encoding",
+                    "value": "chunked"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Type",
+                    "value": "application/json;charset=utf-8"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Server",
+                    "value": "Jetty(9.3.z-SNAPSHOT)"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_BODY",
+                    "value": "{\"response\":[{\"parentId\":\"f6175fce-74fd-4839-8f3c-2af9df23e660\",\"systemGroup\":false,\"groupTypeList\":[\"SITE\"],\"additionalInfo\":[{\"nameSpace\":\"ETA\",\"attributes\":{\"member.compatibleWithNaasOnly.direct\":\"0\",\"member.etaCapable.direct\":\"3\",\"member.etaReady.direct\":\"1\",\"member.etaEnabledNaasOnly.direct\":\"0\",\"ETAReady\":\"true\",\"member.etaNotReady.direct\":\"2\",\"member.etaReadyNotEnabled.direct\":\"1\",\"member.etaEnabled.direct\":\"0\"}},{\"nameSpace\":\"System Settings\",\"attributes\":{\"group.count.total\":\"0\",\"hasChild\":\"FALSE\",\"group.count.direct\":\"0\",\"group.hierarchy.groupType\":\"SITE\",\"member.count.total\":\"3\",\"member.count.direct\":\"3\"}},{\"nameSpace\":\"com.wireless.managingwlc\",\"attributes\":{\"secondaryWlcInheritedFrom\":\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\",\"anchorWlcInheritedFrom\":\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\",\"tertiaryWlcInheritedFrom\":\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\",\"primaryWlcInheritedFrom\":\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\"}},{\"nameSpace\":\"Location\",\"attributes\":{\"country\":\"Libya\",\"address\":\"Kufra, Libya\",\"latitude\":\"21.234\",\"addressInheritedFrom\":\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\",\"type\":\"building\",\"longitude\":\"22.232\"}}],\"groupHierarchy\":\"339cae11-92a4-4de6-b5c3-df797b30551e/83ffb817-c943-4f8c-8cd7-bc443cbb5eff/e87eb79a-10dc-405e-9aa8-ce5ddc14e8aa/f4e9b987-952f-4d87-b760-2831302223ec/3d37fe13-0acf-4c58-9503-a294cb7e2325/f6175fce-74fd-4839-8f3c-2af9df23e660/cdab679f-fb22-4b5a-9ec1-917c2195ce3b\",\"groupNameHierarchy\":\"Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12\",\"name\":\"BLR12\",\"instanceTenantId\":\"60165cacf6beca07439a6cfb\",\"id\":\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\"}],\"version\":\"1.0\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Set-Cookie",
+                    "value": "JSESSIONID=y4m2bf5evprrjpscczb5i6if;Path=/"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Date",
+                    "value": "Tue, 23 Feb 2021 09:14:24 GMT"
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "headers",
+                    "value": "{\n  \"X-AUTH-TOKEN\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDE2NWNhZWY2YmVjYTA3NDM5YTZjZmUiLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjYwMTY1Y2FkZjZiZWNhMDc0MzlhNmNmZCJdLCJ0ZW5hbnRJZCI6IjYwMTY1Y2FjZjZiZWNhMDc0MzlhNmNmYiIsImV4cCI6MTYxNDA3MzY4OCwiaWF0IjoxNjE0MDcwMDg4LCJqdGkiOiJiOWNmNThjYi0wMTE5LTQyODMtYmUxYS1hNjE2ODM0ZDIzYzgiLCJ1c2VybmFtZSI6ImFkbWluIn0.ygG2D1FpLgoDvp1N53IZ7DYmRs2EI_jTiIdonFBAkkJoWfxG7zVEowxgZwfLj2krwAgKNWpW2AG77Nk8iwn_N18Ig_wgMjQlxn3bp7bc5iUtrSBUrDUewYmUCQtiy5O7RmNxAzWjlpFxMD0iZhRvTZYPkUl_pjyyhUwUuZUl9ctHQ0S5Eo6inELDvHFMJhIZsJPAY6j-3T_TkCPZYZNqLfRHwUr7vSK4SZpMhj4ViJqp-4szSsUI0x185v9odJ3N3m-fS69_UJmhPoww-zOcYyT2ueAfcwOo4B_Krl9kNNYiEfbFtYAwIguC-fEohJX1kCtGAwQxoENIuLZ9dUVaKw\"\n}"
+                },
+                {
+                    "name": "method",
+                    "value": "\"GET\""
+                },
+                {
+                    "name": "queryParams",
+                    "value": "{ }"
+                },
+                {
+                    "name": "body",
+                    "value": "\"\""
+                },
+                {
+                    "name": "url",
+                    "value": "\"http://grouping-service.fusion.svc.cluster.local:17012/group?groupNameHierarchy=Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuidaaef45e8",
+            "taskName": "Parse Group API Response",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "82edf25f-87c6-4d27-9bbd-062bd2796de2",
+            "startTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "startTimeEpoch": 1614071664496,
+            "endTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "endTimeEpoch": 1614071664499,
+            "taskExecTime": 3,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.0,
+            "taskExternalExecTime": 2,
+            "taskLogs": [
+                "865af0af-501d-4386-bc29-20d311718193 | 82edf25f-87c6-4d27-9bbd-062bd2796de2 | 8b90-8a4e-4c5a-9a23: #### res_obj={\"response\":[{\"parentId\":\"f6175fce-74fd-4839-8f3c-2af9df23e660\",\"systemGroup\":false,\"groupTypeList\":[\"SITE\"],\"additionalInfo\":[{\"nameSpace\":\"ETA\",\"attributes\":{\"member.compatibleWithNaasOnly.direct\":\"0\",\"member.etaCapable.direct\":\"3\",\"member.etaReady.direct\":\"1\",\"member.etaEnabledNaasOnly.direct\":\"0\",\"ETAReady\":\"true\",\"member.etaNotReady.direct\":\"2\",\"member.etaReadyNotEnabled.direct\":\"1\",\"member.etaEnabled.direct\":\"0\"}},{\"nameSpace\":\"System Settings\",\"attributes\":{\"group.count.total\":\"0\",\"hasChild\":\"FALSE\",\"group.count.direct\":\"0\",\"group.hierarchy.groupType\":\"SITE\",\"member.count.total\":\"3\",\"member.count.direct\":\"3\"}},{\"nameSpace\":\"com.wireless.managingwlc\",\"attributes\":{\"secondaryWlcInheritedFrom\":\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\",\"anchorWlcInheritedFrom\":\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\",\"tertiaryWlcInheritedFrom\":\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\",\"primaryWlcInheritedFrom\":\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\"}},{\"nameSpace\":\"Location\",\"attributes\":{\"country\":\"Libya\",\"address\":\"Kufra, Libya\",\"latitude\":\"21.234\",\"addressInheritedFrom\":\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\",\"type\":\"building\",\"longitude\":\"22.232\"}}],\"groupHierarchy\":\"339cae11-92a4-4de6-b5c3-df797b30551e/83ffb817-c943-4f8c-8cd7-bc443cbb5eff/e87eb79a-10dc-405e-9aa8-ce5ddc14e8aa/f4e9b987-952f-4d87-b760-2831302223ec/3d37fe13-0acf-4c58-9503-a294cb7e2325/f6175fce-74fd-4839-8f3c-2af9df23e660/cdab679f-fb22-4b5a-9ec1-917c2195ce3b\",\"groupNameHierarchy\":\"Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12\",\"name\":\"BLR12\",\"instanceTenantId\":\"60165cacf6beca07439a6cfb\",\"id\":\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\"}],\"version\":\"1.0\"}",
+                "865af0af-501d-4386-bc29-20d311718193 | 82edf25f-87c6-4d27-9bbd-062bd2796de2 | 8b90-8a4e-4c5a-9a23: #### 1",
+                "865af0af-501d-4386-bc29-20d311718193 | 82edf25f-87c6-4d27-9bbd-062bd2796de2 | 8b90-8a4e-4c5a-9a23: ### start",
+                "865af0af-501d-4386-bc29-20d311718193 | 82edf25f-87c6-4d27-9bbd-062bd2796de2 | 8b90-8a4e-4c5a-9a23: [object Object]",
+                "865af0af-501d-4386-bc29-20d311718193 | 82edf25f-87c6-4d27-9bbd-062bd2796de2 | 8b90-8a4e-4c5a-9a23: ### end",
+                "865af0af-501d-4386-bc29-20d311718193 | 82edf25f-87c6-4d27-9bbd-062bd2796de2 | 8b90-8a4e-4c5a-9a23: #### cds={\"response\":[{\"parentId\":\"f6175fce-74fd-4839-8f3c-2af9df23e660\",\"systemGroup\":false,\"groupTypeList\":[\"SITE\"],\"additionalInfo\":[{\"nameSpace\":\"ETA\",\"attributes\":{\"member.compatibleWithNaasOnly.direct\":\"0\",\"member.etaCapable.direct\":\"3\",\"member.etaReady.direct\":\"1\",\"member.etaEnabledNaasOnly.direct\":\"0\",\"ETAReady\":\"true\",\"member.etaNotReady.direct\":\"2\",\"member.etaReadyNotEnabled.direct\":\"1\",\"member.etaEnabled.direct\":\"0\"}},{\"nameSpace\":\"System Settings\",\"attributes\":{\"group.count.total\":\"0\",\"hasChild\":\"FALSE\",\"group.count.direct\":\"0\",\"group.hierarchy.groupType\":\"SITE\",\"member.count.total\":\"3\",\"member.count.direct\":\"3\"}},{\"nameSpace\":\"com.wireless.managingwlc\",\"attributes\":{\"secondaryWlcInheritedFrom\":\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\",\"anchorWlcInheritedFrom\":\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\",\"tertiaryWlcInheritedFrom\":\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\",\"primaryWlcInheritedFrom\":\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\"}},{\"nameSpace\":\"Location\",\"attributes\":{\"country\":\"Libya\",\"address\":\"Kufra, Libya\",\"latitude\":\"21.234\",\"addressInheritedFrom\":\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\",\"type\":\"building\",\"longitude\":\"22.232\"}}],\"groupHierarchy\":\"339cae11-92a4-4de6-b5c3-df797b30551e/83ffb817-c943-4f8c-8cd7-bc443cbb5eff/e87eb79a-10dc-405e-9aa8-ce5ddc14e8aa/f4e9b987-952f-4d87-b760-2831302223ec/3d37fe13-0acf-4c58-9503-a294cb7e2325/f6175fce-74fd-4839-8f3c-2af9df23e660/cdab679f-fb22-4b5a-9ec1-917c2195ce3b\",\"groupNameHierarchy\":\"Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12\",\"name\":\"BLR12\",\"instanceTenantId\":\"60165cacf6beca07439a6cfb\",\"id\":\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\"}],\"version\":\"1.0\"}",
+                "865af0af-501d-4386-bc29-20d311718193 | 82edf25f-87c6-4d27-9bbd-062bd2796de2 | 8b90-8a4e-4c5a-9a23: #### groups=[object Object]",
+                "865af0af-501d-4386-bc29-20d311718193 | 82edf25f-87c6-4d27-9bbd-062bd2796de2 | 8b90-8a4e-4c5a-9a23: #### groupNameHierarchy=Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12",
+                "865af0af-501d-4386-bc29-20d311718193 | 82edf25f-87c6-4d27-9bbd-062bd2796de2 | 8b90-8a4e-4c5a-9a23: #### bapi_siteNameHierarchy=Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12",
+                "865af0af-501d-4386-bc29-20d311718193 | 82edf25f-87c6-4d27-9bbd-062bd2796de2 | 8b90-8a4e-4c5a-9a23: #### found.",
+                "865af0af-501d-4386-bc29-20d311718193 | 82edf25f-87c6-4d27-9bbd-062bd2796de2 | 8b90-8a4e-4c5a-9a23: #### bapi_siteNameHierarchyId=null",
+                "865af0af-501d-4386-bc29-20d311718193 | 82edf25f-87c6-4d27-9bbd-062bd2796de2 | 8b90-8a4e-4c5a-9a23: #### bapi_group_id=cdab679f-fb22-4b5a-9ec1-917c2195ce3b",
+                "865af0af-501d-4386-bc29-20d311718193 | 82edf25f-87c6-4d27-9bbd-062bd2796de2 | 8b90-8a4e-4c5a-9a23: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "device_info_query_path",
+                    "value": null
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "response",
+                    "value": "\"{\\\"response\\\":[{\\\"parentId\\\":\\\"f6175fce-74fd-4839-8f3c-2af9df23e660\\\",\\\"systemGroup\\\":false,\\\"groupTypeList\\\":[\\\"SITE\\\"],\\\"additionalInfo\\\":[{\\\"nameSpace\\\":\\\"ETA\\\",\\\"attributes\\\":{\\\"member.compatibleWithNaasOnly.direct\\\":\\\"0\\\",\\\"member.etaCapable.direct\\\":\\\"3\\\",\\\"member.etaReady.direct\\\":\\\"1\\\",\\\"member.etaEnabledNaasOnly.direct\\\":\\\"0\\\",\\\"ETAReady\\\":\\\"true\\\",\\\"member.etaNotReady.direct\\\":\\\"2\\\",\\\"member.etaReadyNotEnabled.direct\\\":\\\"1\\\",\\\"member.etaEnabled.direct\\\":\\\"0\\\"}},{\\\"nameSpace\\\":\\\"System Settings\\\",\\\"attributes\\\":{\\\"group.count.total\\\":\\\"0\\\",\\\"hasChild\\\":\\\"FALSE\\\",\\\"group.count.direct\\\":\\\"0\\\",\\\"group.hierarchy.groupType\\\":\\\"SITE\\\",\\\"member.count.total\\\":\\\"3\\\",\\\"member.count.direct\\\":\\\"3\\\"}},{\\\"nameSpace\\\":\\\"com.wireless.managingwlc\\\",\\\"attributes\\\":{\\\"secondaryWlcInheritedFrom\\\":\\\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\\\",\\\"anchorWlcInheritedFrom\\\":\\\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\\\",\\\"tertiaryWlcInheritedFrom\\\":\\\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\\\",\\\"primaryWlcInheritedFrom\\\":\\\"83ffb817-c943-4f8c-8cd7-bc443cbb5eff\\\"}},{\\\"nameSpace\\\":\\\"Location\\\",\\\"attributes\\\":{\\\"country\\\":\\\"Libya\\\",\\\"address\\\":\\\"Kufra, Libya\\\",\\\"latitude\\\":\\\"21.234\\\",\\\"addressInheritedFrom\\\":\\\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\\\",\\\"type\\\":\\\"building\\\",\\\"longitude\\\":\\\"22.232\\\"}}],\\\"groupHierarchy\\\":\\\"339cae11-92a4-4de6-b5c3-df797b30551e/83ffb817-c943-4f8c-8cd7-bc443cbb5eff/e87eb79a-10dc-405e-9aa8-ce5ddc14e8aa/f4e9b987-952f-4d87-b760-2831302223ec/3d37fe13-0acf-4c58-9503-a294cb7e2325/f6175fce-74fd-4839-8f3c-2af9df23e660/cdab679f-fb22-4b5a-9ec1-917c2195ce3b\\\",\\\"groupNameHierarchy\\\":\\\"Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12\\\",\\\"name\\\":\\\"BLR12\\\",\\\"instanceTenantId\\\":\\\"60165cacf6beca07439a6cfb\\\",\\\"id\\\":\\\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\\\"}],\\\"version\\\":\\\"1.0\\\"}\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid38824295",
+            "taskName": "Prepare API Call for Get CD API",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "489981d1-33ce-436a-b534-8a807c84c431",
+            "startTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "startTimeEpoch": 1614071664499,
+            "endTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "endTimeEpoch": 1614071664501,
+            "taskExecTime": 2,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.1640625,
+            "taskExternalExecTime": 2,
+            "taskLogs": [
+                "865af0af-501d-4386-bc29-20d311718193 | 489981d1-33ce-436a-b534-8a807c84c431 | 8b90-8a4e-4c5a-9a23: ###path=/ConnectivityDomain?siteId=cdab679f-fb22-4b5a-9ec1-917c2195ce3b",
+                "865af0af-501d-4386-bc29-20d311718193 | 489981d1-33ce-436a-b534-8a807c84c431 | 8b90-8a4e-4c5a-9a23: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "path",
+                    "value": "/ConnectivityDomain?siteId=cdab679f-fb22-4b5a-9ec1-917c2195ce3b"
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "raw_response",
+                    "value": "\"${uuid18c04dcf.__DNA_REST_SERVICE_RESPONSE_BODY}\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid2aa54f0a",
+            "taskName": "Invoke Get CD API",
+            "taskType": "DNA_REST_SERVICE",
+            "taskExecutionId": "ff6cad42-5daf-4396-a51e-eb5e76730dcf",
+            "startTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "startTimeEpoch": 1614071664501,
+            "endTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "endTimeEpoch": 1614071664596,
+            "taskExecTime": 95,
+            "status": "SUCCESS",
+            "memoryConsumed": 10.8203125,
+            "taskExternalExecTime": 95,
+            "taskLogs": [
+                ": tokenType X_AUTH",
+                "865af0af-501d-4386-bc29-20d311718193 | ff6cad42-5daf-4396-a51e-eb5e76730dcf | 8b90-8a4e-4c5a-9a23: tokenType X_AUTH"
+            ],
+            "taskOutput": [
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Length",
+                    "value": "4915"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Date",
+                    "value": "Tue, 23 Feb 2021 09:14:24 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Set-Cookie",
+                    "value": "JSESSIONID=1p4mnzzl9f3m515exmqonm52ya;Path=/"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Server",
+                    "value": "Jetty(9.3.z-SNAPSHOT)"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS",
+                    "value": "{\"Server\":\"Jetty(9.3.z-SNAPSHOT)\",\"Set-Cookie\":\"JSESSIONID=1p4mnzzl9f3m515exmqonm52ya;Path=/\",\"Expires\":\"Thu, 01 Jan 1970 00:00:00 GMT\",\"Content-Length\":\"4915\",\"Date\":\"Tue, 23 Feb 2021 09:14:24 GMT\",\"Content-Type\":\"application/json;charset=utf-8\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Expires",
+                    "value": "Thu, 01 Jan 1970 00:00:00 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_BODY",
+                    "value": "{\"response\":[{\"id\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"instanceId\":74097,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceVersion\":68,\"deployed\":false,\"isSeeded\":false,\"isStale\":false,\"lastUpdateTime\":1613987505850,\"name\":\"Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12_my_fab\",\"namespace\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"provisioningState\":\"DEFINED\",\"resourceVersion\":68,\"targetIdList\":[],\"type\":\"ConnectivityDomain\",\"cfsChangeInfo\":[],\"customProvisions\":[],\"authenticationProfileId\":\"\",\"domainType\":\"FABRIC_SITE\",\"enableMonitoring\":true,\"isDefault\":false,\"isIpv6Compatible\":true,\"isNativeMulticastEnabled\":false,\"isReprovisionRequired\":false,\"l2FloodingIndex\":1,\"siteId\":\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\",\"transitMetaData\":[],\"wirelessMulticastFeature\":false,\"authenticationProfiles\":[{\"id\":\"a9e55966-667b-4893-b8d7-050c341ec145\",\"instanceId\":300312,\"displayName\":\"18123b3b[No Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"name\":\"No Authentication\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_NOAUTH\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},{\"id\":\"f0abbf11-fba9-4ee6-a090-499f1887791d\",\"instanceId\":300314,\"displayName\":\"18123b3b[Low Impact,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Low Impact\",\"order\":\"dot1x\",\"priority\":\"mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_EASYCONNECT\",\"wakeOnLan\":false,\"webauthBypassMap\":[],\"preAuthAcl\":{\"id\":\"9ebad813-8b19-4ab6-86c1-445b60ea8c80\",\"instanceId\":301304,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":67,\"aclDescription\":\"\",\"aclName\":\"IPV4_PRE_AUTH_ACL\",\"contract\":[{\"id\":\"83161cba-fc79-4186-8e8c-9248f43b6073\",\"action\":\"PERMIT\",\"port\":\"bootps\",\"protocol\":\"udp\"},{\"id\":\"8616a1f5-6fc5-410a-bb72-81573eae2f70\",\"action\":\"PERMIT\",\"port\":\"bootpc\",\"protocol\":\"udp\"},{\"id\":\"cd146209-b2d7-4139-86a1-93025b8fe323\",\"action\":\"PERMIT\",\"port\":\"domain\",\"protocol\":\"udp\"}],\"defaultAction\":\"DENY\",\"enabled\":true}},{\"id\":\"6e604259-3273-4539-933c-ff12ebdc31be\",\"instanceId\":300313,\"displayName\":\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Open Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},{\"id\":\"9f74e2c0-fa28-4ebb-a333-e62bea21514e\",\"instanceId\":300315,\"displayName\":\"18123b3b[Closed Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"CLOSED\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Closed Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]}],\"deviceInfo\":[{\"idRef\":\"eb222e1b-fea3-4a90-a7a0-4b468a8bbad8\"},{\"idRef\":\"f0458409-ca57-4bbe-947e-1a80ec0935bc\"}],\"extranetPolicy\":[],\"fabricAuthenticationProfile\":{\"id\":\"6e604259-3273-4539-933c-ff12ebdc31be\",\"instanceId\":300313,\"displayName\":\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Open Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},\"fabricSiteBorderInfo\":[],\"migrationStatus\":[{\"id\":\"13433f13-1ca9-4408-8af3-8b45ee9a40e8\",\"instanceId\":299302,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"migrationState\":false,\"migrationType\":\"FLOODING_BEHAVIOR\"},{\"id\":\"c3dec7b5-d532-43ad-b375-8525160c8502\",\"instanceId\":299303,\"displayName\":\"0\",\"instanceCreatedOn\":1612351076759,\"instanceUpdatedOn\":1612351076759,\"instanceVersion\":1,\"migrationState\":true,\"migrationType\":\"AUTO_CONF\"}],\"multicastInfo\":[],\"siteSpecificDomain\":[],\"virtualNetwork\":[{\"idRef\":\"7a08d14d-2d12-441c-abdd-7afd4127a09b\"},{\"idRef\":\"3590d1ca-ded7-48da-988a-14707daa0904\"},{\"idRef\":\"10899b82-0a4d-4f45-acac-3c139a06cfe8\"},{\"idRef\":\"c91888db-859f-4745-b919-f55bf75f1a4c\"},{\"idRef\":\"ea2b9b91-2bec-417b-9102-b101fbd2cfb7\"},{\"idRef\":\"663d776a-fd49-4091-aa05-a88ab5e77aa6\"}]}],\"version\":\"1.0\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Type",
+                    "value": "application/json;charset=utf-8"
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "headers",
+                    "value": "{\n  \"X-AUTH-TOKEN\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDE2NWNhZWY2YmVjYTA3NDM5YTZjZmUiLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjYwMTY1Y2FkZjZiZWNhMDc0MzlhNmNmZCJdLCJ0ZW5hbnRJZCI6IjYwMTY1Y2FjZjZiZWNhMDc0MzlhNmNmYiIsImV4cCI6MTYxNDA3MzY4OCwiaWF0IjoxNjE0MDcwMDg4LCJqdGkiOiJiOWNmNThjYi0wMTE5LTQyODMtYmUxYS1hNjE2ODM0ZDIzYzgiLCJ1c2VybmFtZSI6ImFkbWluIn0.ygG2D1FpLgoDvp1N53IZ7DYmRs2EI_jTiIdonFBAkkJoWfxG7zVEowxgZwfLj2krwAgKNWpW2AG77Nk8iwn_N18Ig_wgMjQlxn3bp7bc5iUtrSBUrDUewYmUCQtiy5O7RmNxAzWjlpFxMD0iZhRvTZYPkUl_pjyyhUwUuZUl9ctHQ0S5Eo6inELDvHFMJhIZsJPAY6j-3T_TkCPZYZNqLfRHwUr7vSK4SZpMhj4ViJqp-4szSsUI0x185v9odJ3N3m-fS69_UJmhPoww-zOcYyT2ueAfcwOo4B_Krl9kNNYiEfbFtYAwIguC-fEohJX1kCtGAwQxoENIuLZ9dUVaKw\"\n}"
+                },
+                {
+                    "name": "method",
+                    "value": "\"GET\""
+                },
+                {
+                    "name": "queryParams",
+                    "value": "{ }"
+                },
+                {
+                    "name": "body",
+                    "value": "\"\""
+                },
+                {
+                    "name": "url",
+                    "value": "\"http://spf-service-manager-service.fusion.svc.cluster.local:9201/data/customer-facing-service/ConnectivityDomain?siteId=cdab679f-fb22-4b5a-9ec1-917c2195ce3b\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid28084dde",
+            "taskName": "Parse get CD API Response",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "7d06f12d-1dac-42ae-bc4f-b80e9331fd54",
+            "startTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "startTimeEpoch": 1614071664597,
+            "endTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "endTimeEpoch": 1614071664601,
+            "taskExecTime": 4,
+            "status": "SUCCESS",
+            "memoryConsumed": 9.640625,
+            "taskExternalExecTime": 3,
+            "taskLogs": [
+                "865af0af-501d-4386-bc29-20d311718193 | 7d06f12d-1dac-42ae-bc4f-b80e9331fd54 | 8b90-8a4e-4c5a-9a23: #### raw_response={\"response\":[{\"id\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"instanceId\":74097,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceVersion\":68,\"deployed\":false,\"isSeeded\":false,\"isStale\":false,\"lastUpdateTime\":1613987505850,\"name\":\"Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12_my_fab\",\"namespace\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"provisioningState\":\"DEFINED\",\"resourceVersion\":68,\"targetIdList\":[],\"type\":\"ConnectivityDomain\",\"cfsChangeInfo\":[],\"customProvisions\":[],\"authenticationProfileId\":\"\",\"domainType\":\"FABRIC_SITE\",\"enableMonitoring\":true,\"isDefault\":false,\"isIpv6Compatible\":true,\"isNativeMulticastEnabled\":false,\"isReprovisionRequired\":false,\"l2FloodingIndex\":1,\"siteId\":\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\",\"transitMetaData\":[],\"wirelessMulticastFeature\":false,\"authenticationProfiles\":[{\"id\":\"a9e55966-667b-4893-b8d7-050c341ec145\",\"instanceId\":300312,\"displayName\":\"18123b3b[No Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"name\":\"No Authentication\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_NOAUTH\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},{\"id\":\"f0abbf11-fba9-4ee6-a090-499f1887791d\",\"instanceId\":300314,\"displayName\":\"18123b3b[Low Impact,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Low Impact\",\"order\":\"dot1x\",\"priority\":\"mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_EASYCONNECT\",\"wakeOnLan\":false,\"webauthBypassMap\":[],\"preAuthAcl\":{\"id\":\"9ebad813-8b19-4ab6-86c1-445b60ea8c80\",\"instanceId\":301304,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":67,\"aclDescription\":\"\",\"aclName\":\"IPV4_PRE_AUTH_ACL\",\"contract\":[{\"id\":\"83161cba-fc79-4186-8e8c-9248f43b6073\",\"action\":\"PERMIT\",\"port\":\"bootps\",\"protocol\":\"udp\"},{\"id\":\"8616a1f5-6fc5-410a-bb72-81573eae2f70\",\"action\":\"PERMIT\",\"port\":\"bootpc\",\"protocol\":\"udp\"},{\"id\":\"cd146209-b2d7-4139-86a1-93025b8fe323\",\"action\":\"PERMIT\",\"port\":\"domain\",\"protocol\":\"udp\"}],\"defaultAction\":\"DENY\",\"enabled\":true}},{\"id\":\"6e604259-3273-4539-933c-ff12ebdc31be\",\"instanceId\":300313,\"displayName\":\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Open Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},{\"id\":\"9f74e2c0-fa28-4ebb-a333-e62bea21514e\",\"instanceId\":300315,\"displayName\":\"18123b3b[Closed Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"CLOSED\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Closed Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]}],\"deviceInfo\":[{\"idRef\":\"eb222e1b-fea3-4a90-a7a0-4b468a8bbad8\"},{\"idRef\":\"f0458409-ca57-4bbe-947e-1a80ec0935bc\"}],\"extranetPolicy\":[],\"fabricAuthenticationProfile\":{\"id\":\"6e604259-3273-4539-933c-ff12ebdc31be\",\"instanceId\":300313,\"displayName\":\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Open Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},\"fabricSiteBorderInfo\":[],\"migrationStatus\":[{\"id\":\"13433f13-1ca9-4408-8af3-8b45ee9a40e8\",\"instanceId\":299302,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"migrationState\":false,\"migrationType\":\"FLOODING_BEHAVIOR\"},{\"id\":\"c3dec7b5-d532-43ad-b375-8525160c8502\",\"instanceId\":299303,\"displayName\":\"0\",\"instanceCreatedOn\":1612351076759,\"instanceUpdatedOn\":1612351076759,\"instanceVersion\":1,\"migrationState\":true,\"migrationType\":\"AUTO_CONF\"}],\"multicastInfo\":[],\"siteSpecificDomain\":[],\"virtualNetwork\":[{\"idRef\":\"7a08d14d-2d12-441c-abdd-7afd4127a09b\"},{\"idRef\":\"3590d1ca-ded7-48da-988a-14707daa0904\"},{\"idRef\":\"10899b82-0a4d-4f45-acac-3c139a06cfe8\"},{\"idRef\":\"c91888db-859f-4745-b919-f55bf75f1a4c\"},{\"idRef\":\"ea2b9b91-2bec-417b-9102-b101fbd2cfb7\"},{\"idRef\":\"663d776a-fd49-4091-aa05-a88ab5e77aa6\"}]}],\"version\":\"1.0\"}",
+                "865af0af-501d-4386-bc29-20d311718193 | 7d06f12d-1dac-42ae-bc4f-b80e9331fd54 | 8b90-8a4e-4c5a-9a23: #### cd_data={\"response\":[{\"id\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"instanceId\":74097,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceVersion\":68,\"deployed\":false,\"isSeeded\":false,\"isStale\":false,\"lastUpdateTime\":1613987505850,\"name\":\"Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12_my_fab\",\"namespace\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"provisioningState\":\"DEFINED\",\"resourceVersion\":68,\"targetIdList\":[],\"type\":\"ConnectivityDomain\",\"cfsChangeInfo\":[],\"customProvisions\":[],\"authenticationProfileId\":\"\",\"domainType\":\"FABRIC_SITE\",\"enableMonitoring\":true,\"isDefault\":false,\"isIpv6Compatible\":true,\"isNativeMulticastEnabled\":false,\"isReprovisionRequired\":false,\"l2FloodingIndex\":1,\"siteId\":\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\",\"transitMetaData\":[],\"wirelessMulticastFeature\":false,\"authenticationProfiles\":[{\"id\":\"a9e55966-667b-4893-b8d7-050c341ec145\",\"instanceId\":300312,\"displayName\":\"18123b3b[No Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"name\":\"No Authentication\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_NOAUTH\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},{\"id\":\"f0abbf11-fba9-4ee6-a090-499f1887791d\",\"instanceId\":300314,\"displayName\":\"18123b3b[Low Impact,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Low Impact\",\"order\":\"dot1x\",\"priority\":\"mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_EASYCONNECT\",\"wakeOnLan\":false,\"webauthBypassMap\":[],\"preAuthAcl\":{\"id\":\"9ebad813-8b19-4ab6-86c1-445b60ea8c80\",\"instanceId\":301304,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":67,\"aclDescription\":\"\",\"aclName\":\"IPV4_PRE_AUTH_ACL\",\"contract\":[{\"id\":\"83161cba-fc79-4186-8e8c-9248f43b6073\",\"action\":\"PERMIT\",\"port\":\"bootps\",\"protocol\":\"udp\"},{\"id\":\"8616a1f5-6fc5-410a-bb72-81573eae2f70\",\"action\":\"PERMIT\",\"port\":\"bootpc\",\"protocol\":\"udp\"},{\"id\":\"cd146209-b2d7-4139-86a1-93025b8fe323\",\"action\":\"PERMIT\",\"port\":\"domain\",\"protocol\":\"udp\"}],\"defaultAction\":\"DENY\",\"enabled\":true}},{\"id\":\"6e604259-3273-4539-933c-ff12ebdc31be\",\"instanceId\":300313,\"displayName\":\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Open Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},{\"id\":\"9f74e2c0-fa28-4ebb-a333-e62bea21514e\",\"instanceId\":300315,\"displayName\":\"18123b3b[Closed Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"CLOSED\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Closed Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]}],\"deviceInfo\":[{\"idRef\":\"eb222e1b-fea3-4a90-a7a0-4b468a8bbad8\"},{\"idRef\":\"f0458409-ca57-4bbe-947e-1a80ec0935bc\"}],\"extranetPolicy\":[],\"fabricAuthenticationProfile\":{\"id\":\"6e604259-3273-4539-933c-ff12ebdc31be\",\"instanceId\":300313,\"displayName\":\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Open Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},\"fabricSiteBorderInfo\":[],\"migrationStatus\":[{\"id\":\"13433f13-1ca9-4408-8af3-8b45ee9a40e8\",\"instanceId\":299302,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"migrationState\":false,\"migrationType\":\"FLOODING_BEHAVIOR\"},{\"id\":\"c3dec7b5-d532-43ad-b375-8525160c8502\",\"instanceId\":299303,\"displayName\":\"0\",\"instanceCreatedOn\":1612351076759,\"instanceUpdatedOn\":1612351076759,\"instanceVersion\":1,\"migrationState\":true,\"migrationType\":\"AUTO_CONF\"}],\"multicastInfo\":[],\"siteSpecificDomain\":[],\"virtualNetwork\":[{\"idRef\":\"7a08d14d-2d12-441c-abdd-7afd4127a09b\"},{\"idRef\":\"3590d1ca-ded7-48da-988a-14707daa0904\"},{\"idRef\":\"10899b82-0a4d-4f45-acac-3c139a06cfe8\"},{\"idRef\":\"c91888db-859f-4745-b919-f55bf75f1a4c\"},{\"idRef\":\"ea2b9b91-2bec-417b-9102-b101fbd2cfb7\"},{\"idRef\":\"663d776a-fd49-4091-aa05-a88ab5e77aa6\"}]}],\"version\":\"1.0\"}",
+                "865af0af-501d-4386-bc29-20d311718193 | 7d06f12d-1dac-42ae-bc4f-b80e9331fd54 | 8b90-8a4e-4c5a-9a23: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "cd_data",
+                    "value": "{\"response\":[{\"id\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"instanceId\":74097,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceVersion\":68,\"deployed\":false,\"isSeeded\":false,\"isStale\":false,\"lastUpdateTime\":1613987505850,\"name\":\"Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12_my_fab\",\"namespace\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"provisioningState\":\"DEFINED\",\"resourceVersion\":68,\"targetIdList\":[],\"type\":\"ConnectivityDomain\",\"cfsChangeInfo\":[],\"customProvisions\":[],\"authenticationProfileId\":\"\",\"domainType\":\"FABRIC_SITE\",\"enableMonitoring\":true,\"isDefault\":false,\"isIpv6Compatible\":true,\"isNativeMulticastEnabled\":false,\"isReprovisionRequired\":false,\"l2FloodingIndex\":1,\"siteId\":\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\",\"transitMetaData\":[],\"wirelessMulticastFeature\":false,\"authenticationProfiles\":[{\"id\":\"a9e55966-667b-4893-b8d7-050c341ec145\",\"instanceId\":300312,\"displayName\":\"18123b3b[No Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"name\":\"No Authentication\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_NOAUTH\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},{\"id\":\"f0abbf11-fba9-4ee6-a090-499f1887791d\",\"instanceId\":300314,\"displayName\":\"18123b3b[Low Impact,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Low Impact\",\"order\":\"dot1x\",\"priority\":\"mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_EASYCONNECT\",\"wakeOnLan\":false,\"webauthBypassMap\":[],\"preAuthAcl\":{\"id\":\"9ebad813-8b19-4ab6-86c1-445b60ea8c80\",\"instanceId\":301304,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":67,\"aclDescription\":\"\",\"aclName\":\"IPV4_PRE_AUTH_ACL\",\"contract\":[{\"id\":\"83161cba-fc79-4186-8e8c-9248f43b6073\",\"action\":\"PERMIT\",\"port\":\"bootps\",\"protocol\":\"udp\"},{\"id\":\"8616a1f5-6fc5-410a-bb72-81573eae2f70\",\"action\":\"PERMIT\",\"port\":\"bootpc\",\"protocol\":\"udp\"},{\"id\":\"cd146209-b2d7-4139-86a1-93025b8fe323\",\"action\":\"PERMIT\",\"port\":\"domain\",\"protocol\":\"udp\"}],\"defaultAction\":\"DENY\",\"enabled\":true}},{\"id\":\"6e604259-3273-4539-933c-ff12ebdc31be\",\"instanceId\":300313,\"displayName\":\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Open Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},{\"id\":\"9f74e2c0-fa28-4ebb-a333-e62bea21514e\",\"instanceId\":300315,\"displayName\":\"18123b3b[Closed Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"CLOSED\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Closed Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]}],\"deviceInfo\":[{\"idRef\":\"eb222e1b-fea3-4a90-a7a0-4b468a8bbad8\"},{\"idRef\":\"f0458409-ca57-4bbe-947e-1a80ec0935bc\"}],\"extranetPolicy\":[],\"fabricAuthenticationProfile\":{\"id\":\"6e604259-3273-4539-933c-ff12ebdc31be\",\"instanceId\":300313,\"displayName\":\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Open Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},\"fabricSiteBorderInfo\":[],\"migrationStatus\":[{\"id\":\"13433f13-1ca9-4408-8af3-8b45ee9a40e8\",\"instanceId\":299302,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"migrationState\":false,\"migrationType\":\"FLOODING_BEHAVIOR\"},{\"id\":\"c3dec7b5-d532-43ad-b375-8525160c8502\",\"instanceId\":299303,\"displayName\":\"0\",\"instanceCreatedOn\":1612351076759,\"instanceUpdatedOn\":1612351076759,\"instanceVersion\":1,\"migrationState\":true,\"migrationType\":\"AUTO_CONF\"}],\"multicastInfo\":[],\"siteSpecificDomain\":[],\"virtualNetwork\":[{\"idRef\":\"7a08d14d-2d12-441c-abdd-7afd4127a09b\"},{\"idRef\":\"3590d1ca-ded7-48da-988a-14707daa0904\"},{\"idRef\":\"10899b82-0a4d-4f45-acac-3c139a06cfe8\"},{\"idRef\":\"c91888db-859f-4745-b919-f55bf75f1a4c\"},{\"idRef\":\"ea2b9b91-2bec-417b-9102-b101fbd2cfb7\"},{\"idRef\":\"663d776a-fd49-4091-aa05-a88ab5e77aa6\"}]}],\"version\":\"1.0\"}"
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "raw_response",
+                    "value": "\"{\\\"response\\\":[{\\\"id\\\":\\\"1b76f55d-8e6a-408b-9851-bb86871d301f\\\",\\\"instanceId\\\":74097,\\\"displayName\\\":\\\"0\\\",\\\"instanceCreatedOn\\\":1612278087706,\\\"instanceVersion\\\":68,\\\"deployed\\\":false,\\\"isSeeded\\\":false,\\\"isStale\\\":false,\\\"lastUpdateTime\\\":1613987505850,\\\"name\\\":\\\"Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12_my_fab\\\",\\\"namespace\\\":\\\"1b76f55d-8e6a-408b-9851-bb86871d301f\\\",\\\"provisioningState\\\":\\\"DEFINED\\\",\\\"resourceVersion\\\":68,\\\"targetIdList\\\":[],\\\"type\\\":\\\"ConnectivityDomain\\\",\\\"cfsChangeInfo\\\":[],\\\"customProvisions\\\":[],\\\"authenticationProfileId\\\":\\\"\\\",\\\"domainType\\\":\\\"FABRIC_SITE\\\",\\\"enableMonitoring\\\":true,\\\"isDefault\\\":false,\\\"isIpv6Compatible\\\":true,\\\"isNativeMulticastEnabled\\\":false,\\\"isReprovisionRequired\\\":false,\\\"l2FloodingIndex\\\":1,\\\"siteId\\\":\\\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\\\",\\\"transitMetaData\\\":[],\\\"wirelessMulticastFeature\\\":false,\\\"authenticationProfiles\\\":[{\\\"id\\\":\\\"a9e55966-667b-4893-b8d7-050c341ec145\\\",\\\"instanceId\\\":300312,\\\"displayName\\\":\\\"18123b3b[No Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\\\",\\\"instanceCreatedOn\\\":1612278087706,\\\"instanceUpdatedOn\\\":1612278087706,\\\"instanceVersion\\\":1,\\\"name\\\":\\\"No Authentication\\\",\\\"profileUuid\\\":\\\"1b76f55d-8e6a-408b-9851-bb86871d301f\\\",\\\"profileVersion\\\":1,\\\"type\\\":\\\"WIRED_NOAUTH\\\",\\\"wakeOnLan\\\":false,\\\"webauthBypassMap\\\":[]},{\\\"id\\\":\\\"f0abbf11-fba9-4ee6-a090-499f1887791d\\\",\\\"instanceId\\\":300314,\\\"displayName\\\":\\\"18123b3b[Low Impact,1b76f55d-8e6a-408b-9851-bb86871d301f]\\\",\\\"instanceCreatedOn\\\":1612278087706,\\\"instanceUpdatedOn\\\":1612278087706,\\\"instanceVersion\\\":1,\\\"deploymentMode\\\":\\\"OPEN\\\",\\\"dot1xToMabFallbackTimeout\\\":\\\"21\\\",\\\"hostMode\\\":\\\"multi_auth\\\",\\\"name\\\":\\\"Low Impact\\\",\\\"order\\\":\\\"dot1x\\\",\\\"priority\\\":\\\"mab\\\",\\\"profileUuid\\\":\\\"1b76f55d-8e6a-408b-9851-bb86871d301f\\\",\\\"profileVersion\\\":1,\\\"type\\\":\\\"WIRED_EASYCONNECT\\\",\\\"wakeOnLan\\\":false,\\\"webauthBypassMap\\\":[],\\\"preAuthAcl\\\":{\\\"id\\\":\\\"9ebad813-8b19-4ab6-86c1-445b60ea8c80\\\",\\\"instanceId\\\":301304,\\\"displayName\\\":\\\"0\\\",\\\"instanceCreatedOn\\\":1612278087706,\\\"instanceUpdatedOn\\\":1612278087706,\\\"instanceVersion\\\":67,\\\"aclDescription\\\":\\\"\\\",\\\"aclName\\\":\\\"IPV4_PRE_AUTH_ACL\\\",\\\"contract\\\":[{\\\"id\\\":\\\"83161cba-fc79-4186-8e8c-9248f43b6073\\\",\\\"action\\\":\\\"PERMIT\\\",\\\"port\\\":\\\"bootps\\\",\\\"protocol\\\":\\\"udp\\\"},{\\\"id\\\":\\\"8616a1f5-6fc5-410a-bb72-81573eae2f70\\\",\\\"action\\\":\\\"PERMIT\\\",\\\"port\\\":\\\"bootpc\\\",\\\"protocol\\\":\\\"udp\\\"},{\\\"id\\\":\\\"cd146209-b2d7-4139-86a1-93025b8fe323\\\",\\\"action\\\":\\\"PERMIT\\\",\\\"port\\\":\\\"domain\\\",\\\"protocol\\\":\\\"udp\\\"}],\\\"defaultAction\\\":\\\"DENY\\\",\\\"enabled\\\":true}},{\\\"id\\\":\\\"6e604259-3273-4539-933c-ff12ebdc31be\\\",\\\"instanceId\\\":300313,\\\"displayName\\\":\\\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\\\",\\\"instanceCreatedOn\\\":1612278087706,\\\"instanceUpdatedOn\\\":1612278087706,\\\"instanceVersion\\\":1,\\\"deploymentMode\\\":\\\"OPEN\\\",\\\"dot1xToMabFallbackTimeout\\\":\\\"21\\\",\\\"hostMode\\\":\\\"multi_auth\\\",\\\"name\\\":\\\"Open Authentication\\\",\\\"order\\\":\\\"dot1x\\\",\\\"priority\\\":\\\"dot1x mab\\\",\\\"profileUuid\\\":\\\"1b76f55d-8e6a-408b-9851-bb86871d301f\\\",\\\"profileVersion\\\":1,\\\"type\\\":\\\"WIRED_DOT1X\\\",\\\"wakeOnLan\\\":false,\\\"webauthBypassMap\\\":[]},{\\\"id\\\":\\\"9f74e2c0-fa28-4ebb-a333-e62bea21514e\\\",\\\"instanceId\\\":300315,\\\"displayName\\\":\\\"18123b3b[Closed Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\\\",\\\"instanceCreatedOn\\\":1612278087706,\\\"instanceUpdatedOn\\\":1612278087706,\\\"instanceVersion\\\":1,\\\"deploymentMode\\\":\\\"CLOSED\\\",\\\"dot1xToMabFallbackTimeout\\\":\\\"21\\\",\\\"hostMode\\\":\\\"multi_auth\\\",\\\"name\\\":\\\"Closed Authentication\\\",\\\"order\\\":\\\"dot1x\\\",\\\"priority\\\":\\\"dot1x mab\\\",\\\"profileUuid\\\":\\\"1b76f55d-8e6a-408b-9851-bb86871d301f\\\",\\\"profileVersion\\\":1,\\\"type\\\":\\\"WIRED_DOT1X\\\",\\\"wakeOnLan\\\":false,\\\"webauthBypassMap\\\":[]}],\\\"deviceInfo\\\":[{\\\"idRef\\\":\\\"eb222e1b-fea3-4a90-a7a0-4b468a8bbad8\\\"},{\\\"idRef\\\":\\\"f0458409-ca57-4bbe-947e-1a80ec0935bc\\\"}],\\\"extranetPolicy\\\":[],\\\"fabricAuthenticationProfile\\\":{\\\"id\\\":\\\"6e604259-3273-4539-933c-ff12ebdc31be\\\",\\\"instanceId\\\":300313,\\\"displayName\\\":\\\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\\\",\\\"instanceCreatedOn\\\":1612278087706,\\\"instanceUpdatedOn\\\":1612278087706,\\\"instanceVersion\\\":1,\\\"deploymentMode\\\":\\\"OPEN\\\",\\\"dot1xToMabFallbackTimeout\\\":\\\"21\\\",\\\"hostMode\\\":\\\"multi_auth\\\",\\\"name\\\":\\\"Open Authentication\\\",\\\"order\\\":\\\"dot1x\\\",\\\"priority\\\":\\\"dot1x mab\\\",\\\"profileUuid\\\":\\\"1b76f55d-8e6a-408b-9851-bb86871d301f\\\",\\\"profileVersion\\\":1,\\\"type\\\":\\\"WIRED_DOT1X\\\",\\\"wakeOnLan\\\":false,\\\"webauthBypassMap\\\":[]},\\\"fabricSiteBorderInfo\\\":[],\\\"migrationStatus\\\":[{\\\"id\\\":\\\"13433f13-1ca9-4408-8af3-8b45ee9a40e8\\\",\\\"instanceId\\\":299302,\\\"displayName\\\":\\\"0\\\",\\\"instanceCreatedOn\\\":1612278087706,\\\"instanceUpdatedOn\\\":1612278087706,\\\"instanceVersion\\\":1,\\\"migrationState\\\":false,\\\"migrationType\\\":\\\"FLOODING_BEHAVIOR\\\"},{\\\"id\\\":\\\"c3dec7b5-d532-43ad-b375-8525160c8502\\\",\\\"instanceId\\\":299303,\\\"displayName\\\":\\\"0\\\",\\\"instanceCreatedOn\\\":1612351076759,\\\"instanceUpdatedOn\\\":1612351076759,\\\"instanceVersion\\\":1,\\\"migrationState\\\":true,\\\"migrationType\\\":\\\"AUTO_CONF\\\"}],\\\"multicastInfo\\\":[],\\\"siteSpecificDomain\\\":[],\\\"virtualNetwork\\\":[{\\\"idRef\\\":\\\"7a08d14d-2d12-441c-abdd-7afd4127a09b\\\"},{\\\"idRef\\\":\\\"3590d1ca-ded7-48da-988a-14707daa0904\\\"},{\\\"idRef\\\":\\\"10899b82-0a4d-4f45-acac-3c139a06cfe8\\\"},{\\\"idRef\\\":\\\"c91888db-859f-4745-b919-f55bf75f1a4c\\\"},{\\\"idRef\\\":\\\"ea2b9b91-2bec-417b-9102-b101fbd2cfb7\\\"},{\\\"idRef\\\":\\\"663d776a-fd49-4091-aa05-a88ab5e77aa6\\\"}]}],\\\"version\\\":\\\"1.0\\\"}\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuidfa524598",
+            "taskName": "Parse Auth Profile Data in Fabric",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "478c629e-4d90-4f6b-93cc-f22fc12503ca",
+            "startTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "startTimeEpoch": 1614071664601,
+            "endTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "endTimeEpoch": 1614071664603,
+            "taskExecTime": 2,
+            "status": "FAILURE",
+            "memoryConsumed": 0.0,
+            "taskExternalExecTime": 0,
+            "taskLogs": [
+                "865af0af-501d-4386-bc29-20d311718193 | 478c629e-4d90-4f6b-93cc-f22fc12503ca | 8b90-8a4e-4c5a-9a23: ### cd_data={\"response\":[{\"id\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"instanceId\":74097,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceVersion\":68,\"deployed\":false,\"isSeeded\":false,\"isStale\":false,\"lastUpdateTime\":1613987505850,\"name\":\"Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12_my_fab\",\"namespace\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"provisioningState\":\"DEFINED\",\"resourceVersion\":68,\"targetIdList\":[],\"type\":\"ConnectivityDomain\",\"cfsChangeInfo\":[],\"customProvisions\":[],\"authenticationProfileId\":\"\",\"domainType\":\"FABRIC_SITE\",\"enableMonitoring\":true,\"isDefault\":false,\"isIpv6Compatible\":true,\"isNativeMulticastEnabled\":false,\"isReprovisionRequired\":false,\"l2FloodingIndex\":1,\"siteId\":\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\",\"transitMetaData\":[],\"wirelessMulticastFeature\":false,\"authenticationProfiles\":[{\"id\":\"a9e55966-667b-4893-b8d7-050c341ec145\",\"instanceId\":300312,\"displayName\":\"18123b3b[No Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"name\":\"No Authentication\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_NOAUTH\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},{\"id\":\"f0abbf11-fba9-4ee6-a090-499f1887791d\",\"instanceId\":300314,\"displayName\":\"18123b3b[Low Impact,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Low Impact\",\"order\":\"dot1x\",\"priority\":\"mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_EASYCONNECT\",\"wakeOnLan\":false,\"webauthBypassMap\":[],\"preAuthAcl\":{\"id\":\"9ebad813-8b19-4ab6-86c1-445b60ea8c80\",\"instanceId\":301304,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":67,\"aclDescription\":\"\",\"aclName\":\"IPV4_PRE_AUTH_ACL\",\"contract\":[{\"id\":\"83161cba-fc79-4186-8e8c-9248f43b6073\",\"action\":\"PERMIT\",\"port\":\"bootps\",\"protocol\":\"udp\"},{\"id\":\"8616a1f5-6fc5-410a-bb72-81573eae2f70\",\"action\":\"PERMIT\",\"port\":\"bootpc\",\"protocol\":\"udp\"},{\"id\":\"cd146209-b2d7-4139-86a1-93025b8fe323\",\"action\":\"PERMIT\",\"port\":\"domain\",\"protocol\":\"udp\"}],\"defaultAction\":\"DENY\",\"enabled\":true}},{\"id\":\"6e604259-3273-4539-933c-ff12ebdc31be\",\"instanceId\":300313,\"displayName\":\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Open Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},{\"id\":\"9f74e2c0-fa28-4ebb-a333-e62bea21514e\",\"instanceId\":300315,\"displayName\":\"18123b3b[Closed Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"CLOSED\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Closed Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]}],\"deviceInfo\":[{\"idRef\":\"eb222e1b-fea3-4a90-a7a0-4b468a8bbad8\"},{\"idRef\":\"f0458409-ca57-4bbe-947e-1a80ec0935bc\"}],\"extranetPolicy\":[],\"fabricAuthenticationProfile\":{\"id\":\"6e604259-3273-4539-933c-ff12ebdc31be\",\"instanceId\":300313,\"displayName\":\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Open Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},\"fabricSiteBorderInfo\":[],\"migrationStatus\":[{\"id\":\"13433f13-1ca9-4408-8af3-8b45ee9a40e8\",\"instanceId\":299302,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"migrationState\":false,\"migrationType\":\"FLOODING_BEHAVIOR\"},{\"id\":\"c3dec7b5-d532-43ad-b375-8525160c8502\",\"instanceId\":299303,\"displayName\":\"0\",\"instanceCreatedOn\":1612351076759,\"instanceUpdatedOn\":1612351076759,\"instanceVersion\":1,\"migrationState\":true,\"migrationType\":\"AUTO_CONF\"}],\"multicastInfo\":[],\"siteSpecificDomain\":[],\"virtualNetwork\":[{\"idRef\":\"7a08d14d-2d12-441c-abdd-7afd4127a09b\"},{\"idRef\":\"3590d1ca-ded7-48da-988a-14707daa0904\"},{\"idRef\":\"10899b82-0a4d-4f45-acac-3c139a06cfe8\"},{\"idRef\":\"c91888db-859f-4745-b919-f55bf75f1a4c\"},{\"idRef\":\"ea2b9b91-2bec-417b-9102-b101fbd2cfb7\"},{\"idRef\":\"663d776a-fd49-4091-aa05-a88ab5e77aa6\"}]}],\"version\":\"1.0\"}",
+                "865af0af-501d-4386-bc29-20d311718193 | 478c629e-4d90-4f6b-93cc-f22fc12503ca | 8b90-8a4e-4c5a-9a23: ### bapi_siteProfileUuid=",
+                "865af0af-501d-4386-bc29-20d311718193 | 478c629e-4d90-4f6b-93cc-f22fc12503ca | 8b90-8a4e-4c5a-9a23: ### fabric has default auth assigned to it.",
+                "865af0af-501d-4386-bc29-20d311718193 | 478c629e-4d90-4f6b-93cc-f22fc12503ca | 8b90-8a4e-4c5a-9a23: ### bapi_fabricAuthenticationProfile =Open Authentication",
+                "865af0af-501d-4386-bc29-20d311718193 | 478c629e-4d90-4f6b-93cc-f22fc12503ca | 8b90-8a4e-4c5a-9a23: ### authenticationProfileName =Open Authentication"
+            ],
+            "taskOutput": [],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuidfa954dbe",
+            "taskName": "Exception Handler for SDA BAPI",
+            "taskType": "EXCEPTION",
+            "taskExecutionId": "bc6cc7dd-2976-4b7e-8294-3d6f7fba347d",
+            "startTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "startTimeEpoch": 1614071664604,
+            "endTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "endTimeEpoch": 1614071664605,
+            "taskExecTime": 1,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.9609375,
+            "taskExternalExecTime": 0,
+            "taskLogs": [
+                "865af0af-501d-4386-bc29-20d311718193 | bc6cc7dd-2976-4b7e-8294-3d6f7fba347d | 8b90-8a4e-4c5a-9a23: errorCode = 500",
+                "865af0af-501d-4386-bc29-20d311718193 | bc6cc7dd-2976-4b7e-8294-3d6f7fba347d | 8b90-8a4e-4c5a-9a23: errorDescription = 865af0af-501d-4386-bc29-20d311718193 | 478c629e-4d90-4f6b-93cc-f22fc12503ca | 8b90-8a4e-4c5a-9a23 : ScriptProcessor Execution Failed with error: Success in <eval>  at line number : 26  at column number 0",
+                "865af0af-501d-4386-bc29-20d311718193 | bc6cc7dd-2976-4b7e-8294-3d6f7fba347d | 8b90-8a4e-4c5a-9a23: failedTaskInputParams = { }",
+                "865af0af-501d-4386-bc29-20d311718193 | bc6cc7dd-2976-4b7e-8294-3d6f7fba347d | 8b90-8a4e-4c5a-9a23: failedTaskId = uuidfa524598",
+                "865af0af-501d-4386-bc29-20d311718193 | bc6cc7dd-2976-4b7e-8294-3d6f7fba347d | 8b90-8a4e-4c5a-9a23: failedTaskName = Parse Auth Profile Data in Fabric",
+                "865af0af-501d-4386-bc29-20d311718193 | bc6cc7dd-2976-4b7e-8294-3d6f7fba347d | 8b90-8a4e-4c5a-9a23: failedTaskType = JAVASCRIPT_TRANSFORM",
+                "865af0af-501d-4386-bc29-20d311718193 | bc6cc7dd-2976-4b7e-8294-3d6f7fba347d | 8b90-8a4e-4c5a-9a23: failedTaskDescription = Prepare Payload to Assign Auth Profile in Fabric",
+                "865af0af-501d-4386-bc29-20d311718193 | bc6cc7dd-2976-4b7e-8294-3d6f7fba347d | 8b90-8a4e-4c5a-9a23: failedTaskOutputParams = { }"
+            ],
+            "taskOutput": [
+                {
+                    "name": "failedTaskInputParams",
+                    "value": "{ }"
+                },
+                {
+                    "name": "failedTaskOutputParams",
+                    "value": "{ }"
+                },
+                {
+                    "name": "failedTaskDescription",
+                    "value": "Prepare Payload to Assign Auth Profile in Fabric"
+                },
+                {
+                    "name": "errorDescription",
+                    "value": "865af0af-501d-4386-bc29-20d311718193 | 478c629e-4d90-4f6b-93cc-f22fc12503ca | 8b90-8a4e-4c5a-9a23 : ScriptProcessor Execution Failed with error: Success in <eval>  at line number : 26  at column number 0"
+                },
+                {
+                    "name": "failedTaskId",
+                    "value": "uuidfa524598"
+                },
+                {
+                    "name": "failedTaskType",
+                    "value": "JAVASCRIPT_TRANSFORM"
+                },
+                {
+                    "name": "errorCode",
+                    "value": "500"
+                },
+                {
+                    "name": "failedTaskName",
+                    "value": "Parse Auth Profile Data in Fabric"
+                }
+            ],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuidbb2f45a3",
+            "taskName": "Parse Exception Handler response",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "e63f7971-f080-4aaf-9b78-8af47076c80b",
+            "startTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "startTimeEpoch": 1614071664605,
+            "endTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "endTimeEpoch": 1614071664606,
+            "taskExecTime": 1,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.4453125,
+            "taskExternalExecTime": 1,
+            "taskLogs": [
+                "865af0af-501d-4386-bc29-20d311718193 | e63f7971-f080-4aaf-9b78-8af47076c80b | 8b90-8a4e-4c5a-9a23: error_code = 0",
+                "865af0af-501d-4386-bc29-20d311718193 | e63f7971-f080-4aaf-9b78-8af47076c80b | 8b90-8a4e-4c5a-9a23: executionStatusUrl = https://10.195.192.178/api/dnacaap/v1/dnacaap/management/execution-status/865af0af-501d-4386-bc29-20d311718193",
+                "865af0af-501d-4386-bc29-20d311718193 | e63f7971-f080-4aaf-9b78-8af47076c80b | 8b90-8a4e-4c5a-9a23: bapi_fabricAuthenticationProfile = {\"id\":\"6e604259-3273-4539-933c-ff12ebdc31be\",\"instanceId\":300313,\"displayName\":\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Open Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]}",
+                "865af0af-501d-4386-bc29-20d311718193 | e63f7971-f080-4aaf-9b78-8af47076c80b | 8b90-8a4e-4c5a-9a23: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "response_data",
+                    "value": "{\"siteNameHierarchy\":\"Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12\",\"authenticateTemplateName\":\"Open Authentication\",\"authenticateTemplateId\":\"6e604259-3273-4539-933c-ff12ebdc31be\"}"
+                }
+            ],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuid9a4643ce",
+            "taskName": "Invoke BAPI to get auth profile",
+            "taskType": "REST_SERVER",
+            "taskExecutionId": "9dccc630-8e5c-47bc-aef6-2235d8a12a6b",
+            "startTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "startTimeEpoch": 1614071664000,
+            "endTime": "Tue Feb 23 09:14:24 UTC 2021",
+            "endTimeEpoch": 1614071664000,
+            "taskExecTime": 0,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.0,
+            "taskExternalExecTime": 0,
+            "taskLogs": [],
+            "taskOutput": [
+                {
+                    "name": "header.X-Consumer-ID",
+                    "value": "db9cf8b1-61ad-46b1-aced-9043e9cdb574"
+                },
+                {
+                    "name": "type",
+                    "value": "REST_SERVER"
+                },
+                {
+                    "name": "header.Accept-Encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "header.X-Forwarded-Port",
+                    "value": "443"
+                },
+                {
+                    "name": "header.X-Consumer-Username",
+                    "value": "TNT0"
+                },
+                {
+                    "name": "header.User-Agent",
+                    "value": "PostmanRuntime/7.26.10"
+                },
+                {
+                    "name": "header.X-Request-Id",
+                    "value": "74a27c542877f2facc222d9c185d7f47"
+                },
+                {
+                    "name": "header.X-Forwarded-Host",
+                    "value": "10.195.192.178"
+                },
+                {
+                    "name": "header.Cookie",
+                    "value": "X-JWT-ACCESS-TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDE2NWNhZWY2YmVjYTA3NDM5YTZjZmUiLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjYwMTY1Y2FkZjZiZWNhMDc0MzlhNmNmZCJdLCJ0ZW5hbnRJZCI6IjYwMTY1Y2FjZjZiZWNhMDc0MzlhNmNmYiIsImV4cCI6MTYxNDA3MzY4OCwiaWF0IjoxNjE0MDcwMDg4LCJqdGkiOiJiOWNmNThjYi0wMTE5LTQyODMtYmUxYS1hNjE2ODM0ZDIzYzgiLCJ1c2VybmFtZSI6ImFkbWluIn0.ygG2D1FpLgoDvp1N53IZ7DYmRs2EI_jTiIdonFBAkkJoWfxG7zVEowxgZwfLj2krwAgKNWpW2AG77Nk8iwn_N18Ig_wgMjQlxn3bp7bc5iUtrSBUrDUewYmUCQtiy5O7RmNxAzWjlpFxMD0iZhRvTZYPkUl_pjyyhUwUuZUl9ctHQ0S5Eo6inELDvHFMJhIZsJPAY6j-3T_TkCPZYZNqLfRHwUr7vSK4SZpMhj4ViJqp-4szSsUI0x185v9odJ3N3m-fS69_UJmhPoww-zOcYyT2ueAfcwOo4B_Krl9kNNYiEfbFtYAwIguC-fEohJX1kCtGAwQxoENIuLZ9dUVaKw"
+                },
+                {
+                    "name": "header.Authorization",
+                    "value": "Basic YWRtaW46TWFnbGV2MTIz"
+                },
+                {
+                    "name": "header.X-Forwarded-For",
+                    "value": "10.65.40.223"
+                },
+                {
+                    "name": "path",
+                    "value": "/dnacaap/core/v1/business/sda/authentication-profile"
+                },
+                {
+                    "name": "header.Host",
+                    "value": "dnacaap-runtime.dnacaap.svc.cluster.local:8095"
+                },
+                {
+                    "name": "header.X-Forwarded-Proto",
+                    "value": "https"
+                },
+                {
+                    "name": "header.Connection",
+                    "value": "close"
+                },
+                {
+                    "name": "header.Postman-Token",
+                    "value": "e7e4a409-33bc-47df-b643-e831b626205a"
+                },
+                {
+                    "name": "header.X-Real-Ip",
+                    "value": "10.65.40.223"
+                },
+                {
+                    "name": "header.Timeout-Access",
+                    "value": "<function1>"
+                },
+                {
+                    "name": "body",
+                    "value": null
+                },
+                {
+                    "name": "header.Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "queryParam.siteNameHierarchy",
+                    "value": "Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12"
+                }
+            ],
+            "taskInput": []
+        }
+    ],
+    "bapiParameters": [
+        {
+            "name": "bapi_siteProfileUuid",
+            "value": ""
+        },
+        {
+            "name": "bapi_param_cd_data",
+            "value": "{\"response\":[{\"id\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"instanceId\":74097,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceVersion\":68,\"deployed\":false,\"isSeeded\":false,\"isStale\":false,\"lastUpdateTime\":1613987505850,\"name\":\"Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12_my_fab\",\"namespace\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"provisioningState\":\"DEFINED\",\"resourceVersion\":68,\"targetIdList\":[],\"type\":\"ConnectivityDomain\",\"cfsChangeInfo\":[],\"customProvisions\":[],\"authenticationProfileId\":\"\",\"domainType\":\"FABRIC_SITE\",\"enableMonitoring\":true,\"isDefault\":false,\"isIpv6Compatible\":true,\"isNativeMulticastEnabled\":false,\"isReprovisionRequired\":false,\"l2FloodingIndex\":1,\"siteId\":\"cdab679f-fb22-4b5a-9ec1-917c2195ce3b\",\"transitMetaData\":[],\"wirelessMulticastFeature\":false,\"authenticationProfiles\":[{\"id\":\"a9e55966-667b-4893-b8d7-050c341ec145\",\"instanceId\":300312,\"displayName\":\"18123b3b[No Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"name\":\"No Authentication\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_NOAUTH\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},{\"id\":\"f0abbf11-fba9-4ee6-a090-499f1887791d\",\"instanceId\":300314,\"displayName\":\"18123b3b[Low Impact,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Low Impact\",\"order\":\"dot1x\",\"priority\":\"mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_EASYCONNECT\",\"wakeOnLan\":false,\"webauthBypassMap\":[],\"preAuthAcl\":{\"id\":\"9ebad813-8b19-4ab6-86c1-445b60ea8c80\",\"instanceId\":301304,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":67,\"aclDescription\":\"\",\"aclName\":\"IPV4_PRE_AUTH_ACL\",\"contract\":[{\"id\":\"83161cba-fc79-4186-8e8c-9248f43b6073\",\"action\":\"PERMIT\",\"port\":\"bootps\",\"protocol\":\"udp\"},{\"id\":\"8616a1f5-6fc5-410a-bb72-81573eae2f70\",\"action\":\"PERMIT\",\"port\":\"bootpc\",\"protocol\":\"udp\"},{\"id\":\"cd146209-b2d7-4139-86a1-93025b8fe323\",\"action\":\"PERMIT\",\"port\":\"domain\",\"protocol\":\"udp\"}],\"defaultAction\":\"DENY\",\"enabled\":true}},{\"id\":\"6e604259-3273-4539-933c-ff12ebdc31be\",\"instanceId\":300313,\"displayName\":\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Open Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},{\"id\":\"9f74e2c0-fa28-4ebb-a333-e62bea21514e\",\"instanceId\":300315,\"displayName\":\"18123b3b[Closed Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"CLOSED\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Closed Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]}],\"deviceInfo\":[{\"idRef\":\"eb222e1b-fea3-4a90-a7a0-4b468a8bbad8\"},{\"idRef\":\"f0458409-ca57-4bbe-947e-1a80ec0935bc\"}],\"extranetPolicy\":[],\"fabricAuthenticationProfile\":{\"id\":\"6e604259-3273-4539-933c-ff12ebdc31be\",\"instanceId\":300313,\"displayName\":\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Open Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},\"fabricSiteBorderInfo\":[],\"migrationStatus\":[{\"id\":\"13433f13-1ca9-4408-8af3-8b45ee9a40e8\",\"instanceId\":299302,\"displayName\":\"0\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"migrationState\":false,\"migrationType\":\"FLOODING_BEHAVIOR\"},{\"id\":\"c3dec7b5-d532-43ad-b375-8525160c8502\",\"instanceId\":299303,\"displayName\":\"0\",\"instanceCreatedOn\":1612351076759,\"instanceUpdatedOn\":1612351076759,\"instanceVersion\":1,\"migrationState\":true,\"migrationType\":\"AUTO_CONF\"}],\"multicastInfo\":[],\"siteSpecificDomain\":[],\"virtualNetwork\":[{\"idRef\":\"7a08d14d-2d12-441c-abdd-7afd4127a09b\"},{\"idRef\":\"3590d1ca-ded7-48da-988a-14707daa0904\"},{\"idRef\":\"10899b82-0a4d-4f45-acac-3c139a06cfe8\"},{\"idRef\":\"c91888db-859f-4745-b919-f55bf75f1a4c\"},{\"idRef\":\"ea2b9b91-2bec-417b-9102-b101fbd2cfb7\"},{\"idRef\":\"663d776a-fd49-4091-aa05-a88ab5e77aa6\"}]}],\"version\":\"1.0\"}"
+        },
+        {
+            "name": "bapi_orig_request_data",
+            "value": ""
+        },
+        {
+            "name": "bapi_fabricAuthenticationProfile",
+            "value": "{\"id\":\"6e604259-3273-4539-933c-ff12ebdc31be\",\"instanceId\":300313,\"displayName\":\"18123b3b[Open Authentication,1b76f55d-8e6a-408b-9851-bb86871d301f]\",\"instanceCreatedOn\":1612278087706,\"instanceUpdatedOn\":1612278087706,\"instanceVersion\":1,\"deploymentMode\":\"OPEN\",\"dot1xToMabFallbackTimeout\":\"21\",\"hostMode\":\"multi_auth\",\"name\":\"Open Authentication\",\"order\":\"dot1x\",\"priority\":\"dot1x mab\",\"profileUuid\":\"1b76f55d-8e6a-408b-9851-bb86871d301f\",\"profileVersion\":1,\"type\":\"WIRED_DOT1X\",\"wakeOnLan\":false,\"webauthBypassMap\":[]}"
+        },
+        {
+            "name": "bapi_group_id",
+            "value": "cdab679f-fb22-4b5a-9ec1-917c2195ce3b"
+        },
+        {
+            "name": "bapi_siteHierarchy",
+            "value": "Global"
+        },
+        {
+            "name": "bapi_error_message",
+            "value": "Authenticate Template retrieved successfully from SDA fabric."
+        },
+        {
+            "name": "bapi_siteNameHierarchy",
+            "value": "Global/India/North_West_India/Uttar_Pradesh/Varanasi/Vill_Bhanda/BLR12"
+        },
+        {
+            "name": "bapi_error_code",
+            "value": "0"
+        },
+        {
+            "name": "bapi_authenticateTemplateName",
+            "value": "Open Authentication"
+        }
+    ],
+    "bapiSubmitAttempt": []
+}

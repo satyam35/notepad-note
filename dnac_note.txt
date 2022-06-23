@@ -1,0 +1,2 @@
+https://<10.195.192.178>/dna/intent/api/v1/business/sda/hostonboarding/user-device?device-ip=edge-device-ip&interfaceName=GigabitEthernet1/0/1
+bug_id_to_bug>>https://cdetsng.cisco.com/summary/#/defect/CSCvw30695

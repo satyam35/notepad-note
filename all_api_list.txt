@@ -1,0 +1,45 @@
+1. DELETE  Delete Port assignment for access point in SDA Fabric	 /business/sda/hostonboarding/access-point	
+2. GET     Transit Peer Network Info from SD-Access	                 /business/sda/transit-peer-network	
+3. POST    Add IP Pool in SDA Virtual Network	                     /business/sda/virtualnetwork/ippool	
+4. GET     device info from SDA Fabric	                             /business/sda/device	
+5. DELETE  Delete Site from SDA Fabric	                             /business/sda/fabric-site	
+6. DELETE  Delete edge device from SDA Fabric.	                     /business/sda/edge-device	
+7. POST    Add virtual network (VN) in SDA Fabric	                 /business/sda/virtual-network	
+8. GET     Get Port assignment for access point in SDA Fabric	     /business/sda/hostonboarding/access-point	
+9. GET     Get virtual network (VN) from SDA Fabric	                 /business/sda/virtual-network	
+10.DELETE  Delete multicast from SDA fabric	                         /business/sda/multicast	
+11.GET      Get edge device from SDA Fabric                          /business/sda/edge-device	
+12.DELETE	Delete IP Pool from SDA Virtual Network             	 /business/sda/virtualnetwork/ippool	
+13.POST     Add edge device in SDA Fabric	                         /business/sda/edge-device	
+14.DELETE   Delete default authentication profile in SDA Fabric    	 /business/sda/authentication-profile	
+15.POST     Add Transit Peer Network in SD-Access	                 /business/sda/transit-peer-network	
+16.PUT      Re-Provision Wired Device	                             /business/sda/provision-device	
+17.GET      Get Site info from SDA Fabric	                         /business/sda/fabric-site	
+18.GET      Get SDA Fabric Count	                                 /business/sda/fabric/count	
+19.GET      Get device role in SDA Fabric	                         /business/sda/device/role	
+20.POST     Add Port assignment for user device in SDA Fabric.	     /business/sda/hostonboarding/user-device	
+21 PUT      Update default authentication profile in SDA Fabric	     /business/sda/authentication-profile	
+22 DELETE   Delete Port assignment for user device in SDA Fabric.	 /business/sda/hostonboarding/user-device	
+23.GET      Get default authentication profile from SDA Fabric	     /business/sda/authentication-profile	
+24.GET      Get Port assignment for user device in SDA Fabric.	     /business/sda/hostonboarding/user-device	
+25.GET      Get control plane device from SDA Fabric	             /business/sda/control-plane-device	
+26.GET      Get border device detail from SDA Fabric	             /business/sda/border-device	
+27.POST     Add default authentication template in SDA Fabric	     /business/sda/authentication-profile	
+28.POST     Add control plane device in SDA Fabric	                 /business/sda/control-plane-device	
+29.POST     Add border device in SDA Fabric	                         /business/sda/border-device	
+30.POST     Add Port assignment for access point in SDA Fabric	     /business/sda/hostonboarding/access-point	
+31.PUT      Update virtual network with scalable groups	             /virtual-network	
+32.GET      Get virtual network with scalable groups	             /virtual-network	
+33.GET      Get multicast details from SDA fabric	                 /business/sda/multicast	
+34.GET      Get IP Pool from SDA Virtual Network	                 /business/sda/virtualnetwork/ippool	
+35.DELETE   Delete virtual network with scalable groups	             /virtual-network	
+36.POST     Provision Wired Device	                                 /business/sda/provision-device	
+37.DELETE   Delete Transit Peer Network from SD-Access	             /business/sda/transit-peer-network	
+38.GET      Get Provisioned Wired Device	                         /business/sda/provision-device	
+39.DELETE   Delete provisioned Wired Device	                         /business/sda/provision-device	
+40.DELETE   Delete virtual network (VN) from SDA Fabric	             /business/sda/virtual-network	
+41.POST     Add virtual network with scalable groups at global level /virtual-network	
+42.DELETE   Delete border device from SDA Fabric	                 /business/sda/border-device	
+43.POST     Add Site in SDA Fabric	                                 /business/sda/fabric-site	
+44.POST     Add multicast in SDA fabric	                             /business/sda/multicast	
+45.Delete   control plane device in SDA Fabric	                     /business/sda/control-plane-device

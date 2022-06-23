@@ -1,0 +1,198 @@
+ "/dna/intent/api/v1/virtual-network": {
+            "delete": {
+                "operationId": "deleteGlobalVirtualNetwork",
+                "tags": [
+                    "SDA"
+                ],
+                "summary": "Delete Global Virtual Network",
+                "description": "Delete Global Virtual Network",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "request",
+                        "description": "request",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/DeleteGlobalVirtualNetwork"
+                        },
+                        "in": "body"
+                    },
+                    {
+                        "name": "virtualNetworkName",
+                        "description": "virtualNetworkName",
+                        "default": "",
+                        "required": true,
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The request was successful. The result is contained in the response body.",
+                        "schema": {
+                            "$ref": "#/definitions/DeleteGlobalVirtualNetwork"
+                        }
+                    },
+                    "400": {
+                        "description": "The client made a request that the server could not understand (for example, the request syntax is incorrect)."
+                    },
+                    "401": {
+                        "description": "The client's authentication credentials included with the request are missing or invalid."
+                    },
+                    "404": {
+                        "description": "The client made a request for a resource that does not exist."
+                    },
+                    "500": {
+                        "description": "The server could not fulfill the request."
+                    }
+                }
+            },
+            "post": {
+                "operationId": "addGlobalVirtualNetwork",
+                "tags": [
+                    "SDA"
+                ],
+                "summary": "Add Global Virtual Network",
+                "description": "Add Global Virtual Network",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "request",
+                        "description": "request",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/AddGlobalVirtualNetwork"
+                        },
+                        "in": "body"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The request was successful. The result is contained in the response body.",
+                        "schema": {
+                            "$ref": "#/definitions/AddDefaultAuthenticationProfileInSDAFabricResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "The client made a request that the server could not understand (for example, the request syntax is incorrect)."
+                    },
+                    "401": {
+                        "description": "The client's authentication credentials included with the request are missing or invalid."
+                    },
+                    "404": {
+                        "description": "The client made a request for a resource that does not exist."
+                    },
+                    "500": {
+                        "description": "The server could not fulfill the request."
+                    }
+                }
+            },
+            "put": {
+                "operationId": "updateGlobalVirtualNetwork",
+                "tags": [
+                    "SDA"
+                ],
+                "summary": "Update Global Virtual Network",
+                "description": "Update Global Virtual Network",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "request",
+                        "description": "request",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/UpdateGlobalVirtualNetwork"
+                        },
+                        "in": "body"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The request was successful. The result is contained in the response body.",
+                        "schema": {
+                            "$ref": "#/definitions/UpdateGlobalVirtualNetworkResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "The client made a request that the server could not understand (for example, the request syntax is incorrect)."
+                    },
+                    "401": {
+                        "description": "The client's authentication credentials included with the request are missing or invalid."
+                    },
+                    "404": {
+                        "description": "The client made a request for a resource that does not exist."
+                    },
+                    "500": {
+                        "description": "The server could not fulfill the request."
+                    }
+                }
+            },
+            "get": {
+                "operationId": "getGlobalVirtualNetwork",
+                "tags": [
+                    "SDA"
+                ],
+                "summary": "Get Global Virtual Network",
+                "description": "Get Global Virtual Network",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "request",
+                        "description": "request",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/GetGlobalVirtualNetwork"
+                        },
+                        "in": "body"
+                    },
+                    {
+                        "name": "virtualNetworkName",
+                        "description": "Global Virtual Network which is created at global Level",
+                        "default": "",
+                        "required": true,
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The request was successful. The result is contained in the response body.",
+                        "schema": {
+                            "$ref": "#/definitions/GetGlobalVirtualNetwork"
+                        }
+                    },
+                    "400": {
+                        "description": "The client made a request that the server could not understand (for example, the request syntax is incorrect)."
+                    },
+                    "401": {
+                        "description": "The client's authentication credentials included with the request are missing or invalid."
+                    },
+                    "404": {
+                        "description": "The client made a request for a resource that does not exist."
+                    },
+                    "500": {
+                        "description": "The server could not fulfill the request."
+                    }
+                }
+            }
+        },

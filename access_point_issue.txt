@@ -1,0 +1,96 @@
+setup for access point
+
+fabricsite : Global/India/Bangalore/Building 1
+site : Global/India/Bangalore/Building 1/Floor 2
+
+please use this request body
+
+request:
+{
+"siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 2",
+"deviceManagementIpAddress": "10.195.187.194",
+"interfaceName": "GigabitEthernet1/0/6",
+"dataIpAddressPoolName": "18lan",
+"authenticateTemplateName": "No Authentication",
+"interfaceDescription": "ap port assignment"
+}
+
+
+
+------------------------------------------------------------------------------
+
+Case 1 
+----------
+Post HOB for access:  https://10.195.192.165/dna/intent/api/v1/business/sda/hostonboarding/access-point
+
+description: working with wrong fabricsite
+
+request:
+---------
+{
+"siteNameHierarchy": "Global/India/Bangalore/Building 1 hjghjkhg",<-------wrong fabricsite
+
+"deviceManagementIpAddress": "10.195.187.194",
+"interfaceName": "GigabitEthernet1/0/2",
+"dataIpAddressPoolName": "18lan",
+"authenticateTemplateName": "No Authentication",
+"interfaceDescription": "ap port assignment"
+}
+response:
+---------
+{
+    "status": "success",<---------------
+    "description": "Port assignment completed successfully.",
+    "taskId": "1b29c78d-4044-481d-a0a7-8c70172fd66d",
+    "taskStatusUrl": "/dna/intent/api/v1/task/1b29c78d-4044-481d-a0a7-8c70172fd66d",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/2b7b4683-d855-4fe4-8e3a-0eabc709b4cc",
+    "executionId": "2b7b4683-d855-4fe4-8e3a-0eabc709b4cc"
+}
+
+----------------------------------------------------------------------------------------
+case 2:
+--------------
+
+description: working with wrong siteNameHierarchy
+
+
+request:
+-----------------
+{
+"siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 2vnnv",<----------wrong siteNameHierarchy
+"deviceManagementIpAddress": "10.195.187.194",
+"interfaceName": "GigabitEthernet1/0/2",
+"dataIpAddressPoolName": "18lan",
+"authenticateTemplateName": "No Authentication",
+"interfaceDescription": "ap port assignment"
+}
+
+response:
+-------------
+{
+    "status": "success",
+    "description": "Port assignment completed successfully.",
+    "taskId": "92474a8e-6514-4826-a6b9-525963707086",
+    "taskStatusUrl": "/dna/intent/api/v1/task/92474a8e-6514-4826-a6b9-525963707086",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/a73ec134-ca17-45a7-bcc0-e4c466263b33",
+    "executionId": "a73ec134-ca17-45a7-bcc0-e4c466263b33"
+}
+
+-------------------------------------------------------------------------------------------------
+case 3:
+
+Delete access: https://10.195.192.165/dna/intent/api/v1/business/sda/hostonboarding/access-point?deviceManagementIpAddress=
+               10.195.187.194&interfaceName=GigabitEthernet1/0/5
+
+description : if post access point not have authenticateTemplateName at that time delete access is failing
+
+response:
+----------
+{
+    "status": "failed",
+    "description": "'authenticationProfile'",
+    "taskId": null,
+    "taskStatusUrl": "/dna/intent/api/v1/task/null",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/4e65ba37-dfe1-4061-b6da-4fd6788e1eee",
+    "executionId": "4e65ba37-dfe1-4061-b6da-4fd6788e1eee"
+}

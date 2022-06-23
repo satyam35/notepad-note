@@ -1,0 +1,19 @@
+
+
+--->1. put: able to update with wrong scalableGroupNames group
+
+
+{
+"virtualNetworkName": "abcd",
+"isGuestVirtualNetwork": false,
+"scalableGroupNames": [ "Auhjjkkditorswertyu"]
+}
+
+
+{
+    "status": "success",
+    "description": "Virtual network updated successfully.",
+    "taskId": "4ea7d514-8c2f-4fc1-be33-818817b1025f",
+    "taskStatusUrl": "/dna/intent/api/v1/task/4ea7d514-8c2f-4fc1-be33-818817b1025f",
+    "executionStatusUrl": "/api/dnacaap/v1/dnacaap/management/execution-status/aae6bd42-efb4-4f36-ac0f-9387912e13c2"
+}

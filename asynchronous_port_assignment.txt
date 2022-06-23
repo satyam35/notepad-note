@@ -1,0 +1,161 @@
+C:\Users\terralogic\AppData\Local\Programs\Python\Python39\python.exe C:/Users/terralogic/PycharmProjects/PortConcurrency/Test/pp_test.py
+Total time taken by the code : 0.0 seconds(s) 
+----------------------process -3 is on the way------------------------
+Switch IP =  10.195.187.191 : START TIME =  Tue Feb 15 02:09:00 2022
+Total time taken by the code : 0.0 seconds(s) 
+--------------------process -2 is on the way------------------------
+Switch IP =  10.195.187.193 : START TIME =  Tue Feb 15 02:09:00 2022
+Total time taken by the code : 0.0 seconds(s) 
+--------------------process -1 is on the way------------------------
+Switch IP =  10.195.187.194 : START TIME =  Tue Feb 15 02:09:00 2022
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/1 START TIME =Tue Feb 15 02:09:00 2022 END TIME =Tue Feb 15 02:09:25 2022 DURATION =24.97 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/1 START TIME =Tue Feb 15 02:09:00 2022 END TIME =Tue Feb 15 02:09:36 2022 DURATION =35.05 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/1 START TIME =Tue Feb 15 02:09:00 2022 END TIME =Tue Feb 15 02:09:46 2022 DURATION =45.88 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/2 START TIME =Tue Feb 15 02:09:25 2022 END TIME =Tue Feb 15 02:09:58 2022 DURATION =33.27 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/2 START TIME =Tue Feb 15 02:09:36 2022 END TIME =Tue Feb 15 02:10:14 2022 DURATION =38.81 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/2 START TIME =Tue Feb 15 02:09:46 2022 END TIME =Tue Feb 15 02:10:24 2022 DURATION =37.87 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/3 START TIME =Tue Feb 15 02:09:58 2022 END TIME =Tue Feb 15 02:10:34 2022 DURATION =35.99 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/3 START TIME =Tue Feb 15 02:10:14 2022 END TIME =Tue Feb 15 02:10:45 2022 DURATION =30.54 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/3 START TIME =Tue Feb 15 02:10:24 2022 END TIME =Tue Feb 15 02:10:55 2022 DURATION =31.04 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/4 START TIME =Tue Feb 15 02:10:34 2022 END TIME =Tue Feb 15 02:11:05 2022 DURATION =31.02 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/4 START TIME =Tue Feb 15 02:10:45 2022 END TIME =Tue Feb 15 02:11:16 2022 DURATION =30.94 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/4 START TIME =Tue Feb 15 02:10:55 2022 END TIME =Tue Feb 15 02:11:26 2022 DURATION =31.08 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/5 START TIME =Tue Feb 15 02:11:05 2022 END TIME =Tue Feb 15 02:11:36 2022 DURATION =30.89 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/5 START TIME =Tue Feb 15 02:11:16 2022 END TIME =Tue Feb 15 02:11:47 2022 DURATION =31.19 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/5 START TIME =Tue Feb 15 02:11:26 2022 END TIME =Tue Feb 15 02:11:57 2022 DURATION =31.08 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/6 START TIME =Tue Feb 15 02:11:36 2022 END TIME =Tue Feb 15 02:12:08 2022 DURATION =31.16 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/6 START TIME =Tue Feb 15 02:11:47 2022 END TIME =Tue Feb 15 02:12:18 2022 DURATION =30.81 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/6 START TIME =Tue Feb 15 02:11:57 2022 END TIME =Tue Feb 15 02:12:28 2022 DURATION =31.0 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/7 START TIME =Tue Feb 15 02:12:08 2022 END TIME =Tue Feb 15 02:12:39 2022 DURATION =31.13 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/7 START TIME =Tue Feb 15 02:12:18 2022 END TIME =Tue Feb 15 02:12:49 2022 DURATION =31.21 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/7 START TIME =Tue Feb 15 02:12:28 2022 END TIME =Tue Feb 15 02:13:00 2022 DURATION =31.24 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/8 START TIME =Tue Feb 15 02:12:39 2022 END TIME =Tue Feb 15 02:13:10 2022 DURATION =31.09 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/8 START TIME =Tue Feb 15 02:12:49 2022 END TIME =Tue Feb 15 02:13:20 2022 DURATION =30.97 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/8 START TIME =Tue Feb 15 02:13:00 2022 END TIME =Tue Feb 15 02:13:30 2022 DURATION =30.77 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/9 START TIME =Tue Feb 15 02:13:10 2022 END TIME =Tue Feb 15 02:13:41 2022 DURATION =30.82 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/9 START TIME =Tue Feb 15 02:13:20 2022 END TIME =Tue Feb 15 02:13:51 2022 DURATION =31.02 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/9 START TIME =Tue Feb 15 02:13:30 2022 END TIME =Tue Feb 15 02:14:01 2022 DURATION =31.06 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/10 START TIME =Tue Feb 15 02:13:41 2022 END TIME =Tue Feb 15 02:14:12 2022 DURATION =31.43 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/10 START TIME =Tue Feb 15 02:13:51 2022 END TIME =Tue Feb 15 02:14:22 2022 DURATION =31.12 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/10 START TIME =Tue Feb 15 02:14:01 2022 END TIME =Tue Feb 15 02:14:33 2022 DURATION =31.17 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/11 START TIME =Tue Feb 15 02:14:12 2022 END TIME =Tue Feb 15 02:14:43 2022 DURATION =31.05 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/11 START TIME =Tue Feb 15 02:14:22 2022 END TIME =Tue Feb 15 02:14:54 2022 DURATION =31.4 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/11 START TIME =Tue Feb 15 02:14:33 2022 END TIME =Tue Feb 15 02:15:04 2022 DURATION =31.7 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/12 START TIME =Tue Feb 15 02:14:43 2022 END TIME =Tue Feb 15 02:15:14 2022 DURATION =31.38 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/12 START TIME =Tue Feb 15 02:14:54 2022 END TIME =Tue Feb 15 02:15:25 2022 DURATION =31.47 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/12 START TIME =Tue Feb 15 02:15:04 2022 END TIME =Tue Feb 15 02:15:35 2022 DURATION =31.25 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/13 START TIME =Tue Feb 15 02:15:14 2022 END TIME =Tue Feb 15 02:15:46 2022 DURATION =31.06 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/13 START TIME =Tue Feb 15 02:15:25 2022 END TIME =Tue Feb 15 02:15:56 2022 DURATION =30.99 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/13 START TIME =Tue Feb 15 02:15:35 2022 END TIME =Tue Feb 15 02:16:06 2022 DURATION =30.73 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/14 START TIME =Tue Feb 15 02:15:46 2022 END TIME =Tue Feb 15 02:16:17 2022 DURATION =31.03 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/14 START TIME =Tue Feb 15 02:15:56 2022 END TIME =Tue Feb 15 02:16:27 2022 DURATION =30.91 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/14 START TIME =Tue Feb 15 02:16:06 2022 END TIME =Tue Feb 15 02:16:37 2022 DURATION =31.13 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/15 START TIME =Tue Feb 15 02:16:17 2022 END TIME =Tue Feb 15 02:16:48 2022 DURATION =31.2 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/15 START TIME =Tue Feb 15 02:16:27 2022 END TIME =Tue Feb 15 02:16:58 2022 DURATION =31.11 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/15 START TIME =Tue Feb 15 02:16:37 2022 END TIME =Tue Feb 15 02:17:08 2022 DURATION =31.02 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/16 START TIME =Tue Feb 15 02:16:48 2022 END TIME =Tue Feb 15 02:17:19 2022 DURATION =31.13 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/16 START TIME =Tue Feb 15 02:16:58 2022 END TIME =Tue Feb 15 02:17:29 2022 DURATION =31.21 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/16 START TIME =Tue Feb 15 02:17:08 2022 END TIME =Tue Feb 15 02:17:40 2022 DURATION =31.23 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/17 START TIME =Tue Feb 15 02:17:19 2022 END TIME =Tue Feb 15 02:17:50 2022 DURATION =31.05 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/17 START TIME =Tue Feb 15 02:17:29 2022 END TIME =Tue Feb 15 02:18:00 2022 DURATION =30.97 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/17 START TIME =Tue Feb 15 02:17:40 2022 END TIME =Tue Feb 15 02:18:11 2022 DURATION =31.01 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/18 START TIME =Tue Feb 15 02:17:50 2022 END TIME =Tue Feb 15 02:18:21 2022 DURATION =31.25 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/18 START TIME =Tue Feb 15 02:18:00 2022 END TIME =Tue Feb 15 02:18:31 2022 DURATION =31.11 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/18 START TIME =Tue Feb 15 02:18:11 2022 END TIME =Tue Feb 15 02:18:42 2022 DURATION =30.91 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/19 START TIME =Tue Feb 15 02:18:21 2022 END TIME =Tue Feb 15 02:18:52 2022 DURATION =30.64 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/19 START TIME =Tue Feb 15 02:18:31 2022 END TIME =Tue Feb 15 02:19:02 2022 DURATION =30.72 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/19 START TIME =Tue Feb 15 02:18:42 2022 END TIME =Tue Feb 15 02:19:12 2022 DURATION =30.83 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/20 START TIME =Tue Feb 15 02:18:52 2022 END TIME =Tue Feb 15 02:19:23 2022 DURATION =30.9 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/20 START TIME =Tue Feb 15 02:19:02 2022 END TIME =Tue Feb 15 02:19:33 2022 DURATION =31.17 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/20 START TIME =Tue Feb 15 02:19:12 2022 END TIME =Tue Feb 15 02:19:43 2022 DURATION =31.07 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/21 START TIME =Tue Feb 15 02:19:23 2022 END TIME =Tue Feb 15 02:19:54 2022 DURATION =31.1 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/21 START TIME =Tue Feb 15 02:19:33 2022 END TIME =Tue Feb 15 02:20:04 2022 DURATION =31.04 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/21 START TIME =Tue Feb 15 02:19:43 2022 END TIME =Tue Feb 15 02:20:15 2022 DURATION =31.21 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/22 START TIME =Tue Feb 15 02:19:54 2022 END TIME =Tue Feb 15 02:20:25 2022 DURATION =31.2 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/22 START TIME =Tue Feb 15 02:20:04 2022 END TIME =Tue Feb 15 02:20:35 2022 DURATION =31.24 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/22 START TIME =Tue Feb 15 02:20:15 2022 END TIME =Tue Feb 15 02:20:46 2022 DURATION =31.1 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/23 START TIME =Tue Feb 15 02:20:25 2022 END TIME =Tue Feb 15 02:20:56 2022 DURATION =31.09 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/23 START TIME =Tue Feb 15 02:20:35 2022 END TIME =Tue Feb 15 02:21:07 2022 DURATION =31.09 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/23 START TIME =Tue Feb 15 02:20:46 2022 END TIME =Tue Feb 15 02:21:17 2022 DURATION =30.95 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.191  GigabitEthernet1/0/24 START TIME =Tue Feb 15 02:20:56 2022 END TIME =Tue Feb 15 02:21:27 2022 DURATION =31.05 seconds(s)
+Switch IP =  10.195.187.191 : END TIME =  Tue Feb 15 02:21:27 2022
+Total time taken by the Switch IP =  10.195.187.191 : 746.92 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.194  GigabitEthernet1/0/24 START TIME =Tue Feb 15 02:21:07 2022 END TIME =Tue Feb 15 02:21:37 2022 DURATION =30.74 seconds(s)
+Switch IP =  10.195.187.194 : END TIME =  Tue Feb 15 02:21:37 2022
+Total time taken by the Switch IP =  10.195.187.194 : 756.84 seconds(s)
+--------------------------------------------------------------------
+Switch IP = 10.195.187.193  GigabitEthernet1/0/24 START TIME =Tue Feb 15 02:21:17 2022 END TIME =Tue Feb 15 02:21:48 2022 DURATION =30.87 seconds(s)
+Switch IP =  10.195.187.193 : END TIME =  Tue Feb 15 02:21:48 2022
+Total time taken by the Switch IP =  10.195.187.193 : 767.24 seconds(s)
+Total time taken by the code : 769.19 seconds(s) 

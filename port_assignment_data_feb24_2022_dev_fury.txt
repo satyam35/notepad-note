@@ -1,0 +1,252 @@
+C:\Users\terralogic\AppData\Local\Programs\Python\Python39\python.exe C:/Users/terralogic/PycharmProjects/PortConcurrency/Test/pp_test.py
+----------------------process 3 is on the way------------------------
+Switch IP =  10.195.187.191 : START TIME =Thu Feb 24 16:03:52 2022
+----------------------process 2 is on the way------------------------
+Switch IP =  10.195.187.193 : START TIME =Thu Feb 24 16:03:52 2022
+----------------------process 1 is on the way------------------------
+Switch IP =  10.195.187.194 : START TIME =Thu Feb 24 16:03:52 2022
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/1 
+START TIME =Thu Feb 24 16:03:52 2022
+  END TIME =Thu Feb 24 16:04:06 2022
+  DURATION =00 Hrs:00 Mins:14 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/1 
+START TIME =Thu Feb 24 16:03:52 2022
+  END TIME =Thu Feb 24 16:04:21 2022
+  DURATION =00 Hrs:00 Mins:29 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/1 
+START TIME =Thu Feb 24 16:03:52 2022
+  END TIME =Thu Feb 24 16:04:30 2022
+  DURATION =00 Hrs:00 Mins:37 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/2 
+START TIME =Thu Feb 24 16:04:06 2022
+  END TIME =Thu Feb 24 16:04:39 2022
+  DURATION =00 Hrs:00 Mins:32 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/2 
+START TIME =Thu Feb 24 16:04:21 2022
+  END TIME =Thu Feb 24 16:04:49 2022
+  DURATION =00 Hrs:00 Mins:28 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/2 
+START TIME =Thu Feb 24 16:04:30 2022
+  END TIME =Thu Feb 24 16:05:00 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/3 
+START TIME =Thu Feb 24 16:04:39 2022
+  END TIME =Thu Feb 24 16:05:10 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/3 
+START TIME =Thu Feb 24 16:04:49 2022
+  END TIME =Thu Feb 24 16:05:21 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/3 
+START TIME =Thu Feb 24 16:05:00 2022
+  END TIME =Thu Feb 24 16:05:31 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/4 
+START TIME =Thu Feb 24 16:05:10 2022
+  END TIME =Thu Feb 24 16:05:41 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/4 
+START TIME =Thu Feb 24 16:05:21 2022
+  END TIME =Thu Feb 24 16:05:52 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/4 
+START TIME =Thu Feb 24 16:05:31 2022
+  END TIME =Thu Feb 24 16:06:03 2022
+  DURATION =00 Hrs:00 Mins:32 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/5 
+START TIME =Thu Feb 24 16:05:41 2022
+  END TIME =Thu Feb 24 16:06:13 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/5 
+START TIME =Thu Feb 24 16:05:52 2022
+  END TIME =Thu Feb 24 16:06:25 2022
+  DURATION =00 Hrs:00 Mins:33 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/5 
+START TIME =Thu Feb 24 16:06:03 2022
+  END TIME =Thu Feb 24 16:06:35 2022
+  DURATION =00 Hrs:00 Mins:32 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/6 
+START TIME =Thu Feb 24 16:06:13 2022
+  END TIME =Thu Feb 24 16:06:46 2022
+  DURATION =00 Hrs:00 Mins:32 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/6 
+START TIME =Thu Feb 24 16:06:25 2022
+  END TIME =Thu Feb 24 16:06:56 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/6 
+START TIME =Thu Feb 24 16:06:35 2022
+  END TIME =Thu Feb 24 16:07:07 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/7 
+START TIME =Thu Feb 24 16:06:46 2022
+  END TIME =Thu Feb 24 16:07:17 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/7 
+START TIME =Thu Feb 24 16:06:56 2022
+  END TIME =Thu Feb 24 16:07:27 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/7 
+START TIME =Thu Feb 24 16:07:07 2022
+  END TIME =Thu Feb 24 16:07:38 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/8 
+START TIME =Thu Feb 24 16:07:17 2022
+  END TIME =Thu Feb 24 16:07:49 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/8 
+START TIME =Thu Feb 24 16:07:27 2022
+  END TIME =Thu Feb 24 16:07:59 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/8 
+START TIME =Thu Feb 24 16:07:38 2022
+  END TIME =Thu Feb 24 16:08:09 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+Process Process-3:
+Traceback (most recent call last):
+  File "C:\Users\terralogic\AppData\Local\Programs\Python\Python39\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "C:\Users\terralogic\AppData\Local\Programs\Python\Python39\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\terralogic\PycharmProjects\PortConcurrency\Test\pp_test.py", line 83, in add_userport_91
+    assert add_userport_status, "user port assignment Failed"
+AssertionError: user port assignment Failed
+ErrorCode : 200- NCSP10160: This intent (with name 'Cat9k-10.195.187.191') is outdated as the controller has a newer intent. Resubmit the intent based on the current state of controller.
+{'status': 'failed', 'description': "NCSP10160: This intent (with name 'Cat9k-10.195.187.191') is outdated as the controller has a newer intent. Resubmit the intent based on the current state of controller.", 'taskId': 'd21db781-dd6b-4ad0-af93-40f95c6c0ce1', 'taskStatusUrl': '/dna/intent/api/v1/task/d21db781-dd6b-4ad0-af93-40f95c6c0ce1', 'executionStatusUrl': '/dna/intent/api/v1/dnacaap/management/execution-status/0f4f0b8e-5dff-4832-bdfd-66ff76fe2bfc', 'executionId': '0f4f0b8e-5dff-4832-bdfd-66ff76fe2bfc'}
+user port assignment failed ... not able to assign  user port for the device 10.195.187.191 at the port GigabitEthernet1/0/9
+ErrorCode : 200- NCSP10160: This intent (with name 'Cat9k-10.195.187.193.cisco.com') is outdated as the controller has a newer intent. Resubmit the intent based on the current state of controller.
+{'status': 'failed', 'description': "NCSP10160: This intent (with name 'Cat9k-10.195.187.193.cisco.com') is outdated as the controller has a newer intent. Resubmit the intent based on the current state of controller.", 'taskId': '6e38cd32-024d-41a4-bae4-1e35ac97c818', 'taskStatusUrl': '/dna/intent/api/v1/task/6e38cd32-024d-41a4-bae4-1e35ac97c818', 'executionStatusUrl': '/dna/intent/api/v1/dnacaap/management/execution-status/071196bf-48f6-44b3-a040-7f9e7d6d921d', 'executionId': '071196bf-48f6-44b3-a040-7f9e7d6d921d'}
+user port assignment failed ... not able to assign  user port for the device 10.195.187.193 at the port GigabitEthernet1/0/9
+Process Process-2:
+Traceback (most recent call last):
+  File "C:\Users\terralogic\AppData\Local\Programs\Python\Python39\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "C:\Users\terralogic\AppData\Local\Programs\Python\Python39\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\terralogic\PycharmProjects\PortConcurrency\Test\pp_test.py", line 59, in add_userport_93
+    assert add_userport_status, "user port assignment Failed"
+AssertionError: user port assignment Failed
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/9 
+START TIME =Thu Feb 24 16:08:09 2022
+  END TIME =Thu Feb 24 16:08:27 2022
+  DURATION =00 Hrs:00 Mins:17 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/10 
+START TIME =Thu Feb 24 16:08:27 2022
+  END TIME =Thu Feb 24 16:08:41 2022
+  DURATION =00 Hrs:00 Mins:13 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/11 
+START TIME =Thu Feb 24 16:08:41 2022
+  END TIME =Thu Feb 24 16:08:55 2022
+  DURATION =00 Hrs:00 Mins:14 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/12 
+START TIME =Thu Feb 24 16:08:55 2022
+  END TIME =Thu Feb 24 16:09:09 2022
+  DURATION =00 Hrs:00 Mins:13 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/13 
+START TIME =Thu Feb 24 16:09:09 2022
+  END TIME =Thu Feb 24 16:09:22 2022
+  DURATION =00 Hrs:00 Mins:13 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/14 
+START TIME =Thu Feb 24 16:09:22 2022
+  END TIME =Thu Feb 24 16:09:36 2022
+  DURATION =00 Hrs:00 Mins:14 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/15 
+START TIME =Thu Feb 24 16:09:36 2022
+  END TIME =Thu Feb 24 16:09:50 2022
+  DURATION =00 Hrs:00 Mins:13 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/16 
+START TIME =Thu Feb 24 16:09:50 2022
+  END TIME =Thu Feb 24 16:10:03 2022
+  DURATION =00 Hrs:00 Mins:13 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/17 
+START TIME =Thu Feb 24 16:10:03 2022
+  END TIME =Thu Feb 24 16:10:16 2022
+  DURATION =00 Hrs:00 Mins:13 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/18 
+START TIME =Thu Feb 24 16:10:16 2022
+  END TIME =Thu Feb 24 16:10:30 2022
+  DURATION =00 Hrs:00 Mins:13 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/19 
+START TIME =Thu Feb 24 16:10:30 2022
+  END TIME =Thu Feb 24 16:10:43 2022
+  DURATION =00 Hrs:00 Mins:13 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/20 
+START TIME =Thu Feb 24 16:10:43 2022
+  END TIME =Thu Feb 24 16:10:57 2022
+  DURATION =00 Hrs:00 Mins:13 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/21 
+START TIME =Thu Feb 24 16:10:57 2022
+  END TIME =Thu Feb 24 16:11:11 2022
+  DURATION =00 Hrs:00 Mins:14 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/22 
+START TIME =Thu Feb 24 16:11:11 2022
+  END TIME =Thu Feb 24 16:11:25 2022
+  DURATION =00 Hrs:00 Mins:13 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/23 
+START TIME =Thu Feb 24 16:11:25 2022
+  END TIME =Thu Feb 24 16:11:39 2022
+  DURATION =00 Hrs:00 Mins:13 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/24 
+START TIME =Thu Feb 24 16:11:39 2022
+  END TIME =Thu Feb 24 16:11:52 2022
+  DURATION =00 Hrs:00 Mins:13 Seconds
+--------------------------------------------------------------------
+Port Assignment Time summary for switch #1:
+Number of ports = 24
+START TIME = Thu Feb 24 16:03:52 2022
+  END TIME = Thu Feb 24 16:11:52 2022
+Total Time = 00 Hrs:08 Mins:00 Seconds
+====================================================================
+Concurrent Port Assignment SUMMARY
+====================================================================
+Number of switches = 3
+====================================================================
+Overall Summary
+Number of Ports on switch#1 = 24
+Number of Ports on switch#2 = 24
+Number of Ports on switch#3 = 24
+====================================================================
+Total number of ports on all 3-switches = 72
+Port Assignment START TIME = Thu Feb 24 16:03:50 2022
+  Port Assignment END TIME = Thu Feb 24 16:11:52 2022
+Port Assignment Total Time = 00 Hrs:08 Mins:02 Seconds
+==================================================================

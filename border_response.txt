@@ -1,0 +1,132 @@
+POST:https://10.195.187.58/dna/intent/api/v1/business/sda/border-device
+
+Request
+---------
+[
+{
+"deviceManagementIpAddress": "10.195.187.194",
+"siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 3",
+"externalDomainRoutingProtocolName": "BGP",
+"externalConnectivityIpPoolName": "20lan",
+"internalAutonomouSystemNumber": "65008",
+"borderSessionType": "External",
+"connectedToInternet": false,
+"externalConnectivitySettings": [
+{
+"interfaceName": "GigabitEthernet1/0/1",
+"externalAutonomouSystemNumber": "65009",
+"l3Handoff": [
+{
+"virtualNetwork": {
+"virtualNetworkName": "vn_1",
+"vlanId": "100"
+}
+}
+]
+}
+]
+}
+]
+
+Response
+----------
+{
+    "status": "pending",
+    "description": "API execution is in progress.",
+    "taskId": "8b842c38-2061-441b-b215-976c73b055fa",
+    "taskStatusUrl": "/dna/intent/api/v1/task/8b842c38-2061-441b-b215-976c73b055fa",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/0699ef83-622c-43a9-8acd-32166c332cf2",
+    "executionId": "0699ef83-622c-43a9-8acd-32166c332cf2"
+}
+Invalid Request
+-----------------
+[
+{
+"deviceManagementIpAddress": "10.195.187.194",
+"siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 37",
+"externalDomainRoutingProtocolName": "BGP",
+"externalConnectivityIpPoolName": "20lan",
+"internalAutonomouSystemNumber": "65008",
+"borderSessionType": "External",
+"connectedToInternet": false,
+"externalConnectivitySettings": [
+{
+"interfaceName": "GigabitEthernet1/0/1",
+"externalAutonomouSystemNumber": "65009",
+"l3Handoff": [
+{
+"virtualNetwork": {
+"virtualNetworkName": "vn_1",
+"vlanId": "100"
+}
+}
+]
+}
+]
+}
+]
+Invalid Response
+----------------
+{
+    "status": "failed",
+    "description": "Could not find fabric site for this siteNameHierarchy in sda fabric = Global/India/Bangalore/Building 1/Floor 37",
+    "taskId": null,
+    "taskStatusUrl": "/dna/intent/api/v1/task/null",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/1641448c-ad51-40bf-bf75-323de550c514",
+    "executionId": "1641448c-ad51-40bf-bf75-323de550c514"
+}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+GET: https://10.195.187.58/dna/intent/api/v1/business/sda/border-device?deviceManagementIpAddress=10.195.187.194
+
+Response
+----------
+{
+    "deviceManagementIpAddress": "10.195.187.194",
+    "deviceName": "Cat9k-10.195.187.194.cisco.com",
+    "roles": "BORDERNODE",
+    "siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 3",
+    "fabricSiteNameHierarchy": "Global/India/Bangalore/Building 1",
+    "status": "success",
+    "description": "Border device info retrieved successfully from sda fabric.",
+    "executionId": "388b4a12-6578-4c95-8092-01807708a695"
+}
+Invalid Request: https://10.195.187.58/dna/intent/api/v1/business/sda/border-device?deviceManagementIpAddress=10.195.187.194b
+
+Response
+----------
+{
+    "status": "failed",
+    "description": "Empty or invalid deviceManagementIpAddress in request body. Provide a valid deviceManagementIpAddress",
+    "executionId": "0f1cf6c0-e13e-4a70-9a25-d9bc4e874c31"
+}
+
+--------------------------------------------------------------------------------------------------------------------------------
+DELETE: https://10.195.187.58/dna/intent/api/v1/business/sda/border-device?deviceManagementIpAddress=10.195.187.194
+
+Response
+------------
+
+{
+    "status": "pending",
+    "description": "API execution is in progress.",
+    "taskId": "ef4fb0b9-ed49-4448-9c9a-00442e05606f",
+    "taskStatusUrl": "/dna/intent/api/v1/task/ef4fb0b9-ed49-4448-9c9a-00442e05606f",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/39e3538c-add3-4eda-8a2d-61a02d59676c",
+    "executionId": "39e3538c-add3-4eda-8a2d-61a02d59676c"
+}
+
+
+Invalid Request:https://10.195.187.58/dna/intent/api/v1/business/sda/border-device?deviceManagementIpAddress=10.195.187.194b
+
+Invalid Response
+------------------
+{
+    "status": "failed",
+    "description": "Empty or invalid deviceManagementIpAddress in request body. Provide a valid deviceManagementIpAddress",
+    "taskId": null,
+    "taskStatusUrl": "/dna/intent/api/v1/task/null",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/01856c17-0749-4407-af3a-ffa92dae6bd8",
+    "executionId": "01856c17-0749-4407-af3a-ffa92dae6bd8"
+}

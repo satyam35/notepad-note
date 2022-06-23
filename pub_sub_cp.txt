@@ -1,0 +1,65 @@
+
+
+GET
+======
+
+request:https://10.195.192.178/dna/intent/api/v1/business/sda/control-plane-device?deviceManagementIpAddress=10.195.244.16
+
+response:
+------------
+{
+    "deviceManagementIpAddress": "10.195.244.16",
+    "deviceName": "sda-9k-141",
+    "roles": "MAPSERVER",
+    "siteNameHierarchy": "Global/california/building21/floor1",
+    "fabricSiteNameHierarchy": "Global/california",
+    "status": "success",
+    "description": "Control plane device info retrieved successfully in sda fabric.",
+    "executionId": "85ffbb2b-d205-46f5-afd2-88b45b554db2"
+}
+
+DELETE : 
+===========
+
+request :https://10.195.192.178/dna/intent/api/v1/business/sda/control-plane-device?deviceManagementIpAddress=10.195.244.16
+
+reponse:
+---------
+{
+    "status": "success",
+    "description": "Control plane device deleted successfully from sda fabric.",
+    "taskId": "fdcfa90f-ae61-4e22-8614-285ba10dcc2f",
+    "taskStatusUrl": "/dna/intent/api/v1/task/fdcfa90f-ae61-4e22-8614-285ba10dcc2f",
+    "executionStatusUrl": "/dna/intent/api/v1/dnacaap/management/execution-status/fd25e176-b175-4fc7-be91-cfce98ab21f7",
+    "executionId": "fd25e176-b175-4fc7-be91-cfce98ab21f7"
+}
+
+
+POST:
+=======
+
+API : https://10.195.192.178/dna/intent/api/v1/business/sda/control-plane-device
+
+request :
+-------------
+[
+{
+"deviceManagementIpAddress": "10.195.244.16",
+"siteNameHierarchy": "Global/california/building21/floor1"
+
+}
+]
+
+response :
+-----------
+{
+    "status": "pending",
+    "description": "API execution is in progress.",
+    "taskId": "18d8ea7c-8fdf-4cd2-85a4-1e970c5e316c",
+    "taskStatusUrl": "/dna/intent/api/v1/task/18d8ea7c-8fdf-4cd2-85a4-1e970c5e316c",
+    "executionStatusUrl": "/dna/intent/api/v1/dnacaap/management/execution-status/020fa589-1635-400f-bdb1-b77096c35673",
+    "executionId": "020fa589-1635-400f-bdb1-b77096c35673"
+}
+
+
+ 

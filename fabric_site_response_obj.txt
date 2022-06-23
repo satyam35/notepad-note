@@ -1,0 +1,89 @@
+case:1
+===========
+
+
+request: 
+--------
+
+  {
+    "fabricName": "Default LAN Fabric",
+    "siteNameHierarchy": "Global/India/Bangalore/Building 2"
+  }
+
+response: --->status code : 200
+---------
+{
+    "status": "success",
+    "description": "Fabric site has been added successfully.",
+    "taskId": "38188cee-3a36-4465-83ad-bf4008db11d0",
+    "taskStatusUrl": "/dna/intent/api/v1/task/38188cee-3a36-4465-83ad-bf4008db11d0",
+    "executionStatusUrl": "/dna/intent/api/v1/dnacaap/management/execution-status/b710e3ba-05fe-472f-8b1a-839003684be8",
+    "executionId": "b710e3ba-05fe-472f-8b1a-839003684be8"
+}
+#####################################################################################################
+
+case-2:
+---------
+
+request:
+---------
+
+  { 
+    "siteNameHierarchy": "Global/India/Bangalore/Building 2"
+  }
+
+response: --->status code : 200
+---------
+{
+    "status": "success",
+    "description": "Fabric site has been added successfully.",
+    "taskId": "71586b17-f881-4860-9aa8-384ecfc69adb",
+    "taskStatusUrl": "/dna/intent/api/v1/task/71586b17-f881-4860-9aa8-384ecfc69adb",
+    "executionStatusUrl": "/dna/intent/api/v1/dnacaap/management/execution-status/6e2ff50a-e2c1-43d9-9fe8-f522f00a5adb",
+    "executionId": "6e2ff50a-e2c1-43d9-9fe8-f522f00a5adb"
+}
+###########################################################################################################
+
+case-3:
+
+request:
+---------
+
+  {
+    "fabricName": "anynameisacceptable",
+    "siteNameHierarchy": "Global/India/Bangalore/Building 2"
+  }
+  
+response:---->status code : 200
+----------
+{
+    "status": "success",
+    "description": "Fabric site has been added successfully.",
+    "taskId": "7043339b-7c66-49e8-8a9f-ec8f634ff564",
+    "taskStatusUrl": "/dna/intent/api/v1/task/7043339b-7c66-49e8-8a9f-ec8f634ff564",
+    "executionStatusUrl": "/dna/intent/api/v1/dnacaap/management/execution-status/cf1224b9-f10e-40f6-a50f-cc7cccaa16a7",
+    "executionId": "cf1224b9-f10e-40f6-a50f-cc7cccaa16a7"
+}
+
+###########################################################################################################
+
+case-4: with invalid site name
+
+request:
+
+  {
+    
+    "siteNameHierarchy": "Global/India/Bangalore/Building "
+  }
+
+response: status code : 400 bad request
+-----------
+{
+    "status": "failed",
+    "description": "Could not find site with siteNameHierarchy = Global/India/Bangalore/Building",
+    "taskId": null,
+    "taskStatusUrl": "/dna/intent/api/v1/task/null",
+    "executionStatusUrl": "/dna/intent/api/v1/dnacaap/management/execution-status/f2f56318-65af-4293-a869-a084ddfba08d",
+    "executionId": "f2f56318-65af-4293-a869-a084ddfba08d"
+}
+

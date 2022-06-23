@@ -1,0 +1,544 @@
+
+test/user_port_test.py::TestPortAssignment::test_1_add_userport task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+total time taken by task completion : 3724.0 ms
+user port GigabitEthernet1/0/1 successfully assigned to the device 10.195.187.194 
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+total time taken by task completion : 7013.0 ms
+user port GigabitEthernet1/0/1 successfully assigned to the device 10.195.187.193 
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+total time taken by task completion : 2136.0 ms
+user port GigabitEthernet1/0/1 successfully assigned to the device 10.195.187.191 
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+total time taken by task completion : 2288.0 ms
+user port GigabitEthernet1/0/2 successfully assigned to the device 10.195.187.194 
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+total time taken by task completion : 2055.0 ms
+user port GigabitEthernet1/0/2 successfully assigned to the device 10.195.187.193 
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+total time taken by task completion : 2530.0 ms
+user port GigabitEthernet1/0/2 successfully assigned to the device 10.195.187.191 
+total time taken by task completion : 1469.0 ms
+user port GigabitEthernet1/0/3 successfully assigned to the device 10.195.187.194 
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+total time taken by task completion : 2168.0 ms
+user port GigabitEthernet1/0/3 successfully assigned to the device 10.195.187.193 
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+total time taken by task completion : 1867.0 ms
+user port GigabitEthernet1/0/3 successfully assigned to the device 10.195.187.191 
+task in not completed yet....processing
+total time taken by task completion : 1623.0 ms
+user port GigabitEthernet1/0/4 successfully assigned to the device 10.195.187.194 
+total time taken by task completion : 1341.0 ms
+user port GigabitEthernet1/0/4 successfully assigned to the device 10.195.187.193 
+task in not completed yet....processing
+task in not completed yet....processing
+total time taken by task completion : 1726.0 ms
+user port GigabitEthernet1/0/4 successfully assigned to the device 10.195.187.191 
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+total time taken by task completion : 2087.0 ms
+user port GigabitEthernet1/0/5 successfully assigned to the device 10.195.187.194 
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+total time taken by task completion : 1993.0 ms
+user port GigabitEthernet1/0/5 successfully assigned to the device 10.195.187.193 
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+task in not completed yet....processing
+total time taken by task completion : 2148.0 ms
+user port GigabitEthernet1/0/5 successfully assigned to the device 10.195.187.191 
+task in not completed yet....processing
+total time taken by task completion : 1611.0 ms
+user port GigabitEthernet1/0/6 successfully assigned to the device 10.195.187.194 
+total time taken by task completion : 1353.0 ms
+user port GigabitEthernet1/0/6 successfully assigned to the device 10.195.187.193 
+this port taken less time ............
+total time taken by task completion : 1179.0 ms
+user port GigabitEthernet1/0/6 successfully assigned to the device 10.195.187.191
+this port taken very less time
+user port GigabitEthernet1/0/7 successfully assigned to the device 10.195.187.194 
+this port taken less time ............
+total time taken by task completion : 1227.0 ms
+user port GigabitEthernet1/0/7 successfully assigned to the device 10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1216.0 ms
+user port GigabitEthernet1/0/7 successfully assigned to the device 10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1241.0 ms
+user port GigabitEthernet1/0/8 successfully assigned to the device 10.195.187.194
+this port taken very less time
+user port GigabitEthernet1/0/8 successfully assigned to the device 10.195.187.193 
+this port taken less time ............
+total time taken by task completion : 1235.0 ms
+user port GigabitEthernet1/0/8 successfully assigned to the device 10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1238.0 ms
+user port GigabitEthernet1/0/9 successfully assigned to the device 10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1390.0 ms
+user port GigabitEthernet1/0/9 successfully assigned to the device 10.195.187.193
+this port taken very less time
+user port GigabitEthernet1/0/9 successfully assigned to the device 10.195.187.191 
+this port taken less time ............
+total time taken by task completion : 1293.0 ms
+user port GigabitEthernet1/0/10 successfully assigned to the device 10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1235.0 ms
+user port GigabitEthernet1/0/10 successfully assigned to the device 10.195.187.193
+this port taken very less time
+user port GigabitEthernet1/0/10 successfully assigned to the device 10.195.187.191 
+this port taken very less time
+user port GigabitEthernet1/0/11 successfully assigned to the device 10.195.187.194 
+this port taken very less time
+user port GigabitEthernet1/0/11 successfully assigned to the device 10.195.187.193 
+this port taken very less time
+user port GigabitEthernet1/0/11 successfully assigned to the device 10.195.187.191 
+this port taken very less time
+user port GigabitEthernet1/0/12 successfully assigned to the device 10.195.187.194 
+this port taken less time ............
+total time taken by task completion : 1223.0 ms
+user port GigabitEthernet1/0/12 successfully assigned to the device 10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1319.0 ms
+user port GigabitEthernet1/0/12 successfully assigned to the device 10.195.187.191
+task in not completed yet....processing
+total time taken by task completion : 1626.0 ms
+user port GigabitEthernet1/0/13 successfully assigned to the device 10.195.187.194 
+this port taken less time ............
+total time taken by task completion : 1180.0 ms
+user port GigabitEthernet1/0/13 successfully assigned to the device 10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1346.0 ms
+user port GigabitEthernet1/0/13 successfully assigned to the device 10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1315.0 ms
+user port GigabitEthernet1/0/14 successfully assigned to the device 10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1334.0 ms
+user port GigabitEthernet1/0/14 successfully assigned to the device 10.195.187.193
+this port taken very less time
+user port GigabitEthernet1/0/14 successfully assigned to the device 10.195.187.191 
+this port taken less time ............
+total time taken by task completion : 1207.0 ms
+user port GigabitEthernet1/0/15 successfully assigned to the device 10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1213.0 ms
+user port GigabitEthernet1/0/15 successfully assigned to the device 10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1191.0 ms
+user port GigabitEthernet1/0/15 successfully assigned to the device 10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1178.0 ms
+user port GigabitEthernet1/0/16 successfully assigned to the device 10.195.187.194
+this port taken very less time
+user port GigabitEthernet1/0/16 successfully assigned to the device 10.195.187.193 
+this port taken less time ............
+total time taken by task completion : 1179.0 ms
+user port GigabitEthernet1/0/16 successfully assigned to the device 10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1241.0 ms
+user port GigabitEthernet1/0/17 successfully assigned to the device 10.195.187.194
+this port taken very less time
+user port GigabitEthernet1/0/17 successfully assigned to the device 10.195.187.193 
+this port taken less time ............
+total time taken by task completion : 1209.0 ms
+user port GigabitEthernet1/0/17 successfully assigned to the device 10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1231.0 ms
+user port GigabitEthernet1/0/18 successfully assigned to the device 10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1235.0 ms
+user port GigabitEthernet1/0/18 successfully assigned to the device 10.195.187.193
+this port taken very less time
+user port GigabitEthernet1/0/18 successfully assigned to the device 10.195.187.191 
+this port taken less time ............
+total time taken by task completion : 1264.0 ms
+user port GigabitEthernet1/0/19 successfully assigned to the device 10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1232.0 ms
+user port GigabitEthernet1/0/19 successfully assigned to the device 10.195.187.193
+this port taken very less time
+user port GigabitEthernet1/0/19 successfully assigned to the device 10.195.187.191 
+this port taken less time ............
+total time taken by task completion : 1231.0 ms
+user port GigabitEthernet1/0/20 successfully assigned to the device 10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1224.0 ms
+user port GigabitEthernet1/0/20 successfully assigned to the device 10.195.187.193
+this port taken very less time
+user port GigabitEthernet1/0/20 successfully assigned to the device 10.195.187.191 
+this port taken very less time
+user port GigabitEthernet1/0/21 successfully assigned to the device 10.195.187.194 
+this port taken less time ............
+total time taken by task completion : 1197.0 ms
+user port GigabitEthernet1/0/21 successfully assigned to the device 10.195.187.193
+this port taken very less time
+user port GigabitEthernet1/0/21 successfully assigned to the device 10.195.187.191 
+this port taken less time ............
+total time taken by task completion : 1228.0 ms
+user port GigabitEthernet1/0/22 successfully assigned to the device 10.195.187.194
+this port taken very less time
+user port GigabitEthernet1/0/22 successfully assigned to the device 10.195.187.193 
+this port taken less time ............
+total time taken by task completion : 1210.0 ms
+user port GigabitEthernet1/0/22 successfully assigned to the device 10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1181.0 ms
+user port GigabitEthernet1/0/23 successfully assigned to the device 10.195.187.194
+this port taken very less time
+user port GigabitEthernet1/0/23 successfully assigned to the device 10.195.187.193 
+this port taken very less time
+user port GigabitEthernet1/0/23 successfully assigned to the device 10.195.187.191 
+this port taken less time ............
+total time taken by task completion : 1176.0 ms
+user port GigabitEthernet1/0/24 successfully assigned to the device 10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1229.0 ms
+user port GigabitEthernet1/0/24 successfully assigned to the device 10.195.187.193
+this port taken very less time
+user port GigabitEthernet1/0/24 successfully assigned to the device 10.195.187.191 
+PASSED
+test/user_port_test.py::TestPortAssignment::test_2_get_userport user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/1
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/1
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/1
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/2
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/2
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/2
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/3
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/3
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/3
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/4
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/4
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/4
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/5
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/5
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/5
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/6
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/6
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/6
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/7
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/7
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/7
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/8
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/8
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/8
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/9
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/9
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/9
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/10
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/10
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/10
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/11
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/11
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/11
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/12
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/12
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/12
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/13
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/13
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/13
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/14
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/14
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/14
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/15
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/15
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/15
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/16
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/16
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/16
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/17
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/17
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/17
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/18
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/18
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/18
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/19
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/19
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/19
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/20
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/20
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/20
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/21
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/21
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/21
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/22
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/22
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/22
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/23
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/23
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/23
+user device 10.195.187.194 retrieved successfully....for the port GigabitEthernet1/0/24
+user device 10.195.187.193 retrieved successfully....for the port GigabitEthernet1/0/24
+user device 10.195.187.191 retrieved successfully....for the port GigabitEthernet1/0/24
+PASSED
+test/user_port_test.py::TestPortAssignment::test_3_delete_userport this port taken less time ............
+total time taken by task completion : 1305.0 ms
+user port GigabitEthernet1/0/1 removed  successfully from the device  10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1255.0 ms
+user port GigabitEthernet1/0/1 removed  successfully from the device  10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1198.0 ms
+user port GigabitEthernet1/0/1 removed  successfully from the device  10.195.187.191
+user device port  deleted successfully.... able to remove user port  from the device  10.195.187.194 
+user device port  deleted successfully.... able to remove user port  from the device  10.195.187.193 
+user device port  deleted successfully.... able to remove user port  from the device  10.195.187.191 
+user device port  deleted successfully.... able to remove user port  from the device  10.195.187.194 
+total time taken by task completion : 1372.0 ms
+user port GigabitEthernet1/0/3 removed  successfully from the device  10.195.187.193 
+this port taken less time ............
+total time taken by task completion : 1233.0 ms
+user port GigabitEthernet1/0/3 removed  successfully from the device  10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1259.0 ms
+user port GigabitEthernet1/0/4 removed  successfully from the device  10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1181.0 ms
+user port GigabitEthernet1/0/4 removed  successfully from the device  10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1215.0 ms
+user port GigabitEthernet1/0/4 removed  successfully from the device  10.195.187.191
+user device port  deleted successfully.... able to remove user port  from the device  10.195.187.194 
+total time taken by task completion : 1358.0 ms
+user port GigabitEthernet1/0/5 removed  successfully from the device  10.195.187.193 
+user device port  deleted successfully.... able to remove user port  from the device  10.195.187.191 
+user device port  deleted successfully.... able to remove user port  from the device  10.195.187.194 
+this port taken less time ............
+total time taken by task completion : 1219.0 ms
+user port GigabitEthernet1/0/6 removed  successfully from the device  10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1196.0 ms
+user port GigabitEthernet1/0/6 removed  successfully from the device  10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1242.0 ms
+user port GigabitEthernet1/0/7 removed  successfully from the device  10.195.187.194
+user device port  deleted successfully.... able to remove user port  from the device  10.195.187.193 
+this port taken less time ............
+total time taken by task completion : 1284.0 ms
+user port GigabitEthernet1/0/7 removed  successfully from the device  10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1200.0 ms
+user port GigabitEthernet1/0/8 removed  successfully from the device  10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1288.0 ms
+user port GigabitEthernet1/0/8 removed  successfully from the device  10.195.187.193
+user device port  deleted successfully.... able to remove user port  from the device  10.195.187.191 
+this port taken less time ............
+total time taken by task completion : 1248.0 ms
+user port GigabitEthernet1/0/9 removed  successfully from the device  10.195.187.194
+total time taken by task completion : 1323.0 ms
+user port GigabitEthernet1/0/9 removed  successfully from the device  10.195.187.193 
+this port taken less time ............
+total time taken by task completion : 1215.0 ms
+user port GigabitEthernet1/0/9 removed  successfully from the device  10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1241.0 ms
+user port GigabitEthernet1/0/10 removed  successfully from the device  10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1188.0 ms
+user port GigabitEthernet1/0/10 removed  successfully from the device  10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1203.0 ms
+user port GigabitEthernet1/0/10 removed  successfully from the device  10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1273.0 ms
+user port GigabitEthernet1/0/11 removed  successfully from the device  10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1234.0 ms
+user port GigabitEthernet1/0/11 removed  successfully from the device  10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1251.0 ms
+user port GigabitEthernet1/0/11 removed  successfully from the device  10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1288.0 ms
+user port GigabitEthernet1/0/12 removed  successfully from the device  10.195.187.194
+total time taken by task completion : 1324.0 ms
+user port GigabitEthernet1/0/12 removed  successfully from the device  10.195.187.193 
+this port taken less time ............
+total time taken by task completion : 1195.0 ms
+user port GigabitEthernet1/0/12 removed  successfully from the device  10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1320.0 ms
+user port GigabitEthernet1/0/13 removed  successfully from the device  10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1225.0 ms
+user port GigabitEthernet1/0/13 removed  successfully from the device  10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1246.0 ms
+user port GigabitEthernet1/0/13 removed  successfully from the device  10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1250.0 ms
+user port GigabitEthernet1/0/14 removed  successfully from the device  10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1320.0 ms
+user port GigabitEthernet1/0/14 removed  successfully from the device  10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1208.0 ms
+user port GigabitEthernet1/0/14 removed  successfully from the device  10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1340.0 ms
+user port GigabitEthernet1/0/15 removed  successfully from the device  10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1264.0 ms
+user port GigabitEthernet1/0/15 removed  successfully from the device  10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1208.0 ms
+user port GigabitEthernet1/0/15 removed  successfully from the device  10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1254.0 ms
+user port GigabitEthernet1/0/16 removed  successfully from the device  10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1320.0 ms
+user port GigabitEthernet1/0/16 removed  successfully from the device  10.195.187.193
+total time taken by task completion : 1364.0 ms
+user port GigabitEthernet1/0/16 removed  successfully from the device  10.195.187.191 
+this port taken less time ............
+total time taken by task completion : 1256.0 ms
+user port GigabitEthernet1/0/17 removed  successfully from the device  10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1289.0 ms
+user port GigabitEthernet1/0/17 removed  successfully from the device  10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1261.0 ms
+user port GigabitEthernet1/0/17 removed  successfully from the device  10.195.187.191
+task in not completed yet....processing
+total time taken by task completion : 1455.0 ms
+user port GigabitEthernet1/0/18 removed  successfully from the device  10.195.187.194 
+total time taken by task completion : 1344.0 ms
+user port GigabitEthernet1/0/18 removed  successfully from the device  10.195.187.193 
+this port taken less time ............
+total time taken by task completion : 1290.0 ms
+user port GigabitEthernet1/0/18 removed  successfully from the device  10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1295.0 ms
+user port GigabitEthernet1/0/19 removed  successfully from the device  10.195.187.194
+total time taken by task completion : 1347.0 ms
+user port GigabitEthernet1/0/19 removed  successfully from the device  10.195.187.193 
+this port taken less time ............
+total time taken by task completion : 1244.0 ms
+user port GigabitEthernet1/0/19 removed  successfully from the device  10.195.187.191
+total time taken by task completion : 1319.0 ms
+user port GigabitEthernet1/0/20 removed  successfully from the device  10.195.187.194 
+this port taken less time ............
+total time taken by task completion : 1303.0 ms
+user port GigabitEthernet1/0/20 removed  successfully from the device  10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1252.0 ms
+user port GigabitEthernet1/0/20 removed  successfully from the device  10.195.187.191
+total time taken by task completion : 1373.0 ms
+user port GigabitEthernet1/0/21 removed  successfully from the device  10.195.187.194 
+this port taken less time ............
+total time taken by task completion : 1296.0 ms
+user port GigabitEthernet1/0/21 removed  successfully from the device  10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1300.0 ms
+user port GigabitEthernet1/0/21 removed  successfully from the device  10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1312.0 ms
+user port GigabitEthernet1/0/22 removed  successfully from the device  10.195.187.194
+total time taken by task completion : 1363.0 ms
+user port GigabitEthernet1/0/22 removed  successfully from the device  10.195.187.193 
+this port taken less time ............
+total time taken by task completion : 1253.0 ms
+user port GigabitEthernet1/0/22 removed  successfully from the device  10.195.187.191
+this port taken less time ............
+total time taken by task completion : 1334.0 ms
+user port GigabitEthernet1/0/23 removed  successfully from the device  10.195.187.194
+this port taken less time ............
+total time taken by task completion : 1309.0 ms
+user port GigabitEthernet1/0/23 removed  successfully from the device  10.195.187.193
+total time taken by task completion : 1372.0 ms
+user port GigabitEthernet1/0/23 removed  successfully from the device  10.195.187.191 
+total time taken by task completion : 1370.0 ms
+user port GigabitEthernet1/0/24 removed  successfully from the device  10.195.187.194 
+this port taken less time ............
+total time taken by task completion : 1314.0 ms
+user port GigabitEthernet1/0/24 removed  successfully from the device  10.195.187.193
+this port taken less time ............
+total time taken by task completion : 1313.0 ms
+user port GigabitEthernet1/0/24 removed  successfully from the device  10.195.187.191
+PASSED
+

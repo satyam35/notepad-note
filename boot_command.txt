@@ -1,0 +1,3 @@
+autoboot >>> no boot manual
+maunal boot >>> boot manual
+sh boot

@@ -1,0 +1,3 @@
+Hi satpal
+
+in guardian we need to execute script for single as well as multiple devices correct ?

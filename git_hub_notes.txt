@@ -1,0 +1,39 @@
+
+--> Set user name
+   $ git config --global user.name Satyam
+
+--> Set email
+   $ git config --global user.email 18satyamsingh@gmail.com
+   
+-->open visual studio on bash(git)
+   $ git .
+   
+--> initialize the empty folder
+  $ git init
+  
+--> to see hidden file in empty git folder 
+  $ ls -lart
+  
+--> for the status of repo
+  $ git status
+  
+--> add file into stagged area
+  $ git add index.html
+  
+--> commit the file
+  $ git commit (after this on new window will write -->(Intial commit) then scap button and write :wq )
+  
+--> create new file
+  $ touch file.extension
+  
+--> add all the file at once in stagging area
+  $ git add -A
+  
+--> commit at a time with message
+  $ git commit -m "message"
+  
+--> to match with last commit
+  $ git checkout contact.html
+
+    
+ 

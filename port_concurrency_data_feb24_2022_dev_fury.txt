@@ -1,0 +1,400 @@
+C:\Users\terralogic\AppData\Local\Programs\Python\Python39\python.exe C:/Users/terralogic/PycharmProjects/PortConcurrency/Test/pp_test.py
+----------------------process 1 is on the way------------------------
+Switch IP =  10.195.187.194 : START TIME =Thu Feb 24 16:34:29 2022
+----------------------process 2 is on the way------------------------
+Switch IP =  10.195.187.193 : START TIME =Thu Feb 24 16:34:30 2022
+----------------------process 3 is on the way------------------------
+Switch IP =  10.195.187.191 : START TIME =Thu Feb 24 16:34:30 2022
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/1 
+START TIME =Thu Feb 24 16:34:29 2022
+  END TIME =Thu Feb 24 16:34:43 2022
+  DURATION =00 Hrs:00 Mins:14 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/1 
+START TIME =Thu Feb 24 16:34:30 2022
+  END TIME =Thu Feb 24 16:34:54 2022
+  DURATION =00 Hrs:00 Mins:24 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/1 
+START TIME =Thu Feb 24 16:34:30 2022
+  END TIME =Thu Feb 24 16:35:04 2022
+  DURATION =00 Hrs:00 Mins:34 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/2 
+START TIME =Thu Feb 24 16:34:43 2022
+  END TIME =Thu Feb 24 16:35:19 2022
+  DURATION =00 Hrs:00 Mins:35 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/2 
+START TIME =Thu Feb 24 16:34:54 2022
+  END TIME =Thu Feb 24 16:35:26 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/2 
+START TIME =Thu Feb 24 16:35:04 2022
+  END TIME =Thu Feb 24 16:35:37 2022
+  DURATION =00 Hrs:00 Mins:32 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/3 
+START TIME =Thu Feb 24 16:35:19 2022
+  END TIME =Thu Feb 24 16:35:46 2022
+  DURATION =00 Hrs:00 Mins:26 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/3 
+START TIME =Thu Feb 24 16:35:26 2022
+  END TIME =Thu Feb 24 16:35:59 2022
+  DURATION =00 Hrs:00 Mins:32 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/3 
+START TIME =Thu Feb 24 16:35:37 2022
+  END TIME =Thu Feb 24 16:36:11 2022
+  DURATION =00 Hrs:00 Mins:34 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/4 
+START TIME =Thu Feb 24 16:35:46 2022
+  END TIME =Thu Feb 24 16:36:18 2022
+  DURATION =00 Hrs:00 Mins:32 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/4 
+START TIME =Thu Feb 24 16:35:59 2022
+  END TIME =Thu Feb 24 16:36:29 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/4 
+START TIME =Thu Feb 24 16:36:11 2022
+  END TIME =Thu Feb 24 16:36:42 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/5 
+START TIME =Thu Feb 24 16:36:18 2022
+  END TIME =Thu Feb 24 16:36:49 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/5 
+START TIME =Thu Feb 24 16:36:29 2022
+  END TIME =Thu Feb 24 16:37:00 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/5 
+START TIME =Thu Feb 24 16:36:42 2022
+  END TIME =Thu Feb 24 16:37:11 2022
+  DURATION =00 Hrs:00 Mins:29 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/6 
+START TIME =Thu Feb 24 16:36:49 2022
+  END TIME =Thu Feb 24 16:37:21 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/6 
+START TIME =Thu Feb 24 16:37:00 2022
+  END TIME =Thu Feb 24 16:37:31 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/6 
+START TIME =Thu Feb 24 16:37:11 2022
+  END TIME =Thu Feb 24 16:37:41 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/7 
+START TIME =Thu Feb 24 16:37:21 2022
+  END TIME =Thu Feb 24 16:37:52 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/7 
+START TIME =Thu Feb 24 16:37:31 2022
+  END TIME =Thu Feb 24 16:38:03 2022
+  DURATION =00 Hrs:00 Mins:32 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/7 
+START TIME =Thu Feb 24 16:37:41 2022
+  END TIME =Thu Feb 24 16:38:12 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/8 
+START TIME =Thu Feb 24 16:37:52 2022
+  END TIME =Thu Feb 24 16:38:27 2022
+  DURATION =00 Hrs:00 Mins:34 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/8 
+START TIME =Thu Feb 24 16:38:03 2022
+  END TIME =Thu Feb 24 16:38:34 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/8 
+START TIME =Thu Feb 24 16:38:12 2022
+  END TIME =Thu Feb 24 16:38:44 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/9 
+START TIME =Thu Feb 24 16:38:34 2022
+  END TIME =Thu Feb 24 16:38:55 2022
+  DURATION =00 Hrs:00 Mins:20 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/9 
+START TIME =Thu Feb 24 16:38:27 2022
+  END TIME =Thu Feb 24 16:39:06 2022
+  DURATION =00 Hrs:00 Mins:39 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/9 
+START TIME =Thu Feb 24 16:38:44 2022
+  END TIME =Thu Feb 24 16:39:15 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/10 
+START TIME =Thu Feb 24 16:38:55 2022
+  END TIME =Thu Feb 24 16:39:26 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/10 
+START TIME =Thu Feb 24 16:39:06 2022
+  END TIME =Thu Feb 24 16:39:36 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/10 
+START TIME =Thu Feb 24 16:39:15 2022
+  END TIME =Thu Feb 24 16:39:45 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/11 
+START TIME =Thu Feb 24 16:39:26 2022
+  END TIME =Thu Feb 24 16:39:57 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/11 
+START TIME =Thu Feb 24 16:39:36 2022
+  END TIME =Thu Feb 24 16:40:09 2022
+  DURATION =00 Hrs:00 Mins:33 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/11 
+START TIME =Thu Feb 24 16:39:45 2022
+  END TIME =Thu Feb 24 16:40:18 2022
+  DURATION =00 Hrs:00 Mins:32 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/12 
+START TIME =Thu Feb 24 16:40:09 2022
+  END TIME =Thu Feb 24 16:40:41 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/12 
+START TIME =Thu Feb 24 16:39:57 2022
+  END TIME =Thu Feb 24 16:40:41 2022
+  DURATION =00 Hrs:00 Mins:43 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/12 
+START TIME =Thu Feb 24 16:40:18 2022
+  END TIME =Thu Feb 24 16:40:48 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/13 
+START TIME =Thu Feb 24 16:40:41 2022
+  END TIME =Thu Feb 24 16:40:59 2022
+  DURATION =00 Hrs:00 Mins:18 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/13 
+START TIME =Thu Feb 24 16:40:41 2022
+  END TIME =Thu Feb 24 16:41:11 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/13 
+START TIME =Thu Feb 24 16:40:48 2022
+  END TIME =Thu Feb 24 16:41:22 2022
+  DURATION =00 Hrs:00 Mins:34 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/14 
+START TIME =Thu Feb 24 16:40:59 2022
+  END TIME =Thu Feb 24 16:41:31 2022
+  DURATION =00 Hrs:00 Mins:32 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/14 
+START TIME =Thu Feb 24 16:41:11 2022
+  END TIME =Thu Feb 24 16:41:41 2022
+  DURATION =00 Hrs:00 Mins:29 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/14 
+START TIME =Thu Feb 24 16:41:22 2022
+  END TIME =Thu Feb 24 16:41:52 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/15 
+START TIME =Thu Feb 24 16:41:31 2022
+  END TIME =Thu Feb 24 16:42:04 2022
+  DURATION =00 Hrs:00 Mins:32 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/15 
+START TIME =Thu Feb 24 16:41:41 2022
+  END TIME =Thu Feb 24 16:42:12 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/15 
+START TIME =Thu Feb 24 16:41:52 2022
+  END TIME =Thu Feb 24 16:42:24 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/16 
+START TIME =Thu Feb 24 16:42:04 2022
+  END TIME =Thu Feb 24 16:42:32 2022
+  DURATION =00 Hrs:00 Mins:27 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/16 
+START TIME =Thu Feb 24 16:42:12 2022
+  END TIME =Thu Feb 24 16:42:44 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/16 
+START TIME =Thu Feb 24 16:42:24 2022
+  END TIME =Thu Feb 24 16:42:55 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/17 
+START TIME =Thu Feb 24 16:42:32 2022
+  END TIME =Thu Feb 24 16:43:05 2022
+  DURATION =00 Hrs:00 Mins:33 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/17 
+START TIME =Thu Feb 24 16:42:44 2022
+  END TIME =Thu Feb 24 16:43:15 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/17 
+START TIME =Thu Feb 24 16:42:55 2022
+  END TIME =Thu Feb 24 16:43:24 2022
+  DURATION =00 Hrs:00 Mins:29 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/18 
+START TIME =Thu Feb 24 16:43:05 2022
+  END TIME =Thu Feb 24 16:43:35 2022
+  DURATION =00 Hrs:00 Mins:29 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/18 
+START TIME =Thu Feb 24 16:43:15 2022
+  END TIME =Thu Feb 24 16:43:45 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/18 
+START TIME =Thu Feb 24 16:43:24 2022
+  END TIME =Thu Feb 24 16:43:55 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/19 
+START TIME =Thu Feb 24 16:43:35 2022
+  END TIME =Thu Feb 24 16:44:06 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/19 
+START TIME =Thu Feb 24 16:43:45 2022
+  END TIME =Thu Feb 24 16:44:16 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/19 
+START TIME =Thu Feb 24 16:43:55 2022
+  END TIME =Thu Feb 24 16:44:26 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/20 
+START TIME =Thu Feb 24 16:44:06 2022
+  END TIME =Thu Feb 24 16:44:37 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/20 
+START TIME =Thu Feb 24 16:44:16 2022
+  END TIME =Thu Feb 24 16:44:47 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/20 
+START TIME =Thu Feb 24 16:44:26 2022
+  END TIME =Thu Feb 24 16:44:58 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/21 
+START TIME =Thu Feb 24 16:44:37 2022
+  END TIME =Thu Feb 24 16:45:08 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/21 
+START TIME =Thu Feb 24 16:44:47 2022
+  END TIME =Thu Feb 24 16:45:18 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/21 
+START TIME =Thu Feb 24 16:44:58 2022
+  END TIME =Thu Feb 24 16:45:28 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/22 
+START TIME =Thu Feb 24 16:45:08 2022
+  END TIME =Thu Feb 24 16:45:40 2022
+  DURATION =00 Hrs:00 Mins:32 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/22 
+START TIME =Thu Feb 24 16:45:18 2022
+  END TIME =Thu Feb 24 16:45:50 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/22 
+START TIME =Thu Feb 24 16:45:28 2022
+  END TIME =Thu Feb 24 16:46:00 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/23 
+START TIME =Thu Feb 24 16:45:40 2022
+  END TIME =Thu Feb 24 16:46:12 2022
+  DURATION =00 Hrs:00 Mins:32 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/23 
+START TIME =Thu Feb 24 16:45:50 2022
+  END TIME =Thu Feb 24 16:46:21 2022
+  DURATION =00 Hrs:00 Mins:30 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/23 
+START TIME =Thu Feb 24 16:46:00 2022
+  END TIME =Thu Feb 24 16:46:31 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.193  GigabitEthernet1/0/24 
+START TIME =Thu Feb 24 16:46:12 2022
+  END TIME =Thu Feb 24 16:46:42 2022
+  DURATION =00 Hrs:00 Mins:29 Seconds
+--------------------------------------------------------------------
+Port Assignment Time summary for switch #2:
+Number of ports = 24
+START TIME = Thu Feb 24 16:34:30 2022
+  END TIME = Thu Feb 24 16:46:42 2022
+Total Time = 00 Hrs:12 Mins:11 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.194  GigabitEthernet1/0/24 
+START TIME =Thu Feb 24 16:46:21 2022
+  END TIME =Thu Feb 24 16:46:52 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Port Assignment Time summary for switch #1:
+Number of ports = 24
+START TIME = Thu Feb 24 16:34:29 2022
+  END TIME = Thu Feb 24 16:46:52 2022
+Total Time = 00 Hrs:12 Mins:22 Seconds
+--------------------------------------------------------------------
+Switch IP =10.195.187.191  GigabitEthernet1/0/24 
+START TIME =Thu Feb 24 16:46:31 2022
+  END TIME =Thu Feb 24 16:47:02 2022
+  DURATION =00 Hrs:00 Mins:31 Seconds
+--------------------------------------------------------------------
+Port Assignment Time summary for switch #3:
+Number of ports = 24
+START TIME = Thu Feb 24 16:34:30 2022
+  END TIME = Thu Feb 24 16:47:02 2022
+Total Time = 00 Hrs:12 Mins:32 Seconds
+====================================================================
+Concurrent Port Assignment SUMMARY
+====================================================================
+Number of switches = 3
+====================================================================
+Overall Summary
+Number of Ports on switch#1 = 24
+Number of Ports on switch#2 = 24
+Number of Ports on switch#3 = 24
+====================================================================
+Total number of ports on all 3-switches = 72
+Port Assignment START TIME = Thu Feb 24 16:34:27 2022
+  Port Assignment END TIME = Thu Feb 24 16:47:02 2022
+Port Assignment Total Time = 00 Hrs:12 Mins:35 Seconds
+====================================================================

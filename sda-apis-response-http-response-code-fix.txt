@@ -1,0 +1,98 @@
+
+
+ - - - - — - - - - — - - - - - — - — - - - - - - - - - - - - 
+
+CSCwb17897 - [review-bug] - Return correct http error codes in response for failed and accepted requests 
+Résponse HTTP return code Testing
+Needs to be Returned correct http error codes in response for success, failed and accepted requests for all response.
+
+will add these http returns codes in response header
+200 Success 
+202 Accepted 
+400 Bad Request
+
+ - - - - — - - - - — - - - - - — - — - - - - - - - - - - - - 
+Fabric-Site APIs
+POST   ===> /dna/intent/api/v1/business/sda/fabric-site ==> TESTED ==> Working
+DELETE ===> /dna/intent/api/v1/business/sda/fabric-site ==> TESTED ==> Working
+GET    ===> /dna/intent/api/v1/business/sda/fabric-site ==> TESTED ==> Working
+
+
+Provision-APIs
+POST    ===> /dna/intent/api/v1/business/sda/provision-device ===> TESTED ==> Working
+DELETE  ===> /dna/intent/api/v1/business/sda/provision-device ===> TESTED ==> Working
+GET    	===> /dna/intent/api/v1/business/sda/provision-device ===> TESTED ==> Working
+
+
+Virtual-Network APIs
+POST    ===> /dna/intent/api/v1/virtual-network ===> TESTED ==> Working
+DELETE  ===> /dna/intent/api/v1/virtual-network ===> TESTED ==> Working
+GET    	===> /dna/intent/api/v1/virtual-network ===> TESTED ==> Working
+
+
+Virtual-Network to Fabric APIs
+POST    ===> /dna/intent/api/v1/business/sda/virtual-network ===> TESTED ==> Working
+DELETE  ===> /dna/intent/api/v1/business/sda/virtual-network ===> TESTED ==> Working
+GET    	===> /dna/intent/api/v1/business/sda/virtual-network ===> TESTED ==> Working
+GET     ===> /dna/intent/api/v1/business/sda/virtual-network/summary ===> TESTED ==> Working
+
+
+Transit-Peer APIs
+POST    ===> /dna/intent/api/v1/business/sda/transit-peer-network ===> TESTED ==> Working
+DELETE  ===> /dna/intent/api/v1/business/sda/transit-peer-network ===> TESTED ==> Working
+GET    	===> /dna/intent/api/v1/business/sda/transit-peer-network ===> TESTED ==> Working
+
+
+Control Plane APIs
+POST    ===> /dna/intent/api/v1/business/sda/control-plane-device ===> TESTED ==> Working
+DELETE  ===> /dna/intent/api/v1/business/sda/control-plane-device ===> TESTED ==> Working
+GET    	===> /dna/intent/api/v1/business/sda/control-plane-device ===> TESTED ==> Working
+
+Edge Device APIs
+POST    ===> /dna/intent/api/v1/business/sda/edge-device ===> TESTED ==> Working
+DELETE  ===> /dna/intent/api/v1/business/sda/edge-device ===> TESTED ==> Working
+GET    	===> /dna/intent/api/v1/business/sda/edge-device ===> TESTED ==> Working
+
+Border Device APIs
+POST    ===> /dna/intent/api/v1/business/sda/border-device ===> TESTED ==> Working
+DELETE  ===> /dna/intent/api/v1/business/sda/border-device ===> TESTED ==> Working
+GET    	===> /dna/intent/api/v1/business/sda/border-device ===> TESTED ==> Working
+
+Multicast APIs
+POST    ===> /dna/intent/api/v1/business/sda/multicast ===> TESTED ==> Working
+DELETE  ===> /dna/intent/api/v1/business/sda/multicast ===> TESTED ==> Working
+GET    	===> /dna/intent/api/v1/business/sda/multicast ===> TESTED ==> Working
+
+Authentication profile APIs
+POST    ===> /dna/intent/api/v1business/sda/authentication-profile ===> TESTED ==> Working
+DELETE  ===> /dna/intent/api/v1business/sda/authentication-profile ===> TESTED ==> Working
+GET    	===> /dna/intent/api/v1business/sda/authentication-profile ===> TESTED ==> Working
+
+Add IP-Pool to VN APIs
+POST    ===> /dna/intent/api/v1/business/sda/virtualnetwork/ippool ===> TESTED ==> Working
+DELETE  ===> /dna/intent/api/v1/business/sda/virtualnetwork/ippool ===> TESTED ==> Working
+GET    	===> /dna/intent/api/v1/business/sda/virtualnetwork/ippool ===> TESTED ==> Working
+
+Hostonboarding for User APIs
+POST    ===> /dna/intent/api/v1/business/sda/hostonboarding/user-device ===> TESTED ==> Working
+DELETE  ===> /dna/intent/api/v1/business/sda/hostonboarding/user-device ===> TESTED ==> Working
+GET    	===> /dna/intent/api/v1/business/sda/hostonboarding/user-device ===> TESTED ==> Working
+
+Hostonboarding for Access APIs
+POST    ===> /dna/intent/api/v1/business/sda/hostonboarding/access-point ===> TESTED ==> Working
+DELETE  ===> /dna/intent/api/v1/business/sda/hostonboarding/access-point ===> TESTED ==> Working
+GET    	===> /dna/intent/api/v1/business/sda/hostonboarding/access-point ===> TESTED ==> Working
+
+Device-Info APS
+GET    	===> /dna/intent/api/v1/business/sda/device ===> TESTED ==> Working
+
+Device-role API
+GET    	===> /dna/intent/api/v1/business/sda/device/role ===> TESTED ==> Working
+
+
+
+
+
+
+
+

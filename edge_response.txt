@@ -1,0 +1,96 @@
+POST:https://10.195.187.58/dna/intent/api/v1/business/sda/edge-device
+
+Request
+--------
+[
+    {
+        "deviceManagementIpAddress": "10.195.187.193",
+        "siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 2"
+    }
+]
+
+Response:
+----------
+{
+    "status": "pending",
+    "description": "API execution is in progress.",
+    "taskId": "fc704f93-dd3c-45d3-b75b-4102d1b34e7c",
+    "taskStatusUrl": "/dna/intent/api/v1/task/fc704f93-dd3c-45d3-b75b-4102d1b34e7c",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/c90372ad-bbf9-4246-8f5a-e06b5fd42559",
+    "executionId": "c90372ad-bbf9-4246-8f5a-e06b5fd42559"
+}
+
+Invalid Request
+----------------
+[
+    {
+        "deviceManagementIpAddress": "10.195.187.1937",
+        "siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 2"
+    }
+]
+Invalid Response
+----------------
+{
+    "status": "failed",
+    "description": "Empty or invalid deviceManagementIpAddress in request body. Provide a valid deviceManagementIpAddress",
+    "taskId": null,
+    "taskStatusUrl": "/dna/intent/api/v1/task/null",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/40661da3-3c78-4edd-be5b-42b7de84c4da",
+    "executionId": "40661da3-3c78-4edd-be5b-42b7de84c4da"
+}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+GET: https://10.195.187.58/dna/intent/api/v1/business/sda/edge-device?deviceManagementIpAddress=10.195.187.193
+
+Response:
+-----------
+{
+    "deviceManagementIpAddress": "10.195.187.193",
+    "deviceName": "Cat9k-10.195.187.193.cisco.com",
+    "roles": "EDGENODE",
+    "siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 2",
+    "fabricSiteNameHierarchy": "Global/India/Bangalore/Building 1",
+    "status": "success",
+    "description": "Edge device info retrieved successfully from sda fabric.",
+    "executionId": "51c977f9-a0bf-452d-aa8e-d4894f6d2d2d"
+}
+Invalid Request:https://10.195.187.58/dna/intent/api/v1/business/sda/edge-device?deviceManagementIpAddress=10.195.187.1937
+
+Response
+---------
+{
+    "status": "failed",
+    "description": "Empty or invalid deviceManagementIpAddress in request body. Provide a valid deviceManagementIpAddress",
+    "executionId": "36b97631-d055-4979-a104-f030ef6350b3"
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------
+DELETE: https://10.195.187.58/dna/intent/api/v1/business/sda/edge-device?deviceManagementIpAddress=10.195.187.193
+
+Response
+------------
+{
+    "status": "pending",
+    "description": "API execution is in progress.",
+    "taskId": "c8ea09e5-7bde-42a9-80e9-049804c69fc0",
+    "taskStatusUrl": "/dna/intent/api/v1/task/c8ea09e5-7bde-42a9-80e9-049804c69fc0",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/c172910a-61ea-4ece-98a9-fd65c5b5604b",
+    "executionId": "c172910a-61ea-4ece-98a9-fd65c5b5604b"
+}
+
+Invalid Request:https://10.195.187.58/dna/intent/api/v1/business/sda/edge-device?deviceManagementIpAddress=10.195.187.1936
+
+
+Invalid Response
+-------------------
+{
+    "status": "failed",
+    "description": "Empty or invalid deviceManagementIpAddress in request body. Provide a valid deviceManagementIpAddress",
+    "taskId": null,
+    "taskStatusUrl": "/dna/intent/api/v1/task/null",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/6f1b4c6c-5a23-4548-aa53-1a18cc14b0bb",
+    "executionId": "6f1b4c6c-5a23-4548-aa53-1a18cc14b0bb"
+}

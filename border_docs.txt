@@ -1,0 +1,69 @@
+root
+(array<map>, required)
+: Add Border Device API (Highlights : Supports multi device role,L3 Handoff and L2 Handoff )
+deviceManagementIpAddress
+(string, required)
+: Management Ip Address of the provisioned Device
+siteNameHierarchy
+(string, required)
+: Site Name Hierarchy of provisioned Device(site should be part of Fabric Site)
+deviceRole
+(array<string>, required)
+: Supported Device Roles in SD-Access fabric. Allowed roles are "Border_Node","Control_Plane_Node","Edge_Node". E.g. ["Border_Node"] or ["Border_Node", "Control_Plane_Node"] or ["Border_Node", "Control_Plane_Node","Edge_Node"]
+externalDomainRoutingProtocolName
+(string, required, enum: BGP)
+: External Domain Routing Protocol Name
+externalConnectivityIpPoolName
+(string, required)
+: External Connectivity IpPool Name
+internalAutonomouSystemNumber
+(string, required)
+: Internal Autonomouns System Number (e.g.,1-65535)
+borderPriority
+(string, optional)
+: Border priority associated with a given device. Allowed range for Border Priority is [1-9]. A lower value indicates higher priority. E.g., a priority of 1 takes precedence over 5. Default priority would be set to 10.
+borderSessionType
+(string, required, enum: EXTERNAL, INTERNAL, ANYWHERE)
+: Border Session Type
+connectedToInternet
+(boolean, required)
+: Connected to Internet
+sdaTransitNetworkName
+(string, optional)
+: SD-Access Transit Network Name
+borderWithExternalConnectivity
+(boolean, required)
+: Border With External Connectivity (Note: True for transit and False for non-transit border)
+externalConnectivitySettings
+(array<map>, required)
+: External Connectivity Settings information of L3 and L2 Handoff
+interfaceName
+(string, required)
+: Interface Name
+interfaceDescription
+(string, required)
+: Interface Description
+externalAutonomouSystemNumber
+(string, required)
+: External Autonomous System Number peer (e.g.,1-65535)
+l3Handoff
+(array<map>, optional)
+: L3 Handoff information
+virtualNetwork
+(map, required)
+: Virtual Network information of L3 Hand off
+virtualNetworkName
+(string, required)
+: Virtual Network Name, that is associated to Fabric Site
+vlanId
+(string, optional)
+: Vlan Id (e.g.,2-4096 except for reserved VLANs (1002-1005, 2046, 4095))
+l2Handoff
+(array<map>, optional)
+: L2 Handoff information
+virtualNetworkName
+(string, required)
+: Virtual Network Name, that is associated to Fabric Site
+vlanName
+(string, required)
+: Vlan Name of L2 Handoff

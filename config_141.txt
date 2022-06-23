@@ -1,0 +1,36 @@
+
+
+
+telnet 10.195.244.12 2044
+---------------------------------------------
+conf t
+interface range gigabitEthernet 1/0/1-24
+shut
+end
+conf t
+hostname sda-9k-141
+ip routing
+interface GigabitEthernet0/0
+ip address 10.195.244.16 255.255.255.0
+no shut
+exit
+username cisco privilege 15 password uci123!
+enable password lab
+snmp-server community public rw
+line vty 0 4
+login local
+exit
+interface Loopback0
+ip address 11.11.11.141 255.255.255.255
+ip route vrf Mgmt-vrf 0.0.0.0 0.0.0.0 10.195.244.1
+ip route vrf Mgmt-vrf 10.29.34.0 255.255.255.0 10.195.244.1
+ip route vrf Mgmt-vrf 10.195.187.0 255.255.255.0 10.195.244.1
+ip route vrf Mgmt-vrf 10.195.192.0 255.255.255.0 10.195.244.1
+end
+
+write memory
+
+
+
+
+

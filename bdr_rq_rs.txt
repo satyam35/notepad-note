@@ -1,0 +1,41 @@
+post border : https://10.195.192.165/dna/intent/api/v1/business/sda/border-device
+
+
+request
+----------
+[
+{
+"deviceManagementIpAddress": "10.195.187.194",
+"siteNameHierarchy": "Global/India/Bangalore/Building 1",
+"externalDomainRoutingProtocolName": "BGP",
+"externalConnectivityIpPoolName": "21lan",
+"internalAutonomouSystemNumber": "65008",
+"borderSessionType": "External",
+"connectedToInternet": false,
+"externalConnectivitySettings": [
+{
+"interfaceName": "GigabitEthernet1/0/1",
+"externalAutonomouSystemNumber": "65009",
+"l3Handoff": [
+{
+"virtualNetwork": {
+"virtualNetworkName": "vn_1",
+"vlanId": "890"
+}
+}
+]
+}
+]
+}
+]
+
+response
+-------------
+{
+    "status": "pending",
+    "description": "API execution is in progress.",
+    "taskId": "416aeeb5-848e-468b-8eb3-7a61156ffd82",
+    "taskStatusUrl": "/dna/intent/api/v1/task/416aeeb5-848e-468b-8eb3-7a61156ffd82",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/84447134-5ec6-4535-a204-3554ec08acf0",
+    "executionId": "84447134-5ec6-4535-a204-3554ec08acf0"
+}

@@ -1,0 +1,96 @@
+POST: https://10.195.187.58/dna/intent/api/v1/business/sda/control-plane-device
+
+Request
+-------
+[
+{
+"deviceManagementIpAddress": "10.195.187.192",
+"siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 1"
+}
+]
+Response
+---------
+{
+    "status": "pending",
+    "description": "API execution is in progress.",
+    "taskId": "b46c8f7f-a07b-4ca1-bcde-d3424db5d7bb",
+    "taskStatusUrl": "/dna/intent/api/v1/task/b46c8f7f-a07b-4ca1-bcde-d3424db5d7bb",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/02ee6f1c-eac0-48aa-8ffa-7daec477a6f2",
+    "executionId": "02ee6f1c-eac0-48aa-8ffa-7daec477a6f2"
+}
+
+Invalid Request
+----------------
+[
+    {
+        "deviceManagementIpAddress": "10.195.187.192",
+        "siteNameHierarchykkk": "Global/India/Bangalore/Building 1/Floor 1"
+    }
+]
+
+Invalid Response
+----------------
+{
+    "status": "failed",
+    "description": "Empty or invalid siteNameHierarchy field in request body. Please provide a valid sda fabric siteNameHierarchy and try again.",
+    "taskId": null,
+    "taskStatusUrl": "/dna/intent/api/v1/task/null",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/15d5df90-854a-4f5b-b6ac-8da7d263f5f8",
+    "executionId": "15d5df90-854a-4f5b-b6ac-8da7d263f5f8"
+}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+GET: https://10.195.187.58/dna/intent/api/v1/business/sda/control-plane-device?deviceManagementIpAddress=10.195.187.192
+
+Response
+-----------
+{
+    "deviceManagementIpAddress": "10.195.187.192",
+    "deviceName": "Cat9k-10.195.187.192",
+    "roles": "MAPSERVER",
+    "siteNameHierarchy": "Global/India/Bangalore/Building 1/Floor 1",
+    "fabricSiteNameHierarchy": "Global/India/Bangalore/Building 1",
+    "status": "success",
+    "description": "Control plane device info retrieved successfully in sda fabric.",
+    "executionId": "2dc59290-285b-4bb8-a2e8-1f3778bfd208"
+}
+
+Invalid Request: https://10.195.187.58/dna/intent/api/v1/business/sda/control-plane-device?deviceManagementIpAddress=10.195.187.192n
+
+
+Response
+----------
+{
+    "status": "failed",
+    "description": "Empty or invalid deviceManagementIpAddress in request body. Provide a valid deviceManagementIpAddress",
+    "executionId": "939f4fe5-bfc1-434d-a702-394a653be577"
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------
+DELETE: https://10.195.187.58/dna/intent/api/v1/business/sda/control-plane-device?deviceManagementIpAddress=10.195.187.192
+
+Response:
+------------
+{
+    "status": "pending",
+    "description": "API execution is in progress.",
+    "taskId": "264de822-2c0c-4b06-8a2b-3a95ed123d79",
+    "taskStatusUrl": "/dna/intent/api/v1/task/264de822-2c0c-4b06-8a2b-3a95ed123d79",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/606b14de-d882-4a0d-8182-b5e6b79aa954",
+    "executionId": "606b14de-d882-4a0d-8182-b5e6b79aa954"
+}
+
+Invalid Request:https://10.195.187.58/dna/intent/api/v1/business/sda/control-plane-device?deviceManagementIpAddress=10.195.187.192n
+
+Response
+------------------
+{
+    "status": "failed",
+    "description": "Empty or invalid deviceManagementIpAddress in request body. Provide a valid deviceManagementIpAddress",
+    "taskId": null,
+    "taskStatusUrl": "/dna/intent/api/v1/task/null",
+    "executionStatusUrl": "/dna/intent/api/v1/execution-status/561691a2-7f0d-44dd-b339-cf0b5d4f477d",
+    "executionId": "561691a2-7f0d-44dd-b339-cf0b5d4f477d"
+}

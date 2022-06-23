@@ -1,0 +1,63 @@
+API's which are use fabricSiteName hierarchy
+
+=====================================================================================
+
+1.post Segment assignment 
+
+post: https://10.195.192.178/dna/intent/api/v1/business/sda/virtualnetwork/ippool
+
+reguest body:
+
+[
+{
+"fabricSiteNameHierarchy": "", <--------------------(''
+"virtualNetworkName": "",
+"ipPoolName": "",
+"trafficType": "",
+"authenticationPolicyName": "",
+"scalableGroupName": "",
+"isL2FloodingEnabled": ,
+"isThisCriticalPool": "",
+"poolType": "",
+"vlanName": "",
+"isWirelessPool": ""
+}
+]
+
+==================================================================================
+
+2. post multicast
+
+post: https://10.195.192.165/dna/intent/api/v1/business/sda/multicast
+
+reguest body:
+{
+"fabricSiteNameHierarchy": "",<------------------(''
+"multicastMethod": "",
+"muticastType": " ",
+"multicastVnInfo": [
+{
+"virtualNetworkName": "",
+"ipPoolName": "",
+"externalRpIpAddress": "",
+"ssmInfo" : [
+{
+"ssmGroupRange": "",
+"ssmWildcardMask": ""
+},
+{
+"ssmGroupRange": "",
+"ssmWildcardMask": ""
+}
+]
+}
+]
+}
+===================================================================================
+3. get multicast
+
+Get:https://10.195.192.165/dna/intent/api/v1/business/sda/multicast?fabricSiteNameHierarchy=?<-----------(''
+
+4. delete multicaste
+
+delete: https://10.195.192.165/dna/intent/api/v1/business/sda/multicast?fabricSiteNameHierarchy=?<-------------(''

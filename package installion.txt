@@ -1,0 +1,6 @@
+ssh -p 2222 maglev@10.195.192.178
+maglev catalog package pull dnac-platform:1.3.99.247 -force
+maglev catalog package pull dnac-platform:1.3.99.247 
+maglev catalog package status dnac-platform:1.3.99.247
+maglev catalog package status dnac-platform:1.3.99.247
+maglev package deploy dnac-platform:1.3.99.247

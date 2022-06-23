@@ -1,0 +1,153 @@
+"/dna/intent/api/v1/business/sda/multicast": {
+            "delete": {
+                "operationId": "deleteMulticastFromSDAFabric",
+                "tags": [
+                    "SDA"
+                ],
+                "summary": "Delete Multicast from SDA Fabric",
+                "description": "Delete Multicast from SDA Fabric",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "request",
+                        "description": "request",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/DeleteMulticastFromSDAFabricRequest"
+                        },
+                        "in": "body"
+                    },
+                    {
+                        "name": "siteNameHierarchy",
+                        "description": "siteNameHierarchy",
+                        "default": "",
+                        "required": true,
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The request was successful. The result is contained in the response body.",
+                        "schema": {
+                            "$ref": "#/definitions/DeleteMulticastFromSDAFabricResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "The client made a request that the server could not understand (for example, the request syntax is incorrect)."
+                    },
+                    "401": {
+                        "description": "The client's authentication credentials included with the request are missing or invalid."
+                    },
+                    "404": {
+                        "description": "The client made a request for a resource that does not exist."
+                    },
+                    "500": {
+                        "description": "The server could not fulfill the request."
+                    }
+                }
+            },
+            "get": {
+                "operationId": "getMulticastFromSDAFabric",
+                "tags": [
+                    "SDA"
+                ],
+                "summary": "Get Multicast from SDA Fabric",
+                "description": "Get Multicast info from SDA Fabric",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "request",
+                        "description": "request",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/getMulticastFromSDAFabric"
+                        },
+                        "in": "body"
+                    },
+                    {
+                        "name": "siteNameHierarchy",
+                        "description": "Site Name Hierarchy for device location,where Multicast is configured",
+                        "default": "",
+                        "required": true,
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The request was successful. The result is contained in the response body.",
+                        "schema": {
+                            "$ref": "#/definitions/GetMulticastFromSDAFabricResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "The client made a request that the server could not understand (for example, the request syntax is incorrect)."
+                    },
+                    "401": {
+                        "description": "The client's authentication credentials included with the request are missing or invalid."
+                    },
+                    "404": {
+                        "description": "The client made a request for a resource that does not exist."
+                    },
+                    "500": {
+                        "description": "The server could not fulfill the request."
+                    }
+                }
+            },
+            "post": {
+                "operationId": "addMulticastInSDAFabric",
+                "tags": [
+                    "SDA"
+                ],
+                "summary": "Add Multicast in SDA Fabric",
+                "description": "Add Multicast in SDA Fabric",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "request",
+                        "description": "request",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/AddMulticastInSDAFabricRequest"
+                        },
+                        "in": "body"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The request was successful. The result is contained in the response body.",
+                        "schema": {
+                            "$ref": "#/definitions/AddMulticastInSDAFabricResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "The client made a request that the server could not understand (for example, the request syntax is incorrect)."
+                    },
+                    "401": {
+                        "description": "The client's authentication credentials included with the request are missing or invalid."
+                    },
+                    "404": {
+                        "description": "The client made a request for a resource that does not exist."
+                    },
+                    "500": {
+                        "description": "The server could not fulfill the request."
+                    }
+                }
+            }
+        },

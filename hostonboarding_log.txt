@@ -1,0 +1,901 @@
+{
+    "bapiKey": "9582-ab82-4ce8-b29d",
+    "bapiName": "Add Port assignment for user device in SDA Fabric",
+    "bapiExecutionId": "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3",
+    "startTime": "Wed Jul 28 05:25:02 UTC 2021",
+    "startTimeEpoch": 1627449902120,
+    "endTime": "Wed Jul 28 05:25:02 UTC 2021",
+    "endTimeEpoch": 1627449902257,
+    "timeDuration": 137,
+    "status": "SUCCESS",
+    "runtimeInstanceId": "DNACP_Runtime_b1daa98e-a879-418d-9063-98c99709e63d",
+    "hideArtifact": false,
+    "tasks": [
+        {
+            "taskId": "uuida9984a65",
+            "taskName": "Parse Bapi inputs",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "fab6451e-aa3f-4774-825f-f70b5523fbe5",
+            "startTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "startTimeEpoch": 1627449902128,
+            "endTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "endTimeEpoch": 1627449902129,
+            "taskExecTime": 1,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.0,
+            "taskExternalExecTime": 1,
+            "taskLogs": [
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: raw_input_validation= {\r\n\"siteNameHierarchy\": \"Global/India/Banglore/bld_1/flr_1\",\r\n\"deviceManagementIpAddress\": \"10.195.187.194\",\r\n\"interfaceName\": \"GigabitEthernet1/0/1\",\r\n\"dataIpAddressPoolName\": \"22lan\",\r\n\"voiceIpAddressPoolName\": \"23lan\",\r\n\"authenticateTemplateName\": \"No Authentication\",\r\n\"scalableGroupName\":\"Guests\",\r\n\"portDescription\":\"port assingnment descrption\"\r\n}",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: input is array: No",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: req_objects= {\"siteNameHierarchy\":\"Global/India/Banglore/bld_1/flr_1\",\"deviceManagementIpAddress\":\"10.195.187.194\",\"interfaceName\":\"GigabitEthernet1/0/1\",\"dataIpAddressPoolName\":\"22lan\",\"voiceIpAddressPoolName\":\"23lan\",\"authenticateTemplateName\":\"No Authentication\",\"scalableGroupName\":\"Guests\",\"portDescription\":\"port assingnment descrption\"}",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: req_obj= {\"siteNameHierarchy\":\"Global/India/Banglore/bld_1/flr_1\",\"deviceManagementIpAddress\":\"10.195.187.194\",\"interfaceName\":\"GigabitEthernet1/0/1\",\"dataIpAddressPoolName\":\"22lan\",\"voiceIpAddressPoolName\":\"23lan\",\"authenticateTemplateName\":\"No Authentication\",\"scalableGroupName\":\"Guests\",\"portDescription\":\"port assingnment descrption\"}",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: border_device_ip_address = 10.195.187.194",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: Ip address is valid=10.195.187.194",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: siteNameHierarchy = Global/India/Banglore/bld_1/flr_1",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: interfaceName = GigabitEthernet1/0/1",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: isIntfParamEmpty =false",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: voiceIpAddressPoolName = 23lan",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: dataIpAddressPoolName = 22lan",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: isVoiceParamEmpty = false",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: isdataParamEmpty =false",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: scalableGroupName found in request",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: scalableGroupName = Guests",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: portDescription found in request",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: portDescription = port assingnment descrption",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | fab6451e-aa3f-4774-825f-f70b5523fbe5 | 9582-ab82-4ce8-b29d: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "path",
+                    "value": null
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "path",
+                    "value": "\"${__TRIGGER.pathParams.border-device}\""
+                },
+                {
+                    "name": "raw_input_request",
+                    "value": "\"{\\r\\n\\\"siteNameHierarchy\\\": \\\"Global/India/Banglore/bld_1/flr_1\\\",\\r\\n\\\"deviceManagementIpAddress\\\": \\\"10.195.187.194\\\",\\r\\n\\\"interfaceName\\\": \\\"GigabitEthernet1/0/1\\\",\\r\\n\\\"dataIpAddressPoolName\\\": \\\"22lan\\\",\\r\\n\\\"voiceIpAddressPoolName\\\": \\\"23lan\\\",\\r\\n\\\"authenticateTemplateName\\\": \\\"No Authentication\\\",\\r\\n\\\"scalableGroupName\\\":\\\"Guests\\\",\\r\\n\\\"portDescription\\\":\\\"port assingnment descrption\\\"\\r\\n}\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuiddb1640df",
+            "taskName": "Prepare Group API Call",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "6a8214d3-0683-464e-a354-98313dddff7c",
+            "startTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "startTimeEpoch": 1627449902130,
+            "endTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "endTimeEpoch": 1627449902130,
+            "taskExecTime": 0,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.1484375,
+            "taskExternalExecTime": 0,
+            "taskLogs": [
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6a8214d3-0683-464e-a354-98313dddff7c | 9582-ab82-4ce8-b29d: path=?groupNameHierarchy=Global/India/Banglore/bld_1/flr_1",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6a8214d3-0683-464e-a354-98313dddff7c | 9582-ab82-4ce8-b29d: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "path",
+                    "value": "?groupNameHierarchy=Global/India/Banglore/bld_1/flr_1"
+                }
+            ],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuid29bd43c3",
+            "taskName": "Invoke Get Group API",
+            "taskType": "DNA_REST_SERVICE",
+            "taskExecutionId": "ac6a5651-5cca-4a9b-9cba-ad840878d824",
+            "startTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "startTimeEpoch": 1627449902130,
+            "endTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "endTimeEpoch": 1627449902158,
+            "taskExecTime": 28,
+            "status": "SUCCESS",
+            "memoryConsumed": 4.5078125,
+            "taskExternalExecTime": 25,
+            "taskLogs": [
+                ": tokenType X_AUTH",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | ac6a5651-5cca-4a9b-9cba-ad840878d824 | 9582-ab82-4ce8-b29d: tokenType X_AUTH"
+            ],
+            "taskOutput": [
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Expires",
+                    "value": "Thu, 01 Jan 1970 00:00:00 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Server",
+                    "value": "Jetty(9.3.z-SNAPSHOT)"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Type",
+                    "value": "application/json;charset=utf-8"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS",
+                    "value": "{\"Transfer-Encoding\":\"chunked\",\"Server\":\"Jetty(9.3.z-SNAPSHOT)\",\"Set-Cookie\":\"JSESSIONID=176n3dt8g1gmawt11chirqxu2;Path=/\",\"Expires\":\"Thu, 01 Jan 1970 00:00:00 GMT\",\"Date\":\"Wed, 28 Jul 2021 05:25:02 GMT\",\"Content-Type\":\"application/json;charset=utf-8\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Transfer-Encoding",
+                    "value": "chunked"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Date",
+                    "value": "Wed, 28 Jul 2021 05:25:02 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_BODY",
+                    "value": "{\"response\":[{\"parentId\":\"01e5e2e4-1033-46b3-b865-888cc4f0f226\",\"systemGroup\":false,\"groupTypeList\":[\"SITE\"],\"additionalInfo\":[{\"nameSpace\":\"mapGeometry\",\"attributes\":{\"offsetX\":\"0.0\",\"offsetY\":\"0.0\",\"length\":\"100.0\",\"width\":\"100.0\",\"height\":\"10.0\"}},{\"nameSpace\":\"mapsSummary\",\"attributes\":{\"rfModel\":\"123123\",\"floorIndex\":\"1\"}},{\"nameSpace\":\"System Settings\",\"attributes\":{\"group.count.total\":\"0\",\"hasChild\":\"FALSE\",\"group.count.direct\":\"0\",\"group.hierarchy.groupType\":\"SITE\",\"member.count.total\":\"2\",\"member.count.direct\":\"2\"}},{\"nameSpace\":\"ETA\",\"attributes\":{\"member.compatibleWithNaasOnly.direct\":\"0\",\"member.etaCapable.direct\":\"2\",\"member.etaReady.direct\":\"1\",\"member.etaEnabledNaasOnly.direct\":\"0\",\"ETAReady\":\"true\",\"member.etaNotReady.direct\":\"1\",\"member.etaReadyNotEnabled.direct\":\"1\",\"member.etaEnabled.direct\":\"0\"}},{\"nameSpace\":\"Location\",\"attributes\":{\"address\":\"Kufra, Libya\",\"addressInheritedFrom\":\"01e5e2e4-1033-46b3-b865-888cc4f0f226\",\"type\":\"floor\"}},{\"nameSpace\":\"com.wireless.managingwlc\",\"attributes\":{\"secondaryWlcInheritedFrom\":\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\",\"anchorWlcInheritedFrom\":\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\",\"tertiaryWlcInheritedFrom\":\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\",\"primaryWlcInheritedFrom\":\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\"}}],\"groupHierarchy\":\"d684ee9c-f28b-4dc0-8ddb-0bfcbbcbfa54/9217914e-2e8b-4dc4-8fa6-638eacd13a40/4bfe3189-75cf-4a38-bb6b-55070bd9f3da/01e5e2e4-1033-46b3-b865-888cc4f0f226/3c7c05d0-413b-41bf-a8b7-bf40290a6d98\",\"groupNameHierarchy\":\"Global/India/Banglore/bld_1/flr_1\",\"name\":\"flr_1\",\"instanceTenantId\":\"60f926492198de42c1dc13d4\",\"id\":\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\"}],\"version\":\"1.0\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Set-Cookie",
+                    "value": "JSESSIONID=176n3dt8g1gmawt11chirqxu2;Path=/"
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "headers",
+                    "value": "{\n  \"X-AUTH-TOKEN\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGY5MjY0YzIxOThkZTQyYzFkYzEzZDciLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNiJdLCJ0ZW5hbnRJZCI6IjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNCIsImV4cCI6MTYyNzQ1MzQyMywiaWF0IjoxNjI3NDQ5ODIzLCJqdGkiOiJmMjYxNzI3YS05ZmQ1LTQ2MGQtYTQzMi0yYTRlYzllZGFiYjMiLCJ1c2VybmFtZSI6ImFkbWluIn0.l17tT1s0hZ1RTvtAa2aHhkH97-W49Yt1pZADk4ZtHsRnQVm3B3T2Sb4wksKzE_Nma33ibg3g1gDhSzyTC9bm2Myd1eULEmNW1P4scUwtX8vD0kT6wWlwht4QuY_6KF6UF-50yDRNye8JSUoJx3GV0Jj_ap1npG25rfSJ-HM_DXDOxOabDtdxy5MjfzQPHzxKy0Mtjtnn7b7yjKwxpjqf50knvm-M_HB528x_0rsqhSoTbSoyWiFKLk-vbYTol0nOli_OZGj0HOvI0XVHmqMC1HiIER3B9iwq2Y3b1ouNSKG18UQ7Ptz0-o2pENOwlx3KeyveOf7EktSbTwY0G8XvUg\"\n}"
+                },
+                {
+                    "name": "method",
+                    "value": "\"GET\""
+                },
+                {
+                    "name": "queryParams",
+                    "value": "{ }"
+                },
+                {
+                    "name": "body",
+                    "value": "\"\""
+                },
+                {
+                    "name": "url",
+                    "value": "\"http://grouping-service.fusion.svc.cluster.local:17012/group?groupNameHierarchy=Global/India/Banglore/bld_1/flr_1\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid0b16477b",
+            "taskName": "Parse Group API Response",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "a2325eac-d43d-49de-aace-236b5045d5cb",
+            "startTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "startTimeEpoch": 1627449902158,
+            "endTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "endTimeEpoch": 1627449902163,
+            "taskExecTime": 5,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.0,
+            "taskExternalExecTime": 5,
+            "taskLogs": [
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | a2325eac-d43d-49de-aace-236b5045d5cb | 9582-ab82-4ce8-b29d: #### res_obj={\"response\":[{\"parentId\":\"01e5e2e4-1033-46b3-b865-888cc4f0f226\",\"systemGroup\":false,\"groupTypeList\":[\"SITE\"],\"additionalInfo\":[{\"nameSpace\":\"mapGeometry\",\"attributes\":{\"offsetX\":\"0.0\",\"offsetY\":\"0.0\",\"length\":\"100.0\",\"width\":\"100.0\",\"height\":\"10.0\"}},{\"nameSpace\":\"mapsSummary\",\"attributes\":{\"rfModel\":\"123123\",\"floorIndex\":\"1\"}},{\"nameSpace\":\"System Settings\",\"attributes\":{\"group.count.total\":\"0\",\"hasChild\":\"FALSE\",\"group.count.direct\":\"0\",\"group.hierarchy.groupType\":\"SITE\",\"member.count.total\":\"2\",\"member.count.direct\":\"2\"}},{\"nameSpace\":\"ETA\",\"attributes\":{\"member.compatibleWithNaasOnly.direct\":\"0\",\"member.etaCapable.direct\":\"2\",\"member.etaReady.direct\":\"1\",\"member.etaEnabledNaasOnly.direct\":\"0\",\"ETAReady\":\"true\",\"member.etaNotReady.direct\":\"1\",\"member.etaReadyNotEnabled.direct\":\"1\",\"member.etaEnabled.direct\":\"0\"}},{\"nameSpace\":\"Location\",\"attributes\":{\"address\":\"Kufra, Libya\",\"addressInheritedFrom\":\"01e5e2e4-1033-46b3-b865-888cc4f0f226\",\"type\":\"floor\"}},{\"nameSpace\":\"com.wireless.managingwlc\",\"attributes\":{\"secondaryWlcInheritedFrom\":\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\",\"anchorWlcInheritedFrom\":\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\",\"tertiaryWlcInheritedFrom\":\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\",\"primaryWlcInheritedFrom\":\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\"}}],\"groupHierarchy\":\"d684ee9c-f28b-4dc0-8ddb-0bfcbbcbfa54/9217914e-2e8b-4dc4-8fa6-638eacd13a40/4bfe3189-75cf-4a38-bb6b-55070bd9f3da/01e5e2e4-1033-46b3-b865-888cc4f0f226/3c7c05d0-413b-41bf-a8b7-bf40290a6d98\",\"groupNameHierarchy\":\"Global/India/Banglore/bld_1/flr_1\",\"name\":\"flr_1\",\"instanceTenantId\":\"60f926492198de42c1dc13d4\",\"id\":\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\"}],\"version\":\"1.0\"}",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | a2325eac-d43d-49de-aace-236b5045d5cb | 9582-ab82-4ce8-b29d: #### 1",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | a2325eac-d43d-49de-aace-236b5045d5cb | 9582-ab82-4ce8-b29d: ### start",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | a2325eac-d43d-49de-aace-236b5045d5cb | 9582-ab82-4ce8-b29d: [object Object]",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | a2325eac-d43d-49de-aace-236b5045d5cb | 9582-ab82-4ce8-b29d: ### end",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | a2325eac-d43d-49de-aace-236b5045d5cb | 9582-ab82-4ce8-b29d: #### cds={\"response\":[{\"parentId\":\"01e5e2e4-1033-46b3-b865-888cc4f0f226\",\"systemGroup\":false,\"groupTypeList\":[\"SITE\"],\"additionalInfo\":[{\"nameSpace\":\"mapGeometry\",\"attributes\":{\"offsetX\":\"0.0\",\"offsetY\":\"0.0\",\"length\":\"100.0\",\"width\":\"100.0\",\"height\":\"10.0\"}},{\"nameSpace\":\"mapsSummary\",\"attributes\":{\"rfModel\":\"123123\",\"floorIndex\":\"1\"}},{\"nameSpace\":\"System Settings\",\"attributes\":{\"group.count.total\":\"0\",\"hasChild\":\"FALSE\",\"group.count.direct\":\"0\",\"group.hierarchy.groupType\":\"SITE\",\"member.count.total\":\"2\",\"member.count.direct\":\"2\"}},{\"nameSpace\":\"ETA\",\"attributes\":{\"member.compatibleWithNaasOnly.direct\":\"0\",\"member.etaCapable.direct\":\"2\",\"member.etaReady.direct\":\"1\",\"member.etaEnabledNaasOnly.direct\":\"0\",\"ETAReady\":\"true\",\"member.etaNotReady.direct\":\"1\",\"member.etaReadyNotEnabled.direct\":\"1\",\"member.etaEnabled.direct\":\"0\"}},{\"nameSpace\":\"Location\",\"attributes\":{\"address\":\"Kufra, Libya\",\"addressInheritedFrom\":\"01e5e2e4-1033-46b3-b865-888cc4f0f226\",\"type\":\"floor\"}},{\"nameSpace\":\"com.wireless.managingwlc\",\"attributes\":{\"secondaryWlcInheritedFrom\":\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\",\"anchorWlcInheritedFrom\":\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\",\"tertiaryWlcInheritedFrom\":\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\",\"primaryWlcInheritedFrom\":\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\"}}],\"groupHierarchy\":\"d684ee9c-f28b-4dc0-8ddb-0bfcbbcbfa54/9217914e-2e8b-4dc4-8fa6-638eacd13a40/4bfe3189-75cf-4a38-bb6b-55070bd9f3da/01e5e2e4-1033-46b3-b865-888cc4f0f226/3c7c05d0-413b-41bf-a8b7-bf40290a6d98\",\"groupNameHierarchy\":\"Global/India/Banglore/bld_1/flr_1\",\"name\":\"flr_1\",\"instanceTenantId\":\"60f926492198de42c1dc13d4\",\"id\":\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\"}],\"version\":\"1.0\"}",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | a2325eac-d43d-49de-aace-236b5045d5cb | 9582-ab82-4ce8-b29d: #### groups=[object Object]",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | a2325eac-d43d-49de-aace-236b5045d5cb | 9582-ab82-4ce8-b29d: #### groupNameHierarchy=Global/India/Banglore/bld_1/flr_1",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | a2325eac-d43d-49de-aace-236b5045d5cb | 9582-ab82-4ce8-b29d: #### bapi_siteNameHierarchy=Global/India/Banglore/bld_1/flr_1",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | a2325eac-d43d-49de-aace-236b5045d5cb | 9582-ab82-4ce8-b29d: #### found.",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | a2325eac-d43d-49de-aace-236b5045d5cb | 9582-ab82-4ce8-b29d: #### bapi_siteNameHierarchyId=null",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | a2325eac-d43d-49de-aace-236b5045d5cb | 9582-ab82-4ce8-b29d: #### bapi_group_id=3c7c05d0-413b-41bf-a8b7-bf40290a6d98",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | a2325eac-d43d-49de-aace-236b5045d5cb | 9582-ab82-4ce8-b29d: #### bapi_group_hierarchy=d684ee9c-f28b-4dc0-8ddb-0bfcbbcbfa54/9217914e-2e8b-4dc4-8fa6-638eacd13a40/4bfe3189-75cf-4a38-bb6b-55070bd9f3da/01e5e2e4-1033-46b3-b865-888cc4f0f226/3c7c05d0-413b-41bf-a8b7-bf40290a6d98",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | a2325eac-d43d-49de-aace-236b5045d5cb | 9582-ab82-4ce8-b29d: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [],
+            "taskInput": [
+                {
+                    "name": "response",
+                    "value": "\"{\\\"response\\\":[{\\\"parentId\\\":\\\"01e5e2e4-1033-46b3-b865-888cc4f0f226\\\",\\\"systemGroup\\\":false,\\\"groupTypeList\\\":[\\\"SITE\\\"],\\\"additionalInfo\\\":[{\\\"nameSpace\\\":\\\"mapGeometry\\\",\\\"attributes\\\":{\\\"offsetX\\\":\\\"0.0\\\",\\\"offsetY\\\":\\\"0.0\\\",\\\"length\\\":\\\"100.0\\\",\\\"width\\\":\\\"100.0\\\",\\\"height\\\":\\\"10.0\\\"}},{\\\"nameSpace\\\":\\\"mapsSummary\\\",\\\"attributes\\\":{\\\"rfModel\\\":\\\"123123\\\",\\\"floorIndex\\\":\\\"1\\\"}},{\\\"nameSpace\\\":\\\"System Settings\\\",\\\"attributes\\\":{\\\"group.count.total\\\":\\\"0\\\",\\\"hasChild\\\":\\\"FALSE\\\",\\\"group.count.direct\\\":\\\"0\\\",\\\"group.hierarchy.groupType\\\":\\\"SITE\\\",\\\"member.count.total\\\":\\\"2\\\",\\\"member.count.direct\\\":\\\"2\\\"}},{\\\"nameSpace\\\":\\\"ETA\\\",\\\"attributes\\\":{\\\"member.compatibleWithNaasOnly.direct\\\":\\\"0\\\",\\\"member.etaCapable.direct\\\":\\\"2\\\",\\\"member.etaReady.direct\\\":\\\"1\\\",\\\"member.etaEnabledNaasOnly.direct\\\":\\\"0\\\",\\\"ETAReady\\\":\\\"true\\\",\\\"member.etaNotReady.direct\\\":\\\"1\\\",\\\"member.etaReadyNotEnabled.direct\\\":\\\"1\\\",\\\"member.etaEnabled.direct\\\":\\\"0\\\"}},{\\\"nameSpace\\\":\\\"Location\\\",\\\"attributes\\\":{\\\"address\\\":\\\"Kufra, Libya\\\",\\\"addressInheritedFrom\\\":\\\"01e5e2e4-1033-46b3-b865-888cc4f0f226\\\",\\\"type\\\":\\\"floor\\\"}},{\\\"nameSpace\\\":\\\"com.wireless.managingwlc\\\",\\\"attributes\\\":{\\\"secondaryWlcInheritedFrom\\\":\\\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\\\",\\\"anchorWlcInheritedFrom\\\":\\\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\\\",\\\"tertiaryWlcInheritedFrom\\\":\\\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\\\",\\\"primaryWlcInheritedFrom\\\":\\\"9217914e-2e8b-4dc4-8fa6-638eacd13a40\\\"}}],\\\"groupHierarchy\\\":\\\"d684ee9c-f28b-4dc0-8ddb-0bfcbbcbfa54/9217914e-2e8b-4dc4-8fa6-638eacd13a40/4bfe3189-75cf-4a38-bb6b-55070bd9f3da/01e5e2e4-1033-46b3-b865-888cc4f0f226/3c7c05d0-413b-41bf-a8b7-bf40290a6d98\\\",\\\"groupNameHierarchy\\\":\\\"Global/India/Banglore/bld_1/flr_1\\\",\\\"name\\\":\\\"flr_1\\\",\\\"instanceTenantId\\\":\\\"60f926492198de42c1dc13d4\\\",\\\"id\\\":\\\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\\\"}],\\\"version\\\":\\\"1.0\\\"}\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid79744410",
+            "taskName": "prepare cd summary call",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "aab5db6c-64ec-419c-b055-949a86709c21",
+            "startTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "startTimeEpoch": 1627449902164,
+            "endTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "endTimeEpoch": 1627449902164,
+            "taskExecTime": 0,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.09375,
+            "taskExternalExecTime": 0,
+            "taskLogs": [
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | aab5db6c-64ec-419c-b055-949a86709c21 | 9582-ab82-4ce8-b29d: ### entering prepare cd summary call",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | aab5db6c-64ec-419c-b055-949a86709c21 | 9582-ab82-4ce8-b29d: ### full path = https://10.10.10.10/api/v2/data/customer-facing-service/summary/ConnectivityDomain",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | aab5db6c-64ec-419c-b055-949a86709c21 | 9582-ab82-4ce8-b29d: ### calling  get cd summary call",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | aab5db6c-64ec-419c-b055-949a86709c21 | 9582-ab82-4ce8-b29d: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "path",
+                    "value": "/summary/ConnectivityDomain"
+                }
+            ],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuid7a2b4591",
+            "taskName": "invoke cd summary call",
+            "taskType": "DNA_REST_SERVICE",
+            "taskExecutionId": "ec7bc42f-5ed3-4af6-9db3-a0ff61615e83",
+            "startTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "startTimeEpoch": 1627449902164,
+            "endTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "endTimeEpoch": 1627449902187,
+            "taskExecTime": 23,
+            "status": "SUCCESS",
+            "memoryConsumed": 4.3125,
+            "taskExternalExecTime": 21,
+            "taskLogs": [
+                ": tokenType X_AUTH",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | ec7bc42f-5ed3-4af6-9db3-a0ff61615e83 | 9582-ab82-4ce8-b29d: tokenType X_AUTH"
+            ],
+            "taskOutput": [
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Type",
+                    "value": "application/json;charset=utf-8"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Expires",
+                    "value": "Thu, 01 Jan 1970 00:00:00 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_BODY",
+                    "value": "{\"id\":\"fbb6f2c4-df4b-4a93-98c4-b4205c5acc0d\",\"response\":[{\"instanceId\":0,\"displayName\":\"0\",\"instanceVersion\":0,\"summaries\":[{\"id\":\"1db93a13-6a75-4a68-8d8e-6fde2891b2fa\",\"instanceId\":20558,\"displayName\":\"20558\",\"instanceVersion\":0,\"domainType\":\"FABRIC_LAN\",\"isDefault\":true,\"isReprovisionRequired\":false,\"name\":\"Default LAN Fabric\",\"borderCount\":0,\"deviceCount\":0,\"edgeCount\":0,\"endpointProxyCount\":0,\"fabricSiteCount\":0,\"mapServerCount\":0,\"subtendedCount\":0,\"siteConnectivityDomainSummary\":[]},{\"id\":\"7c6cafab-0837-4822-aa00-ea7de67c70d2\",\"instanceId\":55062,\"displayName\":\"55062\",\"instanceVersion\":0,\"domainType\":\"FABRIC_LAN\",\"isDefault\":false,\"isReprovisionRequired\":false,\"name\":\"India_fabric\",\"borderCount\":0,\"deviceCount\":2,\"edgeCount\":1,\"endpointProxyCount\":0,\"fabricSiteCount\":1,\"mapServerCount\":1,\"subtendedCount\":0,\"siteConnectivityDomainSummary\":[]},{\"id\":\"8a66417f-75e2-43ec-80b1-95b2b46f56fd\",\"instanceId\":55076,\"displayName\":\"55076\",\"instanceVersion\":0,\"domainType\":\"TRANSIT\",\"isDefault\":false,\"isReprovisionRequired\":false,\"name\":\"tr_1\",\"deviceCount\":0,\"siteCount\":1,\"transitType\":\"IP\",\"deviceInfoSummary\":[]},{\"id\":\"de29983a-7fef-4722-9e44-d11bb3e819f2\",\"instanceId\":55063,\"displayName\":\"55063\",\"instanceVersion\":0,\"domainType\":\"FABRIC_SITE\",\"isDefault\":false,\"isReprovisionRequired\":false,\"name\":\"Global/India/Banglore/bld_1/flr_1_India_fabric\",\"siteId\":\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\",\"siteName\":\"flr_1\",\"siteNameHierarchy\":\"Global/India/Banglore/bld_1/flr_1\",\"fabricSignificantDeviceInfoSummary\":[],\"transitConnectivityDomainSummary\":[]}]}],\"version\":\"1.0\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS",
+                    "value": "{\"Server\":\"Jetty(9.3.z-SNAPSHOT)\",\"Set-Cookie\":\"JSESSIONID=1l3utarmt0i9h1opngfgh81uzu;Path=/\",\"Expires\":\"Thu, 01 Jan 1970 00:00:00 GMT\",\"Content-Length\":\"1581\",\"Date\":\"Wed, 28 Jul 2021 05:25:02 GMT\",\"Content-Type\":\"application/json;charset=utf-8\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Set-Cookie",
+                    "value": "JSESSIONID=1l3utarmt0i9h1opngfgh81uzu;Path=/"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Date",
+                    "value": "Wed, 28 Jul 2021 05:25:02 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Server",
+                    "value": "Jetty(9.3.z-SNAPSHOT)"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Length",
+                    "value": "1581"
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "headers",
+                    "value": "{\n  \"X-AUTH-TOKEN\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGY5MjY0YzIxOThkZTQyYzFkYzEzZDciLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNiJdLCJ0ZW5hbnRJZCI6IjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNCIsImV4cCI6MTYyNzQ1MzQyMywiaWF0IjoxNjI3NDQ5ODIzLCJqdGkiOiJmMjYxNzI3YS05ZmQ1LTQ2MGQtYTQzMi0yYTRlYzllZGFiYjMiLCJ1c2VybmFtZSI6ImFkbWluIn0.l17tT1s0hZ1RTvtAa2aHhkH97-W49Yt1pZADk4ZtHsRnQVm3B3T2Sb4wksKzE_Nma33ibg3g1gDhSzyTC9bm2Myd1eULEmNW1P4scUwtX8vD0kT6wWlwht4QuY_6KF6UF-50yDRNye8JSUoJx3GV0Jj_ap1npG25rfSJ-HM_DXDOxOabDtdxy5MjfzQPHzxKy0Mtjtnn7b7yjKwxpjqf50knvm-M_HB528x_0rsqhSoTbSoyWiFKLk-vbYTol0nOli_OZGj0HOvI0XVHmqMC1HiIER3B9iwq2Y3b1ouNSKG18UQ7Ptz0-o2pENOwlx3KeyveOf7EktSbTwY0G8XvUg\"\n}"
+                },
+                {
+                    "name": "method",
+                    "value": "\"GET\""
+                },
+                {
+                    "name": "queryParams",
+                    "value": "{ }"
+                },
+                {
+                    "name": "body",
+                    "value": "\"\""
+                },
+                {
+                    "name": "url",
+                    "value": "\"http://spf-service-manager-service.fusion.svc.cluster.local:9201/data/customer-facing-service/summary/ConnectivityDomain\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid291c4f54",
+            "taskName": "parse cd summary call",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "6f4e1652-d2c9-4f00-b16e-84d3dd85a84c",
+            "startTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "startTimeEpoch": 1627449902188,
+            "endTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "endTimeEpoch": 1627449902190,
+            "taskExecTime": 2,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.0,
+            "taskExternalExecTime": 2,
+            "taskLogs": [
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### response={\"id\":\"fbb6f2c4-df4b-4a93-98c4-b4205c5acc0d\",\"response\":[{\"instanceId\":0,\"displayName\":\"0\",\"instanceVersion\":0,\"summaries\":[{\"id\":\"1db93a13-6a75-4a68-8d8e-6fde2891b2fa\",\"instanceId\":20558,\"displayName\":\"20558\",\"instanceVersion\":0,\"domainType\":\"FABRIC_LAN\",\"isDefault\":true,\"isReprovisionRequired\":false,\"name\":\"Default LAN Fabric\",\"borderCount\":0,\"deviceCount\":0,\"edgeCount\":0,\"endpointProxyCount\":0,\"fabricSiteCount\":0,\"mapServerCount\":0,\"subtendedCount\":0,\"siteConnectivityDomainSummary\":[]},{\"id\":\"7c6cafab-0837-4822-aa00-ea7de67c70d2\",\"instanceId\":55062,\"displayName\":\"55062\",\"instanceVersion\":0,\"domainType\":\"FABRIC_LAN\",\"isDefault\":false,\"isReprovisionRequired\":false,\"name\":\"India_fabric\",\"borderCount\":0,\"deviceCount\":2,\"edgeCount\":1,\"endpointProxyCount\":0,\"fabricSiteCount\":1,\"mapServerCount\":1,\"subtendedCount\":0,\"siteConnectivityDomainSummary\":[]},{\"id\":\"8a66417f-75e2-43ec-80b1-95b2b46f56fd\",\"instanceId\":55076,\"displayName\":\"55076\",\"instanceVersion\":0,\"domainType\":\"TRANSIT\",\"isDefault\":false,\"isReprovisionRequired\":false,\"name\":\"tr_1\",\"deviceCount\":0,\"siteCount\":1,\"transitType\":\"IP\",\"deviceInfoSummary\":[]},{\"id\":\"de29983a-7fef-4722-9e44-d11bb3e819f2\",\"instanceId\":55063,\"displayName\":\"55063\",\"instanceVersion\":0,\"domainType\":\"FABRIC_SITE\",\"isDefault\":false,\"isReprovisionRequired\":false,\"name\":\"Global/India/Banglore/bld_1/flr_1_India_fabric\",\"siteId\":\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\",\"siteName\":\"flr_1\",\"siteNameHierarchy\":\"Global/India/Banglore/bld_1/flr_1\",\"fabricSignificantDeviceInfoSummary\":[],\"transitConnectivityDomainSummary\":[]}]}],\"version\":\"1.0\"}",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### resp_obj_count =1",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### bapi_group_hierarchy = d684ee9c-f28b-4dc0-8ddb-0bfcbbcbfa54/9217914e-2e8b-4dc4-8fa6-638eacd13a40/4bfe3189-75cf-4a38-bb6b-55070bd9f3da/01e5e2e4-1033-46b3-b865-888cc4f0f226/3c7c05d0-413b-41bf-a8b7-bf40290a6d98",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### group_ids = d684ee9c-f28b-4dc0-8ddb-0bfcbbcbfa54,9217914e-2e8b-4dc4-8fa6-638eacd13a40,4bfe3189-75cf-4a38-bb6b-55070bd9f3da,01e5e2e4-1033-46b3-b865-888cc4f0f226,3c7c05d0-413b-41bf-a8b7-bf40290a6d98",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### reverse group_ids = 3c7c05d0-413b-41bf-a8b7-bf40290a6d98,01e5e2e4-1033-46b3-b865-888cc4f0f226,4bfe3189-75cf-4a38-bb6b-55070bd9f3da,9217914e-2e8b-4dc4-8fa6-638eacd13a40,d684ee9c-f28b-4dc0-8ddb-0bfcbbcbfa54",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### group_ids length = 5",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### cd_summary_objects.length = 4",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### group_id = 3c7c05d0-413b-41bf-a8b7-bf40290a6d98",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### bapi_cd_id = 1db93a13-6a75-4a68-8d8e-6fde2891b2fa",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### cd_domain_type = FABRIC_LAN",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### bapi_cd_id = 7c6cafab-0837-4822-aa00-ea7de67c70d2",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### cd_domain_type = FABRIC_LAN",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### bapi_cd_id = 8a66417f-75e2-43ec-80b1-95b2b46f56fd",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### cd_domain_type = TRANSIT",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### bapi_cd_id = de29983a-7fef-4722-9e44-d11bb3e819f2",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### cd_domain_type = FABRIC_SITE",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### bapi_cd_site_id = 3c7c05d0-413b-41bf-a8b7-bf40290a6d98",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### found the fabric site = 3c7c05d0-413b-41bf-a8b7-bf40290a6d98",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### found the fabric site = 3c7c05d0-413b-41bf-a8b7-bf40290a6d98",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### found the bapi_fabric_site_id = 3c7c05d0-413b-41bf-a8b7-bf40290a6d98",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: #### found the bapi_cd_id  = de29983a-7fef-4722-9e44-d11bb3e819f2",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 6f4e1652-d2c9-4f00-b16e-84d3dd85a84c | 9582-ab82-4ce8-b29d: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [],
+            "taskInput": [
+                {
+                    "name": "response",
+                    "value": "\"{\\\"id\\\":\\\"fbb6f2c4-df4b-4a93-98c4-b4205c5acc0d\\\",\\\"response\\\":[{\\\"instanceId\\\":0,\\\"displayName\\\":\\\"0\\\",\\\"instanceVersion\\\":0,\\\"summaries\\\":[{\\\"id\\\":\\\"1db93a13-6a75-4a68-8d8e-6fde2891b2fa\\\",\\\"instanceId\\\":20558,\\\"displayName\\\":\\\"20558\\\",\\\"instanceVersion\\\":0,\\\"domainType\\\":\\\"FABRIC_LAN\\\",\\\"isDefault\\\":true,\\\"isReprovisionRequired\\\":false,\\\"name\\\":\\\"Default LAN Fabric\\\",\\\"borderCount\\\":0,\\\"deviceCount\\\":0,\\\"edgeCount\\\":0,\\\"endpointProxyCount\\\":0,\\\"fabricSiteCount\\\":0,\\\"mapServerCount\\\":0,\\\"subtendedCount\\\":0,\\\"siteConnectivityDomainSummary\\\":[]},{\\\"id\\\":\\\"7c6cafab-0837-4822-aa00-ea7de67c70d2\\\",\\\"instanceId\\\":55062,\\\"displayName\\\":\\\"55062\\\",\\\"instanceVersion\\\":0,\\\"domainType\\\":\\\"FABRIC_LAN\\\",\\\"isDefault\\\":false,\\\"isReprovisionRequired\\\":false,\\\"name\\\":\\\"India_fabric\\\",\\\"borderCount\\\":0,\\\"deviceCount\\\":2,\\\"edgeCount\\\":1,\\\"endpointProxyCount\\\":0,\\\"fabricSiteCount\\\":1,\\\"mapServerCount\\\":1,\\\"subtendedCount\\\":0,\\\"siteConnectivityDomainSummary\\\":[]},{\\\"id\\\":\\\"8a66417f-75e2-43ec-80b1-95b2b46f56fd\\\",\\\"instanceId\\\":55076,\\\"displayName\\\":\\\"55076\\\",\\\"instanceVersion\\\":0,\\\"domainType\\\":\\\"TRANSIT\\\",\\\"isDefault\\\":false,\\\"isReprovisionRequired\\\":false,\\\"name\\\":\\\"tr_1\\\",\\\"deviceCount\\\":0,\\\"siteCount\\\":1,\\\"transitType\\\":\\\"IP\\\",\\\"deviceInfoSummary\\\":[]},{\\\"id\\\":\\\"de29983a-7fef-4722-9e44-d11bb3e819f2\\\",\\\"instanceId\\\":55063,\\\"displayName\\\":\\\"55063\\\",\\\"instanceVersion\\\":0,\\\"domainType\\\":\\\"FABRIC_SITE\\\",\\\"isDefault\\\":false,\\\"isReprovisionRequired\\\":false,\\\"name\\\":\\\"Global/India/Banglore/bld_1/flr_1_India_fabric\\\",\\\"siteId\\\":\\\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\\\",\\\"siteName\\\":\\\"flr_1\\\",\\\"siteNameHierarchy\\\":\\\"Global/India/Banglore/bld_1/flr_1\\\",\\\"fabricSignificantDeviceInfoSummary\\\":[],\\\"transitConnectivityDomainSummary\\\":[]}]}],\\\"version\\\":\\\"1.0\\\"}\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid88424b6e",
+            "taskName": "prepare get sgt call",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "7aff132a-8467-44c0-ae7c-703dd4beb5dc",
+            "startTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "startTimeEpoch": 1627449902190,
+            "endTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "endTimeEpoch": 1627449902191,
+            "taskExecTime": 1,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.171875,
+            "taskExternalExecTime": 1,
+            "taskLogs": [
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 7aff132a-8467-44c0-ae7c-703dd4beb5dc | 9582-ab82-4ce8-b29d: ### entering prepare sgt summary call",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 7aff132a-8467-44c0-ae7c-703dd4beb5dc | 9582-ab82-4ce8-b29d: ### full path = http://10.195.192.165/api/v2/data/customer-facing-service/summary/scalablegroup/access?scalableGroupSummary=true&name=Contractors",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 7aff132a-8467-44c0-ae7c-703dd4beb5dc | 9582-ab82-4ce8-b29d: ### calling  get sgt summary call",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 7aff132a-8467-44c0-ae7c-703dd4beb5dc | 9582-ab82-4ce8-b29d: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "path",
+                    "value": "/summary/scalablegroup/access?scalableGroupSummary=true&name=Guests"
+                }
+            ],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuidbbd24f67",
+            "taskName": "invoke get sgt api",
+            "taskType": "DNA_REST_SERVICE",
+            "taskExecutionId": "b16dae33-58da-437d-8117-06e69ed78dcc",
+            "startTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "startTimeEpoch": 1627449902191,
+            "endTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "endTimeEpoch": 1627449902244,
+            "taskExecTime": 53,
+            "status": "SUCCESS",
+            "memoryConsumed": 3.09375,
+            "taskExternalExecTime": 52,
+            "taskLogs": [
+                ": tokenType X_AUTH",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | b16dae33-58da-437d-8117-06e69ed78dcc | 9582-ab82-4ce8-b29d: tokenType X_AUTH"
+            ],
+            "taskOutput": [
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Type",
+                    "value": "application/json;charset=utf-8"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Length",
+                    "value": "959"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Date",
+                    "value": "Wed, 28 Jul 2021 05:25:02 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Set-Cookie",
+                    "value": "JSESSIONID=1m6xrgm923efg37zorpeyxl84;Path=/"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Expires",
+                    "value": "Thu, 01 Jan 1970 00:00:00 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Server",
+                    "value": "Jetty(9.3.z-SNAPSHOT)"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS",
+                    "value": "{\"Server\":\"Jetty(9.3.z-SNAPSHOT)\",\"Set-Cookie\":\"JSESSIONID=1m6xrgm923efg37zorpeyxl84;Path=/\",\"Expires\":\"Thu, 01 Jan 1970 00:00:00 GMT\",\"Content-Length\":\"959\",\"Date\":\"Wed, 28 Jul 2021 05:25:02 GMT\",\"Content-Type\":\"application/json;charset=utf-8\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_BODY",
+                    "value": "{\"id\":\"6e840060-c44e-4d1c-b954-9420db55c79c\",\"response\":[{\"instanceId\":0,\"displayName\":\"0\",\"instanceVersion\":0,\"totalSGCount\":1,\"acaScalableGroupSummary\":[{\"id\":\"aad2b27e-b580-4c6f-aada-fc9f94ba90b0\",\"instanceId\":24032,\"displayName\":\"24032\",\"instanceVersion\":0,\"defaultContractsCount\":0,\"description\":\"Guest Scalable Group\",\"ipSgtRefCount\":0,\"isDeleted\":false,\"iseInstanceUuid\":\"\",\"iseReserved\":false,\"iseRetryCount\":0,\"iseTimeStamp\":\"\",\"mdnacDeletionStatus\":\"ACTIVE\",\"name\":\"Guests\",\"policyRefCount\":0,\"propagateToAci\":false,\"pushed\":false,\"scalableGroupType\":\"USER-DEVICE\",\"securityGroupTag\":\"6/0x6\",\"syncMessage\":\"\",\"syncStatus\":\"CREATE\",\"tenantintsegment\":-1042541612,\"tenantlongsegment\":6987658392380169794,\"virtualNetworkNames\":\"DEFAULT_VN\",\"virtualNetworksCount\":\"1\",\"vnAgnostic\":false,\"acaScalableGroupVNInfo\":[{\"id\":\"889ad9f5-cdb1-421c-9433-ee89793cd947\",\"instanceId\":0,\"displayName\":\"0\",\"instanceVersion\":0,\"name\":\"DEFAULT_VN\"}]}]}],\"version\":\"1.0\"}"
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "headers",
+                    "value": "{\n  \"X-AUTH-TOKEN\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGY5MjY0YzIxOThkZTQyYzFkYzEzZDciLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNiJdLCJ0ZW5hbnRJZCI6IjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNCIsImV4cCI6MTYyNzQ1MzQyMywiaWF0IjoxNjI3NDQ5ODIzLCJqdGkiOiJmMjYxNzI3YS05ZmQ1LTQ2MGQtYTQzMi0yYTRlYzllZGFiYjMiLCJ1c2VybmFtZSI6ImFkbWluIn0.l17tT1s0hZ1RTvtAa2aHhkH97-W49Yt1pZADk4ZtHsRnQVm3B3T2Sb4wksKzE_Nma33ibg3g1gDhSzyTC9bm2Myd1eULEmNW1P4scUwtX8vD0kT6wWlwht4QuY_6KF6UF-50yDRNye8JSUoJx3GV0Jj_ap1npG25rfSJ-HM_DXDOxOabDtdxy5MjfzQPHzxKy0Mtjtnn7b7yjKwxpjqf50knvm-M_HB528x_0rsqhSoTbSoyWiFKLk-vbYTol0nOli_OZGj0HOvI0XVHmqMC1HiIER3B9iwq2Y3b1ouNSKG18UQ7Ptz0-o2pENOwlx3KeyveOf7EktSbTwY0G8XvUg\"\n}"
+                },
+                {
+                    "name": "method",
+                    "value": "\"GET\""
+                },
+                {
+                    "name": "queryParams",
+                    "value": "{ }"
+                },
+                {
+                    "name": "body",
+                    "value": "\"\""
+                },
+                {
+                    "name": "url",
+                    "value": "\"http://spf-service-manager-service.fusion.svc.cluster.local:9201/data/customer-facing-service/summary/scalablegroup/access?scalableGroupSummary=true&name=Guests\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuidb8dd48e1",
+            "taskName": "parse sgt call",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "c3efaefb-b0c7-4782-a80c-fe8d6690f854",
+            "startTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "startTimeEpoch": 1627449902245,
+            "endTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "endTimeEpoch": 1627449902246,
+            "taskExecTime": 1,
+            "status": "FAILURE",
+            "memoryConsumed": 0.0,
+            "taskExternalExecTime": 0,
+            "taskLogs": [
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c3efaefb-b0c7-4782-a80c-fe8d6690f854 | 9582-ab82-4ce8-b29d: #### entering parse sgt call",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c3efaefb-b0c7-4782-a80c-fe8d6690f854 | 9582-ab82-4ce8-b29d: #### bapi_scalableGroupName = Guests",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c3efaefb-b0c7-4782-a80c-fe8d6690f854 | 9582-ab82-4ce8-b29d: #### parse the sgt response and get scalable_group_id",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c3efaefb-b0c7-4782-a80c-fe8d6690f854 | 9582-ab82-4ce8-b29d: #### response={\"id\":\"6e840060-c44e-4d1c-b954-9420db55c79c\",\"response\":[{\"instanceId\":0,\"displayName\":\"0\",\"instanceVersion\":0,\"totalSGCount\":1,\"acaScalableGroupSummary\":[{\"id\":\"aad2b27e-b580-4c6f-aada-fc9f94ba90b0\",\"instanceId\":24032,\"displayName\":\"24032\",\"instanceVersion\":0,\"defaultContractsCount\":0,\"description\":\"Guest Scalable Group\",\"ipSgtRefCount\":0,\"isDeleted\":false,\"iseInstanceUuid\":\"\",\"iseReserved\":false,\"iseRetryCount\":0,\"iseTimeStamp\":\"\",\"mdnacDeletionStatus\":\"ACTIVE\",\"name\":\"Guests\",\"policyRefCount\":0,\"propagateToAci\":false,\"pushed\":false,\"scalableGroupType\":\"USER-DEVICE\",\"securityGroupTag\":\"6/0x6\",\"syncMessage\":\"\",\"syncStatus\":\"CREATE\",\"tenantintsegment\":-1042541612,\"tenantlongsegment\":6987658392380169794,\"virtualNetworkNames\":\"DEFAULT_VN\",\"virtualNetworksCount\":\"1\",\"vnAgnostic\":false,\"acaScalableGroupVNInfo\":[{\"id\":\"889ad9f5-cdb1-421c-9433-ee89793cd947\",\"instanceId\":0,\"displayName\":\"0\",\"instanceVersion\":0,\"name\":\"DEFAULT_VN\"}]}]}],\"version\":\"1.0\"}",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c3efaefb-b0c7-4782-a80c-fe8d6690f854 | 9582-ab82-4ce8-b29d: #### resp_obj_count =1"
+            ],
+            "taskOutput": [],
+            "taskInput": [
+                {
+                    "name": "response",
+                    "value": "\"{\\\"id\\\":\\\"6e840060-c44e-4d1c-b954-9420db55c79c\\\",\\\"response\\\":[{\\\"instanceId\\\":0,\\\"displayName\\\":\\\"0\\\",\\\"instanceVersion\\\":0,\\\"totalSGCount\\\":1,\\\"acaScalableGroupSummary\\\":[{\\\"id\\\":\\\"aad2b27e-b580-4c6f-aada-fc9f94ba90b0\\\",\\\"instanceId\\\":24032,\\\"displayName\\\":\\\"24032\\\",\\\"instanceVersion\\\":0,\\\"defaultContractsCount\\\":0,\\\"description\\\":\\\"Guest Scalable Group\\\",\\\"ipSgtRefCount\\\":0,\\\"isDeleted\\\":false,\\\"iseInstanceUuid\\\":\\\"\\\",\\\"iseReserved\\\":false,\\\"iseRetryCount\\\":0,\\\"iseTimeStamp\\\":\\\"\\\",\\\"mdnacDeletionStatus\\\":\\\"ACTIVE\\\",\\\"name\\\":\\\"Guests\\\",\\\"policyRefCount\\\":0,\\\"propagateToAci\\\":false,\\\"pushed\\\":false,\\\"scalableGroupType\\\":\\\"USER-DEVICE\\\",\\\"securityGroupTag\\\":\\\"6/0x6\\\",\\\"syncMessage\\\":\\\"\\\",\\\"syncStatus\\\":\\\"CREATE\\\",\\\"tenantintsegment\\\":-1042541612,\\\"tenantlongsegment\\\":6987658392380169794,\\\"virtualNetworkNames\\\":\\\"DEFAULT_VN\\\",\\\"virtualNetworksCount\\\":\\\"1\\\",\\\"vnAgnostic\\\":false,\\\"acaScalableGroupVNInfo\\\":[{\\\"id\\\":\\\"889ad9f5-cdb1-421c-9433-ee89793cd947\\\",\\\"instanceId\\\":0,\\\"displayName\\\":\\\"0\\\",\\\"instanceVersion\\\":0,\\\"name\\\":\\\"DEFAULT_VN\\\"}]}]}],\\\"version\\\":\\\"1.0\\\"}\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuidfa954dbe",
+            "taskName": "Exception Handler for SDA POST Border Device",
+            "taskType": "EXCEPTION",
+            "taskExecutionId": "c29ff702-4fa8-437d-aa00-8253ac92f758",
+            "startTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "startTimeEpoch": 1627449902247,
+            "endTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "endTimeEpoch": 1627449902249,
+            "taskExecTime": 2,
+            "status": "SUCCESS",
+            "memoryConsumed": 3.0390625,
+            "taskExternalExecTime": 0,
+            "taskLogs": [
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c29ff702-4fa8-437d-aa00-8253ac92f758 | 9582-ab82-4ce8-b29d: errorCode = 500",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c29ff702-4fa8-437d-aa00-8253ac92f758 | 9582-ab82-4ce8-b29d: errorDescription = 2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c3efaefb-b0c7-4782-a80c-fe8d6690f854 | 9582-ab82-4ce8-b29d : ScriptProcessor Execution Failed with error: ReferenceError: \"resp_cd_info\" is not defined in <eval>  at line number : 38 ",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c29ff702-4fa8-437d-aa00-8253ac92f758 | 9582-ab82-4ce8-b29d: failedTaskInputParams = {\n  \"response\" : \"{\\\"id\\\":\\\"6e840060-c44e-4d1c-b954-9420db55c79c\\\",\\\"response\\\":[{\\\"instanceId\\\":0,\\\"displayName\\\":\\\"0\\\",\\\"instanceVersion\\\":0,\\\"totalSGCount\\\":1,\\\"acaScalableGroupSummary\\\":[{\\\"id\\\":\\\"aad2b27e-b580-4c6f-aada-fc9f94ba90b0\\\",\\\"instanceId\\\":24032,\\\"displayName\\\":\\\"24032\\\",\\\"instanceVersion\\\":0,\\\"defaultContractsCount\\\":0,\\\"description\\\":\\\"Guest Scalable Group\\\",\\\"ipSgtRefCount\\\":0,\\\"isDeleted\\\":false,\\\"iseInstanceUuid\\\":\\\"\\\",\\\"iseReserved\\\":false,\\\"iseRetryCount\\\":0,\\\"iseTimeStamp\\\":\\\"\\\",\\\"mdnacDeletionStatus\\\":\\\"ACTIVE\\\",\\\"name\\\":\\\"Guests\\\",\\\"policyRefCount\\\":0,\\\"propagateToAci\\\":false,\\\"pushed\\\":false,\\\"scalableGroupType\\\":\\\"USER-DEVICE\\\",\\\"securityGroupTag\\\":\\\"6/0x6\\\",\\\"syncMessage\\\":\\\"\\\",\\\"syncStatus\\\":\\\"CREATE\\\",\\\"tenantintsegment\\\":-1042541612,\\\"tenantlongsegment\\\":6987658392380169794,\\\"virtualNetworkNames\\\":\\\"DEFAULT_VN\\\",\\\"virtualNetworksCount\\\":\\\"1\\\",\\\"vnAgnostic\\\":false,\\\"acaScalableGroupVNInfo\\\":[{\\\"id\\\":\\\"889ad9f5-cdb1-421c-9433-ee89793cd947\\\",\\\"instanceId\\\":0,\\\"displayName\\\":\\\"0\\\",\\\"instanceVersion\\\":0,\\\"name\\\":\\\"DEFAULT_VN\\\"}]}]}],\\\"version\\\":\\\"1.0\\\"}\"\n}",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c29ff702-4fa8-437d-aa00-8253ac92f758 | 9582-ab82-4ce8-b29d: failedTaskId = uuidb8dd48e1",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c29ff702-4fa8-437d-aa00-8253ac92f758 | 9582-ab82-4ce8-b29d: failedTaskName = parse sgt call",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c29ff702-4fa8-437d-aa00-8253ac92f758 | 9582-ab82-4ce8-b29d: failedTaskType = JAVASCRIPT_TRANSFORM",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c29ff702-4fa8-437d-aa00-8253ac92f758 | 9582-ab82-4ce8-b29d: failedTaskDescription = parse sgt call",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c29ff702-4fa8-437d-aa00-8253ac92f758 | 9582-ab82-4ce8-b29d: failedTaskOutputParams = { }"
+            ],
+            "taskOutput": [
+                {
+                    "name": "failedTaskInputParams",
+                    "value": "{\n  \"response\" : \"{\\\"id\\\":\\\"6e840060-c44e-4d1c-b954-9420db55c79c\\\",\\\"response\\\":[{\\\"instanceId\\\":0,\\\"displayName\\\":\\\"0\\\",\\\"instanceVersion\\\":0,\\\"totalSGCount\\\":1,\\\"acaScalableGroupSummary\\\":[{\\\"id\\\":\\\"aad2b27e-b580-4c6f-aada-fc9f94ba90b0\\\",\\\"instanceId\\\":24032,\\\"displayName\\\":\\\"24032\\\",\\\"instanceVersion\\\":0,\\\"defaultContractsCount\\\":0,\\\"description\\\":\\\"Guest Scalable Group\\\",\\\"ipSgtRefCount\\\":0,\\\"isDeleted\\\":false,\\\"iseInstanceUuid\\\":\\\"\\\",\\\"iseReserved\\\":false,\\\"iseRetryCount\\\":0,\\\"iseTimeStamp\\\":\\\"\\\",\\\"mdnacDeletionStatus\\\":\\\"ACTIVE\\\",\\\"name\\\":\\\"Guests\\\",\\\"policyRefCount\\\":0,\\\"propagateToAci\\\":false,\\\"pushed\\\":false,\\\"scalableGroupType\\\":\\\"USER-DEVICE\\\",\\\"securityGroupTag\\\":\\\"6/0x6\\\",\\\"syncMessage\\\":\\\"\\\",\\\"syncStatus\\\":\\\"CREATE\\\",\\\"tenantintsegment\\\":-1042541612,\\\"tenantlongsegment\\\":6987658392380169794,\\\"virtualNetworkNames\\\":\\\"DEFAULT_VN\\\",\\\"virtualNetworksCount\\\":\\\"1\\\",\\\"vnAgnostic\\\":false,\\\"acaScalableGroupVNInfo\\\":[{\\\"id\\\":\\\"889ad9f5-cdb1-421c-9433-ee89793cd947\\\",\\\"instanceId\\\":0,\\\"displayName\\\":\\\"0\\\",\\\"instanceVersion\\\":0,\\\"name\\\":\\\"DEFAULT_VN\\\"}]}]}],\\\"version\\\":\\\"1.0\\\"}\"\n}"
+                },
+                {
+                    "name": "failedTaskOutputParams",
+                    "value": "{ }"
+                },
+                {
+                    "name": "failedTaskDescription",
+                    "value": "parse sgt call"
+                },
+                {
+                    "name": "errorDescription",
+                    "value": "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | c3efaefb-b0c7-4782-a80c-fe8d6690f854 | 9582-ab82-4ce8-b29d : ScriptProcessor Execution Failed with error: ReferenceError: \"resp_cd_info\" is not defined in <eval>  at line number : 38 "
+                },
+                {
+                    "name": "failedTaskId",
+                    "value": "uuidb8dd48e1"
+                },
+                {
+                    "name": "failedTaskType",
+                    "value": "JAVASCRIPT_TRANSFORM"
+                },
+                {
+                    "name": "errorCode",
+                    "value": "500"
+                },
+                {
+                    "name": "failedTaskName",
+                    "value": "parse sgt call"
+                }
+            ],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuidbb2f45a3",
+            "taskName": "Parse Exception Handler response",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "17dc0968-a166-40b0-97b8-13d21d32c5b2",
+            "startTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "startTimeEpoch": 1627449902249,
+            "endTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "endTimeEpoch": 1627449902257,
+            "taskExecTime": 8,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.5546875,
+            "taskExternalExecTime": 8,
+            "taskLogs": [
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 17dc0968-a166-40b0-97b8-13d21d32c5b2 | 9582-ab82-4ce8-b29d: ### calling response-template ... ",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 17dc0968-a166-40b0-97b8-13d21d32c5b2 | 9582-ab82-4ce8-b29d: ### full path = null/dna/intent/api/v1/business/sda/utils/response-template",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 17dc0968-a166-40b0-97b8-13d21d32c5b2 | 9582-ab82-4ce8-b29d: ### sda_response_template_json_body = {\"sda_status\":\"not-available\",\"sda_description\":\"\",\"sda_task_id\":\"Not-Available\",\"sda_execution_id\":\"2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3\",\"sda_api_method\":\"add\"}",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 17dc0968-a166-40b0-97b8-13d21d32c5b2 | 9582-ab82-4ce8-b29d: response-template = {\n  \"status\" : null,\n  \"description\" : \"\",\n  \"taskId\" : \"Not-Available\",\n  \"taskStatusUrl\" : \"/dna/intent/api/v1/task/Not-Available\",\n  \"executionStatusUrl\" : \"/dna/intent/api/v1/execution-status/2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3\",\n  \"executionId\" : \"2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3\"\n}",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 17dc0968-a166-40b0-97b8-13d21d32c5b2 | 9582-ab82-4ce8-b29d: all done",
+                "2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3 | 17dc0968-a166-40b0-97b8-13d21d32c5b2 | 9582-ab82-4ce8-b29d: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "response_data",
+                    "value": "{\"status\":null,\"description\":\"\",\"taskId\":\"Not-Available\",\"taskStatusUrl\":\"/dna/intent/api/v1/task/Not-Available\",\"executionStatusUrl\":\"/dna/intent/api/v1/execution-status/2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3\",\"executionId\":\"2a42b4d7-d4d9-4c4a-bdc5-467e2979baa3\"}"
+                }
+            ],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuid9a4643ce",
+            "taskName": "Port Assignment User Device",
+            "taskType": "REST_SERVER",
+            "taskExecutionId": "517f3e15-e620-45bf-8e10-f1612a8e2400",
+            "startTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "startTimeEpoch": 1627449902000,
+            "endTime": "Wed Jul 28 05:25:02 UTC 2021",
+            "endTimeEpoch": 1627449902000,
+            "taskExecTime": 0,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.0,
+            "taskExternalExecTime": 0,
+            "taskLogs": [],
+            "taskOutput": [
+                {
+                    "name": "header.X-Consumer-ID",
+                    "value": "d8d08c7c-dc11-41c4-90b5-0b8c2fa1c261"
+                },
+                {
+                    "name": "type",
+                    "value": "REST_SERVER"
+                },
+                {
+                    "name": "header.Accept-Encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "header.X-Forwarded-Port",
+                    "value": "443"
+                },
+                {
+                    "name": "header.X-Consumer-Username",
+                    "value": "TNT0"
+                },
+                {
+                    "name": "header.User-Agent",
+                    "value": "PostmanRuntime/7.28.2"
+                },
+                {
+                    "name": "header.X-Request-Id",
+                    "value": "58ab1e75425ed7c2c3b83410ccefd9c0"
+                },
+                {
+                    "name": "header.X-Forwarded-Host",
+                    "value": "10.195.192.178"
+                },
+                {
+                    "name": "header.Cookie",
+                    "value": "X-JWT-ACCESS-TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGY5MjY0YzIxOThkZTQyYzFkYzEzZDciLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNiJdLCJ0ZW5hbnRJZCI6IjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNCIsImV4cCI6MTYyNzQ1MzQyMywiaWF0IjoxNjI3NDQ5ODIzLCJqdGkiOiJmMjYxNzI3YS05ZmQ1LTQ2MGQtYTQzMi0yYTRlYzllZGFiYjMiLCJ1c2VybmFtZSI6ImFkbWluIn0.l17tT1s0hZ1RTvtAa2aHhkH97-W49Yt1pZADk4ZtHsRnQVm3B3T2Sb4wksKzE_Nma33ibg3g1gDhSzyTC9bm2Myd1eULEmNW1P4scUwtX8vD0kT6wWlwht4QuY_6KF6UF-50yDRNye8JSUoJx3GV0Jj_ap1npG25rfSJ-HM_DXDOxOabDtdxy5MjfzQPHzxKy0Mtjtnn7b7yjKwxpjqf50knvm-M_HB528x_0rsqhSoTbSoyWiFKLk-vbYTol0nOli_OZGj0HOvI0XVHmqMC1HiIER3B9iwq2Y3b1ouNSKG18UQ7Ptz0-o2pENOwlx3KeyveOf7EktSbTwY0G8XvUg"
+                },
+                {
+                    "name": "header.X-Forwarded-For",
+                    "value": "10.75.237.70"
+                },
+                {
+                    "name": "path",
+                    "value": "/dnacaap/core/v1/business/sda/hostonboarding/user-device"
+                },
+                {
+                    "name": "header.Host",
+                    "value": "dnacaap-runtime.dnacaap.svc.cluster.local:8095"
+                },
+                {
+                    "name": "header.X-Forwarded-Proto",
+                    "value": "https"
+                },
+                {
+                    "name": "header.Connection",
+                    "value": "close"
+                },
+                {
+                    "name": "header.Postman-Token",
+                    "value": "51153a3b-64b7-4935-a36a-11b36ab916e6"
+                },
+                {
+                    "name": "header.X-Real-Ip",
+                    "value": "10.75.237.70"
+                },
+                {
+                    "name": "header.Timeout-Access",
+                    "value": "<function1>"
+                },
+                {
+                    "name": "body",
+                    "value": "{\r\n\"siteNameHierarchy\": \"Global/India/Banglore/bld_1/flr_1\",\r\n\"deviceManagementIpAddress\": \"10.195.187.194\",\r\n\"interfaceName\": \"GigabitEthernet1/0/1\",\r\n\"dataIpAddressPoolName\": \"22lan\",\r\n\"voiceIpAddressPoolName\": \"23lan\",\r\n\"authenticateTemplateName\": \"No Authentication\",\r\n\"scalableGroupName\":\"Guests\",\r\n\"portDescription\":\"port assingnment descrption\"\r\n}"
+                },
+                {
+                    "name": "header.Accept",
+                    "value": "*/*"
+                }
+            ],
+            "taskInput": []
+        }
+    ],
+    "bapiParameters": [
+        {
+            "name": "bapi_external_Connectity_ip_pool_id",
+            "value": ""
+        },
+        {
+            "name": "bap_siteNameHierarchy",
+            "value": ""
+        },
+        {
+            "name": "bapi_externalDomainRoutingProtocolName",
+            "value": ""
+        },
+        {
+            "name": "bapi_extASN",
+            "value": ""
+        },
+        {
+            "name": "bapi_externalConnectivityIpPoolName",
+            "value": ""
+        },
+        {
+            "name": "bapi_orig_request_data",
+            "value": "{\"siteNameHierarchy\":\"Global/India/Banglore/bld_1/flr_1\",\"deviceManagementIpAddress\":\"10.195.187.194\",\"interfaceName\":\"GigabitEthernet1/0/1\",\"dataIpAddressPoolName\":\"22lan\",\"voiceIpAddressPoolName\":\"23lan\",\"authenticateTemplateName\":\"No Authentication\",\"scalableGroupName\":\"Guests\",\"portDescription\":\"port assingnment descrption\"}"
+        },
+        {
+            "name": "bapi_cd_id",
+            "value": "de29983a-7fef-4722-9e44-d11bb3e819f2"
+        },
+        {
+            "name": "bapi_externalDomainRoutingProtocol",
+            "value": ""
+        },
+        {
+            "name": "bapi_siteHierarchy",
+            "value": "Global/India/Banglore/bld_1/flr_1"
+        },
+        {
+            "name": "bapi_param_border_device_id",
+            "value": ""
+        },
+        {
+            "name": "bapi_error_message",
+            "value": ""
+        },
+        {
+            "name": "bapi_taskId_status_url\t",
+            "value": "Not-Available"
+        },
+        {
+            "name": "bapi_intf_instanceUuid",
+            "value": ""
+        },
+        {
+            "name": "bapi_interfaceId",
+            "value": "missing"
+        },
+        {
+            "name": "bapi_dataIpAddressPoolName",
+            "value": "22lan"
+        },
+        {
+            "name": "bapi_fabric_site_id",
+            "value": "3c7c05d0-413b-41bf-a8b7-bf40290a6d98"
+        },
+        {
+            "name": "bapi_voiceIpAddressPoolName",
+            "value": "23lan"
+        },
+        {
+            "name": "bapi_ipPoolId",
+            "value": ""
+        },
+        {
+            "name": "bapi_deviceManagementIpAddress",
+            "value": "10.195.187.194"
+        },
+        {
+            "name": "bapi_portDescription",
+            "value": "port assingnment descrption"
+        },
+        {
+            "name": "bapi_taskId",
+            "value": "Not-Available"
+        },
+        {
+            "name": "bapi_connectedToInternet",
+            "value": "false"
+        },
+        {
+            "name": "bapi_data_segment_id",
+            "value": "not-available"
+        },
+        {
+            "name": "bapi_group_hierarchy",
+            "value": "d684ee9c-f28b-4dc0-8ddb-0bfcbbcbfa54/9217914e-2e8b-4dc4-8fa6-638eacd13a40/4bfe3189-75cf-4a38-bb6b-55070bd9f3da/01e5e2e4-1033-46b3-b865-888cc4f0f226/3c7c05d0-413b-41bf-a8b7-bf40290a6d98"
+        },
+        {
+            "name": "bapi_voice_ipPoolId",
+            "value": "not-available"
+        },
+        {
+            "name": "bapi_intf_description",
+            "value": "not-available"
+        },
+        {
+            "name": "bapi_scalableGroupName",
+            "value": "Guests"
+        },
+        {
+            "name": "bapi_profile_id",
+            "value": "not-available"
+        },
+        {
+            "name": "bapi_voice_segment_id",
+            "value": "not-available"
+        },
+        {
+            "name": "bapi_ip_ransit_id",
+            "value": ""
+        },
+        {
+            "name": "bapi_siteId_from_dataIpPool",
+            "value": "not-available"
+        },
+        {
+            "name": "bapi_vn_idRef",
+            "value": ""
+        },
+        {
+            "name": "bapi_interfaceName",
+            "value": "GigabitEthernet1/0/1"
+        },
+        {
+            "name": "bapi_taskId_status_url",
+            "value": "not-available"
+        },
+        {
+            "name": "bapi_siteProfileUuid",
+            "value": ""
+        },
+        {
+            "name": "bapi_data_ipPoolId",
+            "value": ""
+        },
+        {
+            "name": "bapi_siteId_from_voiceIpPool",
+            "value": "not-available"
+        },
+        {
+            "name": "bapi_virtualNetworkName",
+            "value": ""
+        },
+        {
+            "name": "bapi_internalAutonomouSystemNumber",
+            "value": ""
+        },
+        {
+            "name": "bapi_intf_instanceName",
+            "value": "not-available"
+        },
+        {
+            "name": "bapi_param_cd_data",
+            "value": ""
+        },
+        {
+            "name": "bapi_device_site_id",
+            "value": ""
+        },
+        {
+            "name": "bapi_network_device_instanceUuid",
+            "value": ""
+        },
+        {
+            "name": "bapi_borderSessionType",
+            "value": ""
+        },
+        {
+            "name": "bapi_scalable_group_id",
+            "value": "not-available"
+        },
+        {
+            "name": "bapi_param_border_device_ip_address",
+            "value": "10.195.187.194"
+        },
+        {
+            "name": "bapi_param_device_info_data",
+            "value": ""
+        },
+        {
+            "name": "bapi_status",
+            "value": "not-available"
+        },
+        {
+            "name": "ip_pool_name",
+            "value": "not-available"
+        },
+        {
+            "name": "bapi_group_id",
+            "value": "3c7c05d0-413b-41bf-a8b7-bf40290a6d98"
+        },
+        {
+            "name": "bapi_add_device_info_response_data",
+            "value": ""
+        },
+        {
+            "name": "bapi_siteNameHierarchy",
+            "value": "Global/India/Banglore/bld_1/flr_1"
+        },
+        {
+            "name": "bapi_error_code",
+            "value": "999"
+        },
+        {
+            "name": "bapi_authenticateTemplateName",
+            "value": "No Authentication"
+        }
+    ],
+    "bapiSubmitAttempt": []
+}

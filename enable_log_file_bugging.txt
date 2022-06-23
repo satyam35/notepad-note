@@ -1,0 +1,10 @@
+for enable the bug>>>>>>>https://10.195.192.178/api/dnacaap/v1/dnacaap/management/logs/enable
+get api log >>>>https://10.48.177.154/api/dnacaap/v1/dnacaap/management/execution-context/<>
+link for bug file>>>https://cdetsng.cisco.com/
+
+1.Using dnac-platorm version 1.3.99.247
+2.Using release_unified_lagavulin_latest_006 on cluster
+3.I have tried to executing below api for adding border node on SDA fabric
+4..Observed:
+
+I am not getting expected output while executing this api

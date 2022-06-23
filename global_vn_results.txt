@@ -1,0 +1,110 @@
+
+-->1. post: starting with _ post vn API is Failed
+
+{
+"virtualNetworkName": "_bc",
+"virtualNetworkType": "GUEST",
+"scalableGroupNames": []
+}
+
+response: 
+ 
+ {
+    "status": "failed",
+    "description": "virtualNetworkName can only contain alphanumeric or _ characters, and cannot start with a digit",
+    "taskId": null,
+    "taskStatusUrl": null,
+    "executionStatusUrl": "/api/dnacaap/v1/dnacaap/management/execution-status/c8fa24f0-2095-4f5a-a607-5d83e4dcc147"
+}
+
+-->2. post: post vn working where vn name is more than 32
+ 
+ {
+"virtualNetworkName": "abcdefghijklmnopqrstuvwxyzabcdefghi",
+"virtualNetworkType": "GUEST",
+"scalableGroupNames": []
+}
+
+response:..
+
+{
+    "status": "success",
+    "description": "Virtual network created successfully.",
+    "taskId": "83e80f21-b4c3-4ab1-a27b-ee4516bef91d",
+    "taskStatusUrl": "/dna/intent/api/v1/task/83e80f21-b4c3-4ab1-a27b-ee4516bef91d",
+    "executionStatusUrl": "/api/dnacaap/v1/dnacaap/management/execution-status/4b9f3906-f33c-420c-a047-7adc53bd5ca9"
+}
+
+
+ 
+ --->3. post: post vn working if we pass existing group twice 
+ 
+ {
+"virtualNetworkName": "ABC_12",
+"virtualNetworkType": "GUEST",
+"scalableGroupNames":  [ "Auditors" ,"Auditors"]
+}
+
+
+response:
+
+{
+    "status": "success",
+    "description": "Virtual network created successfully.",
+    "taskId": "246f478d-a779-4b3f-94ed-612bffdb08c9",
+    "taskStatusUrl": "/dna/intent/api/v1/task/246f478d-a779-4b3f-94ed-612bffdb08c9",
+    "executionStatusUrl": "/api/dnacaap/v1/dnacaap/management/execution-status/926179f8-9f47-4596-80ae-c184fdc2e203"
+}
+
+--->4. post:  post vn seems like taking scalableGroupNames as case sensitive
+
+{
+"virtualNetworkName": " hjkks",
+"virtualNetworkType": "GUEST ",
+"scalableGroupNames":  [ "auditors"]
+}
+
+response:
+
+{
+    "status": "failed",
+    "description": "scalable group not found = auditors",
+    "taskId": null,
+    "taskStatusUrl": null,
+    "executionStatusUrl": "/api/dnacaap/v1/dnacaap/management/execution-status/30567009-1128-4545-ac89-7e3efa7f9662"
+}
+
+--->5. put: able to update with wrong scalableGroupNames group
+
+
+{
+"virtualNetworkName": " ABC_Test",
+"virtualNetworkType": "ISOLATED",
+"scalableGroupNames": [ "aUditors1"]
+}
+
+
+response:
+
+{
+    "status": "success",
+    "description": "Virtual network updated successfully.",
+    "taskId": "35d7d43e-37d6-46a0-bf13-0a3d0715caff",
+    "taskStatusUrl": "/dna/intent/api/v1/task/35d7d43e-37d6-46a0-bf13-0a3d0715caff",
+    "executionStatusUrl": "/api/dnacaap/v1/dnacaap/management/execution-status/1091d800-433b-48c8-a15a-b66aec232417"
+}
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+

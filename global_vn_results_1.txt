@@ -1,0 +1,73 @@
+
+-->1. post: starting with _ post vn API is Failed
+
+{
+"virtualNetworkName": "_bc",
+"virtualNetworkType": "GUEST",
+"scalableGroupNames": []
+}
+
+response: 
+ 
+ {
+    "status": "failed",
+    "description": "virtualNetworkName can only contain alphanumeric or _ characters, and cannot start with a digit",
+    "taskId": null,
+    "taskStatusUrl": null,
+    "executionStatusUrl": "/api/dnacaap/v1/dnacaap/management/execution-status/c8fa24f0-2095-4f5a-a607-5d83e4dcc147"
+}
+
+-->2. post: post vn working where vn name is more than 32
+ 
+ {
+"virtualNetworkName": "abcdefghijklmnopqrstuvwxyzabcdefghi",
+"virtualNetworkType": "GUEST",
+"scalableGroupNames": []
+}
+
+response:
+
+{
+    "status": "success",
+    "description": "Virtual network created successfully.",
+    "taskId": "83e80f21-b4c3-4ab1-a27b-ee4516bef91d",
+    "taskStatusUrl": "/dna/intent/api/v1/task/83e80f21-b4c3-4ab1-a27b-ee4516bef91d",
+    "executionStatusUrl": "/api/dnacaap/v1/dnacaap/management/execution-status/4b9f3906-f33c-420c-a047-7adc53bd5ca9"
+}
+
+
+ 
+ --> delete default vn and INFRA_VN condition contains taskStatusUrl and taskId(as we know in failed condition it should not be here)
+ 
+default vn url:https://10.195.192.165/dna/intent/api/v1/business/sda/policy/virtual-network?virtualNetworkName=DEFAULT_VN 
+infra vn url:https://10.195.192.165/dna/intent/api/v1/business/sda/policy/virtual-network?virtualNetworkName=INFRA_VN
+ 
+ 
+ {
+    "status": "failed",
+    "description": "NCVN10004: Cannot delete DEFAULT_VN",
+    "taskId": "7fcae95e-1564-4a54-8c98-3c93c3ffbaca",
+    "taskStatusUrl": "/dna/intent/api/v1/task/7fcae95e-1564-4a54-8c98-3c93c3ffbaca",
+    "executionStatusUrl": "/api/dnacaap/v1/dnacaap/management/execution-status/429d0929-759e-409c-a88b-b6bc3237004e"
+}
+
+
+{
+    "status": "failed",
+    "description": "NCVN10004: Cannot delete INFRA_VN",
+    "taskId": "f0d12749-ff41-45b4-bbf2-03f2073df95a",
+    "taskStatusUrl": "/dna/intent/api/v1/task/f0d12749-ff41-45b4-bbf2-03f2073df95a",
+    "executionStatusUrl": "/api/dnacaap/v1/dnacaap/management/execution-status/b337ceb3-17c1-47c0-8167-9b8da7411fa0"
+}
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+

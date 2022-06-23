@@ -1,0 +1,128 @@
+
+using this image---->> release_unified_miltonduff-intg_latest_006-2.1.360.60571.iso
+
+cluster-ip-->https://10.195.192.178
+
+
+
+get,delete --->>its working but output not in promising form as mentioned below
+
+
+
+case-1: Post:its behave like not working for any combination and output not in promising form as mentioned below ( case-1,case-2,case-3)
+
+
+[
+{
+"deviceManagementIpAddress": "10.195.187.194",
+"siteNameHierarchy":"Global/India/North West India/Uttar Pradesh/Varanasi/Vill_Bhanda/BLR12/Flr_21",
+"fabricSiteNameHierarchy": "Global/India/North West India/UP/Varanasi/Vill_Bhanda",
+"fabricName":"my_fab"
+}
+]
+
+OUTPUT:
+
+{
+    "status": "failed",
+    "description": "Invalid siteNameHierarchy in request.",
+    "executionStatusUrl": "https://10.195.192.178/api/dnacaap/v1/dnacaap/management/execution-status/8fe37fcd-4c14-462e-8e05-fe6c0e651cf8",
+    "taskStatusUrl": "not-available"
+}
+
+=================================================================================================================================
+
+case-2: Post
+
+[
+{
+"deviceManagementIpAddress": "10.195.187.191",
+"siteNameHierarchy": "Global/India/North West India/Uttar Pradesh/Varanasi/Vill_Bhanda/BLR12/Flr_21",
+"fabricSiteNameHierarchy": "Global/India/North West India/Uttar Pradesh/Varanasi/Vill_Bhanda/BLR12/Flr_21",
+"fabricName":"my_fab"
+}
+]
+
+OUTPUT:
+
+{
+    "status": "failed",
+    "description": "Invalid siteNameHierarchy in request.",
+    "executionStatusUrl": "https://10.195.187.154/api/dnacaap/v1/dnacaap/management/execution-status/b35abf60-d29f-4195-b769-abc407f88f3a",
+    "taskStatusUrl": "not-available"
+}
+
+
+=========================================================================================================================================
+case-3: Post
+
+[
+{
+"deviceManagementIpAddress": "10.195.187.191",
+"siteNameHierarchy": "Global/India/North West India/Uttar Pradesh/Varanasi/Vill_Bhanda/BLR12/Flr_21",
+"fabricSiteNameHierarchy": "Global/India/North West India/Uttar Pradesh/Varanasi/Vill_Bhanda/BLR12",
+"fabricName":"my_fab"
+}
+]
+
+
+OUTPUT:
+
+{
+    "status": "failed",
+    "description": "Invalid siteNameHierarchy in request.",
+    "executionStatusUrl": "https://10.195.187.154/api/dnacaap/v1/dnacaap/management/execution-status/6c4f344f-cd9d-42b2-b4aa-bb3dd4f4e201",
+    "taskStatusUrl": "not-available"
+}
+
+
+=========================================================================================================================================
+
+case-4 Post
+
+[
+{
+"deviceManagementIpAddress": "10.195.187.194",
+"siteNameHierarchy": "Global/India/North West India/Uttar Pradesh/Varanasi/Vill_Bhanda/BLR12",
+"fabricSiteNameHierarchy": "Global/India/North West India/Uttar Pradesh/Varanasi/Vill_Bhanda/BLR12",
+"fabricName":"my_fab"
+}
+]
+
+OUTPUT:
+
+{
+    "status": "failed",
+    "description": "Invalid siteNameHierarchy in request.",
+    "executionStatusUrl": "https://10.195.187.154/api/dnacaap/v1/dnacaap/management/execution-status/45e4bf1d-c135-4c3b-9711-4cc4a0ddc127",
+    "taskStatusUrl": "not-available"
+	
+}
+
+=======================================================================================================================================
+
+case-5: delete--its working but output not in proper  formate  as mentioned below
+
+{
+    "status": "pending",
+    "description": "API execution is in progress.",
+    "executionStatusUrl": "https://10.195.192.178/api/dnacaap/v1/dnacaap/management/execution-status/d67b586c-7ee6-498a-91d7-cc81167b9a2f",
+    "taskStatusUrl": "https://10.195.192.178/api/v1/task/efeb21c0-09a6-4b95-a06e-7699246ed83e"
+}
+
+
+case-6: get-its working but output not in proper  formate  as mentioned below
+
+{
+    "status": "success",
+    "description": "Control plane device info successfully retrieved from sda fabric.",
+    "name": "Cat9k-10.195.187.194",
+    "roles": [
+        "MAPSERVER"
+    ],
+    "deviceManagementIpAddress": "10.195.187.194",
+    "siteNameHierarchy": "Global/India/North West India/Uttar Pradesh/Varanasi/Vill_Bhanda/BLR12/Flr_21"
+}
+
+
+

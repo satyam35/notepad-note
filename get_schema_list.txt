@@ -1,0 +1,29 @@
+sda-schema-for-site-fabric-get-api---->fabric site
+
+sda-schema-for-provision-wired-get-api--> provision devices
+
+sda-schema-for-global-vn-get-api-----> Global VN
+
+sda-schema-for-global-vn-get-api-----> VN to site
+
+sda-schema-for-vn-info-get-api----> VN info
+
+sda-schema-for-transit-peer-network-get-api---> Transitpeer Network
+
+sda-schema-for-control-get-api----> Control Plane
+
+sda-schema-for-edge-get-api----> Edge Device
+
+sda-schema-for-multicast-get-api--> Multicast
+
+sda-schema-for-auth-get-api--> Authentication profile
+
+sda-schema-for-segment-get-api---> Segment assignment
+
+sda-schema-for-port-assignment-user-get-api----> user port
+
+sda-schema-for-port-assignment-access-get-api----> access port
+
+sda-schema-for-device-role-get-api--->device role
+
+sda-schema-for-device-info-get-api--->device info

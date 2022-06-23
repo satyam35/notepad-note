@@ -1,0 +1,1101 @@
+{
+    "bapiKey": "cba5-b8b1-4edb-81f4",
+    "bapiName": "Delete Port assignment for user device in SDA Fabric",
+    "bapiExecutionId": "22a96d34-36da-4a81-b0c6-5cc4e88935b0",
+    "startTime": "Thu Jul 29 11:30:30 UTC 2021",
+    "startTimeEpoch": 1627558230177,
+    "endTime": "Thu Jul 29 11:30:34 UTC 2021",
+    "endTimeEpoch": 1627558234584,
+    "timeDuration": 4407,
+    "status": "SUCCESS",
+    "runtimeInstanceId": "DNACP_Runtime_d670889a-8093-41b6-87ae-5c15ea4c7dfc",
+    "hideArtifact": false,
+    "tasks": [
+        {
+            "taskId": "uuida9984a65",
+            "taskName": "Parse Bapi inputs",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "40b7bc18-08c6-444b-85cd-6137ac97febe",
+            "startTime": "Thu Jul 29 11:30:30 UTC 2021",
+            "startTimeEpoch": 1627558230979,
+            "endTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "endTimeEpoch": 1627558231069,
+            "taskExecTime": 90,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.0,
+            "taskExternalExecTime": 89,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 40b7bc18-08c6-444b-85cd-6137ac97febe | cba5-b8b1-4edb-81f4: device-ip= 10.195.187.194",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 40b7bc18-08c6-444b-85cd-6137ac97febe | cba5-b8b1-4edb-81f4: interfaceName= GigabitEthernet1/0/1",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 40b7bc18-08c6-444b-85cd-6137ac97febe | cba5-b8b1-4edb-81f4: Ip address is valid=10.195.187.194",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 40b7bc18-08c6-444b-85cd-6137ac97febe | cba5-b8b1-4edb-81f4: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [],
+            "taskInput": [
+                {
+                    "name": "device-ip",
+                    "value": "\"10.195.187.194\""
+                },
+                {
+                    "name": "interfaceName",
+                    "value": "\"GigabitEthernet1/0/1\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid6ab34bdb",
+            "taskName": "Prepare Payload to Get Network Device Info",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "cbd89214-787c-4799-8fa0-f232a112aa07",
+            "startTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "startTimeEpoch": 1627558231070,
+            "endTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "endTimeEpoch": 1627558231073,
+            "taskExecTime": 3,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.09375,
+            "taskExternalExecTime": 3,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | cbd89214-787c-4799-8fa0-f232a112aa07 | cba5-b8b1-4edb-81f4: path=/ip-address/10.195.187.194",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | cbd89214-787c-4799-8fa0-f232a112aa07 | cba5-b8b1-4edb-81f4: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "path",
+                    "value": "/ip-address/10.195.187.194"
+                }
+            ],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuidd98c41d0",
+            "taskName": "Invoke Get Network Device API",
+            "taskType": "DNA_REST_SERVICE",
+            "taskExecutionId": "b3ad732d-a7a1-4a5c-a14a-1ab3249c5fb7",
+            "startTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "startTimeEpoch": 1627558231074,
+            "endTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "endTimeEpoch": 1627558231098,
+            "taskExecTime": 24,
+            "status": "SUCCESS",
+            "memoryConsumed": 4.578125,
+            "taskExternalExecTime": 22,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | b3ad732d-a7a1-4a5c-a14a-1ab3249c5fb7 | cba5-b8b1-4edb-81f4: tokenType X_AUTH"
+            ],
+            "taskOutput": [
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Connection",
+                    "value": "keep-alive"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS",
+                    "value": "{\"Transfer-Encoding\":\"chunked\",\"Keep-Alive\":\"timeout=20\",\"Content-Disposition\":\"inline;filename=f.txt\",\"Connection\":\"keep-alive\",\"Set-Cookie\":\"JSESSIONID=D267DB53E076B224C652B729CE322A42; Path=/apic-em-inventory-manager-service; HttpOnly\",\"Date\":\"Thu, 29 Jul 2021 11:30:31 GMT\",\"Content-Type\":\"application/json;charset=UTF-8\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Keep-Alive",
+                    "value": "timeout=20"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Transfer-Encoding",
+                    "value": "chunked"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Type",
+                    "value": "application/json;charset=UTF-8"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_BODY",
+                    "value": "{\"response\":{\"memorySize\":\"NA\",\"family\":\"Switches and Hubs\",\"description\":\"Cisco IOS Software [Bengaluru], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.5.1prd8, RELEASE SOFTWARE (fc1) Technical Support: http://www.cisco.com/techsupport Copyright (c) 1986-2021 by Cisco Systems, Inc. Compiled Mon 25-Jan-21 22:06 by mcp\",\"lastUpdateTime\":1627484006247,\"deviceSupportLevel\":\"Supported\",\"softwareType\":\"IOS-XE\",\"softwareVersion\":\"17.5.1prd8\",\"upTime\":\"5 days, 7:54:35.51\",\"inventoryStatusDetail\":\"<status><general code=\\\"SUCCESS\\\"/></status>\",\"managementState\":\"Managed\",\"collectionInterval\":\"Global Default\",\"apManagerInterfaceIp\":\"\",\"bootDateTime\":\"2021-07-23 06:59:26\",\"serialNumber\":\"FCW2241G08G\",\"roleSource\":\"AUTO\",\"managedAtleastOnce\":true,\"tagCount\":\"0\",\"tunnelUdpPort\":null,\"uptimeSeconds\":534665,\"waasDeviceMode\":null,\"location\":null,\"type\":\"Cisco Catalyst 9300 Switch\",\"errorCode\":null,\"role\":\"ACCESS\",\"apEthernetMacAddress\":null,\"associatedWlcIp\":\"\",\"errorDescription\":null,\"interfaceCount\":\"0\",\"lineCardCount\":\"0\",\"lineCardId\":\"\",\"hostname\":\"Cat9k-10.195.187.194\",\"lastUpdated\":\"2021-07-28 14:53:26\",\"collectionStatus\":\"Managed\",\"locationName\":null,\"managementIpAddress\":\"10.195.187.194\",\"platformId\":\"C9300-24P\",\"reachabilityFailureReason\":\"\",\"reachabilityStatus\":\"Reachable\",\"series\":\"Cisco Catalyst 9300 Series Switches\",\"snmpContact\":\"\",\"snmpLocation\":\"\",\"macAddress\":\"34:f8:e7:f0:ee:80\",\"instanceTenantId\":\"60f926492198de42c1dc13d4\",\"instanceUuid\":\"526be460-1325-4356-b123-356c0bdf874e\",\"id\":\"526be460-1325-4356-b123-356c0bdf874e\"},\"version\":\"1.0\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Set-Cookie",
+                    "value": "JSESSIONID=D267DB53E076B224C652B729CE322A42; Path=/apic-em-inventory-manager-service; HttpOnly"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Disposition",
+                    "value": "inline;filename=f.txt"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Date",
+                    "value": "Thu, 29 Jul 2021 11:30:31 GMT"
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "headers",
+                    "value": "{\n  \"X-AUTH-TOKEN\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGY5MjY0YzIxOThkZTQyYzFkYzEzZDciLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNiJdLCJ0ZW5hbnRJZCI6IjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNCIsImV4cCI6MTYyNzU2MDExNCwiaWF0IjoxNjI3NTU2NTE0LCJqdGkiOiI0NmEwYmM0MC1iN2VhLTRhMGMtYjJkMS1kOTdmY2U0MjM3MGIiLCJ1c2VybmFtZSI6ImFkbWluIn0.T-LM2AcQTs-qzSp0DhapHY02bqjTcle0r-wK_1C-wZm_t3XGFe-t92XMP9oZAt1OW0W6oYZryTkAJsOdZy-1dubXQatE5StQLRhKFVTt2rCbb5HNI0CCWXA1gNnF4xxvI6B3IC_yEUyx2zwRhDZH-bIVqRTx47L4fkPzlTtXwY_8WeTKOV1j6G4lvHxC2qcXdzISiBaH1FmxbYphL2zphSr_8jJnjN-Fz8eKjq6665HKcnRXfh9DJOf6oGgXmrYs19K2T1WlOwQavDvlHRgACebJVfhlo6Ms4UxKrLFDElOzkmUkeNFQ3OfTquFiaXHzmYKho6dJxUenGralrm1rLg\"\n}"
+                },
+                {
+                    "name": "method",
+                    "value": "\"GET\""
+                },
+                {
+                    "name": "queryParams",
+                    "value": "{ }"
+                },
+                {
+                    "name": "body",
+                    "value": "\"\""
+                },
+                {
+                    "name": "url",
+                    "value": "\"http://apic-em-inventory-manager-service.fusion.svc.cluster.local:80/apic-em-inventory-manager-service/network-device/ip-address/10.195.187.194\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuidaaef45e8",
+            "taskName": "Parse Network Device API Response",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "9b9fdc9a-db38-4824-bb61-f50f618682bb",
+            "startTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "startTimeEpoch": 1627558231098,
+            "endTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "endTimeEpoch": 1627558231103,
+            "taskExecTime": 5,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.1640625,
+            "taskExternalExecTime": 5,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9b9fdc9a-db38-4824-bb61-f50f618682bb | cba5-b8b1-4edb-81f4: ### raw_response={\"response\":{\"memorySize\":\"NA\",\"family\":\"Switches and Hubs\",\"description\":\"Cisco IOS Software [Bengaluru], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.5.1prd8, RELEASE SOFTWARE (fc1) Technical Support: http://www.cisco.com/techsupport Copyright (c) 1986-2021 by Cisco Systems, Inc. Compiled Mon 25-Jan-21 22:06 by mcp\",\"lastUpdateTime\":1627484006247,\"deviceSupportLevel\":\"Supported\",\"softwareType\":\"IOS-XE\",\"softwareVersion\":\"17.5.1prd8\",\"upTime\":\"5 days, 7:54:35.51\",\"inventoryStatusDetail\":\"<status><general code=\\\"SUCCESS\\\"/></status>\",\"managementState\":\"Managed\",\"collectionInterval\":\"Global Default\",\"apManagerInterfaceIp\":\"\",\"bootDateTime\":\"2021-07-23 06:59:26\",\"serialNumber\":\"FCW2241G08G\",\"roleSource\":\"AUTO\",\"managedAtleastOnce\":true,\"tagCount\":\"0\",\"tunnelUdpPort\":null,\"uptimeSeconds\":534665,\"waasDeviceMode\":null,\"location\":null,\"type\":\"Cisco Catalyst 9300 Switch\",\"errorCode\":null,\"role\":\"ACCESS\",\"apEthernetMacAddress\":null,\"associatedWlcIp\":\"\",\"errorDescription\":null,\"interfaceCount\":\"0\",\"lineCardCount\":\"0\",\"lineCardId\":\"\",\"hostname\":\"Cat9k-10.195.187.194\",\"lastUpdated\":\"2021-07-28 14:53:26\",\"collectionStatus\":\"Managed\",\"locationName\":null,\"managementIpAddress\":\"10.195.187.194\",\"platformId\":\"C9300-24P\",\"reachabilityFailureReason\":\"\",\"reachabilityStatus\":\"Reachable\",\"series\":\"Cisco Catalyst 9300 Series Switches\",\"snmpContact\":\"\",\"snmpLocation\":\"\",\"macAddress\":\"34:f8:e7:f0:ee:80\",\"instanceTenantId\":\"60f926492198de42c1dc13d4\",\"instanceUuid\":\"526be460-1325-4356-b123-356c0bdf874e\",\"id\":\"526be460-1325-4356-b123-356c0bdf874e\"},\"version\":\"1.0\"}",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9b9fdc9a-db38-4824-bb61-f50f618682bb | cba5-b8b1-4edb-81f4: network_device_uuid=526be460-1325-4356-b123-356c0bdf874e",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9b9fdc9a-db38-4824-bb61-f50f618682bb | cba5-b8b1-4edb-81f4: ### bapi_network_device_instanceUuid:526be460-1325-4356-b123-356c0bdf874e",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9b9fdc9a-db38-4824-bb61-f50f618682bb | cba5-b8b1-4edb-81f4: ### device_info_query_path:/DeviceInfo?networkDeviceId=526be460-1325-4356-b123-356c0bdf874e",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9b9fdc9a-db38-4824-bb61-f50f618682bb | cba5-b8b1-4edb-81f4: ### device info full_path:https://10.195.192.165/api/v2/data/customer-facing-service/DeviceInfo?networkDeviceId=526be460-1325-4356-b123-356c0bdf874e",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9b9fdc9a-db38-4824-bb61-f50f618682bb | cba5-b8b1-4edb-81f4: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "device_info_query_path",
+                    "value": "/DeviceInfo?networkDeviceId=526be460-1325-4356-b123-356c0bdf874e"
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "raw_network_device_response",
+                    "value": "\"{\\\"response\\\":{\\\"memorySize\\\":\\\"NA\\\",\\\"family\\\":\\\"Switches and Hubs\\\",\\\"description\\\":\\\"Cisco IOS Software [Bengaluru], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.5.1prd8, RELEASE SOFTWARE (fc1) Technical Support: http://www.cisco.com/techsupport Copyright (c) 1986-2021 by Cisco Systems, Inc. Compiled Mon 25-Jan-21 22:06 by mcp\\\",\\\"lastUpdateTime\\\":1627484006247,\\\"deviceSupportLevel\\\":\\\"Supported\\\",\\\"softwareType\\\":\\\"IOS-XE\\\",\\\"softwareVersion\\\":\\\"17.5.1prd8\\\",\\\"upTime\\\":\\\"5 days, 7:54:35.51\\\",\\\"inventoryStatusDetail\\\":\\\"<status><general code=\\\\\\\"SUCCESS\\\\\\\"/></status>\\\",\\\"managementState\\\":\\\"Managed\\\",\\\"collectionInterval\\\":\\\"Global Default\\\",\\\"apManagerInterfaceIp\\\":\\\"\\\",\\\"bootDateTime\\\":\\\"2021-07-23 06:59:26\\\",\\\"serialNumber\\\":\\\"FCW2241G08G\\\",\\\"roleSource\\\":\\\"AUTO\\\",\\\"managedAtleastOnce\\\":true,\\\"tagCount\\\":\\\"0\\\",\\\"tunnelUdpPort\\\":null,\\\"uptimeSeconds\\\":534665,\\\"waasDeviceMode\\\":null,\\\"location\\\":null,\\\"type\\\":\\\"Cisco Catalyst 9300 Switch\\\",\\\"errorCode\\\":null,\\\"role\\\":\\\"ACCESS\\\",\\\"apEthernetMacAddress\\\":null,\\\"associatedWlcIp\\\":\\\"\\\",\\\"errorDescription\\\":null,\\\"interfaceCount\\\":\\\"0\\\",\\\"lineCardCount\\\":\\\"0\\\",\\\"lineCardId\\\":\\\"\\\",\\\"hostname\\\":\\\"Cat9k-10.195.187.194\\\",\\\"lastUpdated\\\":\\\"2021-07-28 14:53:26\\\",\\\"collectionStatus\\\":\\\"Managed\\\",\\\"locationName\\\":null,\\\"managementIpAddress\\\":\\\"10.195.187.194\\\",\\\"platformId\\\":\\\"C9300-24P\\\",\\\"reachabilityFailureReason\\\":\\\"\\\",\\\"reachabilityStatus\\\":\\\"Reachable\\\",\\\"series\\\":\\\"Cisco Catalyst 9300 Series Switches\\\",\\\"snmpContact\\\":\\\"\\\",\\\"snmpLocation\\\":\\\"\\\",\\\"macAddress\\\":\\\"34:f8:e7:f0:ee:80\\\",\\\"instanceTenantId\\\":\\\"60f926492198de42c1dc13d4\\\",\\\"instanceUuid\\\":\\\"526be460-1325-4356-b123-356c0bdf874e\\\",\\\"id\\\":\\\"526be460-1325-4356-b123-356c0bdf874e\\\"},\\\"version\\\":\\\"1.0\\\"}\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid18c04dcf",
+            "taskName": "Invoke Get Device Info Object",
+            "taskType": "DNA_REST_SERVICE",
+            "taskExecutionId": "ff37c239-73ef-4a2f-8a45-d8a4f2669d91",
+            "startTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "startTimeEpoch": 1627558231167,
+            "endTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "endTimeEpoch": 1627558231259,
+            "taskExecTime": 92,
+            "status": "SUCCESS",
+            "memoryConsumed": 6.7109375,
+            "taskExternalExecTime": 89,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | ff37c239-73ef-4a2f-8a45-d8a4f2669d91 | cba5-b8b1-4edb-81f4: tokenType X_AUTH"
+            ],
+            "taskOutput": [
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS",
+                    "value": "{\"Server\":\"Jetty(9.3.z-SNAPSHOT)\",\"Set-Cookie\":\"JSESSIONID=zd6sgghnfk7ks1xg474jvuke;Path=/\",\"Expires\":\"Thu, 01 Jan 1970 00:00:00 GMT\",\"Content-Length\":\"2811\",\"Date\":\"Thu, 29 Jul 2021 11:30:31 GMT\",\"Content-Type\":\"application/json;charset=utf-8\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Expires",
+                    "value": "Thu, 01 Jan 1970 00:00:00 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Server",
+                    "value": "Jetty(9.3.z-SNAPSHOT)"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Type",
+                    "value": "application/json;charset=utf-8"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Date",
+                    "value": "Thu, 29 Jul 2021 11:30:31 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Set-Cookie",
+                    "value": "JSESSIONID=zd6sgghnfk7ks1xg474jvuke;Path=/"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_BODY",
+                    "value": "{\"response\":[{\"id\":\"26bb2a7f-ae68-4a23-ad4e-41d40ae20f59\",\"instanceId\":55105,\"displayName\":\"f5ba231e[526be460-1325-4356-b123-356c0bdf874e]\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":20,\"createTime\":1627482122811,\"deployed\":false,\"isSeeded\":false,\"isStale\":false,\"lastUpdateTime\":1627558218668,\"name\":\"Cat9k-10.195.187.194\",\"namespace\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"provisioningState\":\"DEFINED\",\"resourceVersion\":20,\"targetIdList\":[],\"type\":\"DeviceInfo\",\"cfsChangeInfo\":[],\"customProvisions\":[],\"anchoredManagedSites\":[],\"configs\":[],\"managedSites\":[],\"networkDeviceId\":\"526be460-1325-4356-b123-356c0bdf874e\",\"primaryManagedSites\":[],\"rlanList\":[],\"roles\":[\"EDGENODE\"],\"saveWanConnectivityDetailsOnly\":false,\"secondaryManagedSites\":[],\"siteId\":\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\",\"tertiaryManagedSites\":[],\"akcSettingsCfs\":[],\"deviceInterfaceGroupInfo\":[],\"deviceInterfaceInfo\":[{\"id\":\"29fbf106-a9df-4ecb-8778-3d23228eba70\",\"instanceId\":7157154,\"displayName\":\"8bc32999[e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e]\",\"instanceCreatedOn\":1627558218772,\"instanceUpdatedOn\":1627558218772,\"instanceVersion\":0,\"apManagementEnabled\":false,\"connectedDeviceType\":\"USER_DEVICE\",\"connectedToSubtendedNode\":false,\"description\":\"port assingnment descrption\",\"dhcpEnabled\":false,\"downloadBW\":0.0,\"interfaceId\":\"e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e\",\"interfaceName\":\"GigabitEthernet1/0/1\",\"ipAddressMask\":0,\"memberInterfaceList\":[],\"natEnabled\":false,\"portNum\":0,\"role\":\"LAN\",\"uploadBW\":0.0,\"authenticationProfile\":{\"id\":\"707e20f8-6b49-44b7-9af6-9aa272be5a7f\",\"instanceId\":3635636,\"displayName\":\"18123b3b[No Authentication,537c2840-ca8f-4024-9084-8fb768d430fe]\",\"instanceCreatedOn\":1627536196998,\"instanceUpdatedOn\":1627536196998,\"instanceVersion\":1,\"name\":\"No Authentication\",\"profileUuid\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"profileVersion\":1,\"type\":\"WIRED_NOAUTH\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},\"deviceInterfaceInfoSegmentMapping\":[],\"segment\":[{\"idRef\":\"85b2eba4-1c43-4cae-bde6-59e14dfa852b\"}]}],\"deviceInterfaceInfoContainer\":{\"idRef\":\"0c8b2291-272b-4260-a44d-c761ad413590\"},\"migrationStatus\":[],\"networkWideSettings\":{\"id\":\"2fccca33-ead8-4745-8a70-99d8fbd169b2\",\"instanceId\":3607613,\"displayName\":\"0\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":9,\"aaa\":[],\"cmx\":[],\"dhcp\":[{\"id\":\"fe3bc3a4-fb44-47ab-abc9-6bfdd05169f6\",\"ipAddress\":{\"id\":\"77cd74ba-af02-40f4-9721-06b08ce34384\",\"address\":\"1.1.1.1\"}}],\"dns\":[{\"id\":\"84ffb978-ba75-42aa-ba0d-4ecc827e5bbd\",\"domainName\":\"\",\"ip\":{\"id\":\"e423ffdd-6754-46ed-ba1a-ff6012bd5629\",\"address\":\"2.2.2.2\"}}],\"ipdtEnabled\":true,\"ldap\":[],\"nativeVlan\":[],\"netflow\":[],\"ntp\":[],\"snmp\":[],\"syslogs\":[]},\"otherDevice\":[],\"transitNetworks\":[],\"virtualNetwork\":[],\"wlan\":[]}],\"version\":\"1.0\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Length",
+                    "value": "2811"
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "headers",
+                    "value": "{\n  \"X-AUTH-TOKEN\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGY5MjY0YzIxOThkZTQyYzFkYzEzZDciLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNiJdLCJ0ZW5hbnRJZCI6IjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNCIsImV4cCI6MTYyNzU2MDExNCwiaWF0IjoxNjI3NTU2NTE0LCJqdGkiOiI0NmEwYmM0MC1iN2VhLTRhMGMtYjJkMS1kOTdmY2U0MjM3MGIiLCJ1c2VybmFtZSI6ImFkbWluIn0.T-LM2AcQTs-qzSp0DhapHY02bqjTcle0r-wK_1C-wZm_t3XGFe-t92XMP9oZAt1OW0W6oYZryTkAJsOdZy-1dubXQatE5StQLRhKFVTt2rCbb5HNI0CCWXA1gNnF4xxvI6B3IC_yEUyx2zwRhDZH-bIVqRTx47L4fkPzlTtXwY_8WeTKOV1j6G4lvHxC2qcXdzISiBaH1FmxbYphL2zphSr_8jJnjN-Fz8eKjq6665HKcnRXfh9DJOf6oGgXmrYs19K2T1WlOwQavDvlHRgACebJVfhlo6Ms4UxKrLFDElOzkmUkeNFQ3OfTquFiaXHzmYKho6dJxUenGralrm1rLg\"\n}"
+                },
+                {
+                    "name": "method",
+                    "value": "\"GET\""
+                },
+                {
+                    "name": "queryParams",
+                    "value": "{ }"
+                },
+                {
+                    "name": "body",
+                    "value": "\"\""
+                },
+                {
+                    "name": "url",
+                    "value": "\"http://spf-service-manager-service.fusion.svc.cluster.local:9201/data/customer-facing-service/DeviceInfo?networkDeviceId=526be460-1325-4356-b123-356c0bdf874e\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid38824295",
+            "taskName": "Parse Device Info API Response",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "5b9b91d3-a1fa-4eeb-a88a-65b9f1b1a223",
+            "startTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "startTimeEpoch": 1627558231259,
+            "endTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "endTimeEpoch": 1627558231291,
+            "taskExecTime": 32,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.1640625,
+            "taskExternalExecTime": 31,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 5b9b91d3-a1fa-4eeb-a88a-65b9f1b1a223 | cba5-b8b1-4edb-81f4: ### raw_response={\"response\":[{\"id\":\"26bb2a7f-ae68-4a23-ad4e-41d40ae20f59\",\"instanceId\":55105,\"displayName\":\"f5ba231e[526be460-1325-4356-b123-356c0bdf874e]\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":20,\"createTime\":1627482122811,\"deployed\":false,\"isSeeded\":false,\"isStale\":false,\"lastUpdateTime\":1627558218668,\"name\":\"Cat9k-10.195.187.194\",\"namespace\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"provisioningState\":\"DEFINED\",\"resourceVersion\":20,\"targetIdList\":[],\"type\":\"DeviceInfo\",\"cfsChangeInfo\":[],\"customProvisions\":[],\"anchoredManagedSites\":[],\"configs\":[],\"managedSites\":[],\"networkDeviceId\":\"526be460-1325-4356-b123-356c0bdf874e\",\"primaryManagedSites\":[],\"rlanList\":[],\"roles\":[\"EDGENODE\"],\"saveWanConnectivityDetailsOnly\":false,\"secondaryManagedSites\":[],\"siteId\":\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\",\"tertiaryManagedSites\":[],\"akcSettingsCfs\":[],\"deviceInterfaceGroupInfo\":[],\"deviceInterfaceInfo\":[{\"id\":\"29fbf106-a9df-4ecb-8778-3d23228eba70\",\"instanceId\":7157154,\"displayName\":\"8bc32999[e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e]\",\"instanceCreatedOn\":1627558218772,\"instanceUpdatedOn\":1627558218772,\"instanceVersion\":0,\"apManagementEnabled\":false,\"connectedDeviceType\":\"USER_DEVICE\",\"connectedToSubtendedNode\":false,\"description\":\"port assingnment descrption\",\"dhcpEnabled\":false,\"downloadBW\":0.0,\"interfaceId\":\"e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e\",\"interfaceName\":\"GigabitEthernet1/0/1\",\"ipAddressMask\":0,\"memberInterfaceList\":[],\"natEnabled\":false,\"portNum\":0,\"role\":\"LAN\",\"uploadBW\":0.0,\"authenticationProfile\":{\"id\":\"707e20f8-6b49-44b7-9af6-9aa272be5a7f\",\"instanceId\":3635636,\"displayName\":\"18123b3b[No Authentication,537c2840-ca8f-4024-9084-8fb768d430fe]\",\"instanceCreatedOn\":1627536196998,\"instanceUpdatedOn\":1627536196998,\"instanceVersion\":1,\"name\":\"No Authentication\",\"profileUuid\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"profileVersion\":1,\"type\":\"WIRED_NOAUTH\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},\"deviceInterfaceInfoSegmentMapping\":[],\"segment\":[{\"idRef\":\"85b2eba4-1c43-4cae-bde6-59e14dfa852b\"}]}],\"deviceInterfaceInfoContainer\":{\"idRef\":\"0c8b2291-272b-4260-a44d-c761ad413590\"},\"migrationStatus\":[],\"networkWideSettings\":{\"id\":\"2fccca33-ead8-4745-8a70-99d8fbd169b2\",\"instanceId\":3607613,\"displayName\":\"0\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":9,\"aaa\":[],\"cmx\":[],\"dhcp\":[{\"id\":\"fe3bc3a4-fb44-47ab-abc9-6bfdd05169f6\",\"ipAddress\":{\"id\":\"77cd74ba-af02-40f4-9721-06b08ce34384\",\"address\":\"1.1.1.1\"}}],\"dns\":[{\"id\":\"84ffb978-ba75-42aa-ba0d-4ecc827e5bbd\",\"domainName\":\"\",\"ip\":{\"id\":\"e423ffdd-6754-46ed-ba1a-ff6012bd5629\",\"address\":\"2.2.2.2\"}}],\"ipdtEnabled\":true,\"ldap\":[],\"nativeVlan\":[],\"netflow\":[],\"ntp\":[],\"snmp\":[],\"syslogs\":[]},\"otherDevice\":[],\"transitNetworks\":[],\"virtualNetwork\":[],\"wlan\":[]}],\"version\":\"1.0\"}",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 5b9b91d3-a1fa-4eeb-a88a-65b9f1b1a223 | cba5-b8b1-4edb-81f4: ### before site_id=3c7c05d0-413b-41bf-a8b7-bf40290a6d98",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 5b9b91d3-a1fa-4eeb-a88a-65b9f1b1a223 | cba5-b8b1-4edb-81f4: ### before site_id=26bb2a7f-ae68-4a23-ad4e-41d40ae20f59",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 5b9b91d3-a1fa-4eeb-a88a-65b9f1b1a223 | cba5-b8b1-4edb-81f4: ### bapi_param_border_device_id=26bb2a7f-ae68-4a23-ad4e-41d40ae20f59",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 5b9b91d3-a1fa-4eeb-a88a-65b9f1b1a223 | cba5-b8b1-4edb-81f4: ### query_path_to_get_cd:/ConnectivityDomain?siteId=3c7c05d0-413b-41bf-a8b7-bf40290a6d98",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 5b9b91d3-a1fa-4eeb-a88a-65b9f1b1a223 | cba5-b8b1-4edb-81f4: #### device_info_data={\"id\":\"26bb2a7f-ae68-4a23-ad4e-41d40ae20f59\",\"instanceId\":55105,\"displayName\":\"f5ba231e[526be460-1325-4356-b123-356c0bdf874e]\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":20,\"createTime\":1627482122811,\"deployed\":false,\"isSeeded\":false,\"isStale\":false,\"lastUpdateTime\":1627558218668,\"name\":\"Cat9k-10.195.187.194\",\"namespace\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"provisioningState\":\"DEFINED\",\"resourceVersion\":20,\"targetIdList\":[],\"type\":\"DeviceInfo\",\"cfsChangeInfo\":[],\"customProvisions\":[],\"anchoredManagedSites\":[],\"configs\":[],\"managedSites\":[],\"networkDeviceId\":\"526be460-1325-4356-b123-356c0bdf874e\",\"primaryManagedSites\":[],\"rlanList\":[],\"roles\":[\"EDGENODE\"],\"saveWanConnectivityDetailsOnly\":false,\"secondaryManagedSites\":[],\"siteId\":\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\",\"tertiaryManagedSites\":[],\"akcSettingsCfs\":[],\"deviceInterfaceGroupInfo\":[],\"deviceInterfaceInfo\":[{\"id\":\"29fbf106-a9df-4ecb-8778-3d23228eba70\",\"instanceId\":7157154,\"displayName\":\"8bc32999[e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e]\",\"instanceCreatedOn\":1627558218772,\"instanceUpdatedOn\":1627558218772,\"instanceVersion\":0,\"apManagementEnabled\":false,\"connectedDeviceType\":\"USER_DEVICE\",\"connectedToSubtendedNode\":false,\"description\":\"port assingnment descrption\",\"dhcpEnabled\":false,\"downloadBW\":0,\"interfaceId\":\"e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e\",\"interfaceName\":\"GigabitEthernet1/0/1\",\"ipAddressMask\":0,\"memberInterfaceList\":[],\"natEnabled\":false,\"portNum\":0,\"role\":\"LAN\",\"uploadBW\":0,\"authenticationProfile\":{\"id\":\"707e20f8-6b49-44b7-9af6-9aa272be5a7f\",\"instanceId\":3635636,\"displayName\":\"18123b3b[No Authentication,537c2840-ca8f-4024-9084-8fb768d430fe]\",\"instanceCreatedOn\":1627536196998,\"instanceUpdatedOn\":1627536196998,\"instanceVersion\":1,\"name\":\"No Authentication\",\"profileUuid\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"profileVersion\":1,\"type\":\"WIRED_NOAUTH\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},\"deviceInterfaceInfoSegmentMapping\":[],\"segment\":[{\"idRef\":\"85b2eba4-1c43-4cae-bde6-59e14dfa852b\"}]}],\"deviceInterfaceInfoContainer\":{\"idRef\":\"0c8b2291-272b-4260-a44d-c761ad413590\"},\"migrationStatus\":[],\"networkWideSettings\":{\"id\":\"2fccca33-ead8-4745-8a70-99d8fbd169b2\",\"instanceId\":3607613,\"displayName\":\"0\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":9,\"aaa\":[],\"cmx\":[],\"dhcp\":[{\"id\":\"fe3bc3a4-fb44-47ab-abc9-6bfdd05169f6\",\"ipAddress\":{\"id\":\"77cd74ba-af02-40f4-9721-06b08ce34384\",\"address\":\"1.1.1.1\"}}],\"dns\":[{\"id\":\"84ffb978-ba75-42aa-ba0d-4ecc827e5bbd\",\"domainName\":\"\",\"ip\":{\"id\":\"e423ffdd-6754-46ed-ba1a-ff6012bd5629\",\"address\":\"2.2.2.2\"}}],\"ipdtEnabled\":true,\"ldap\":[],\"nativeVlan\":[],\"netflow\":[],\"ntp\":[],\"snmp\":[],\"syslogs\":[]},\"otherDevice\":[],\"transitNetworks\":[],\"virtualNetwork\":[],\"wlan\":[]}",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 5b9b91d3-a1fa-4eeb-a88a-65b9f1b1a223 | cba5-b8b1-4edb-81f4: #### borderNode=true",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 5b9b91d3-a1fa-4eeb-a88a-65b9f1b1a223 | cba5-b8b1-4edb-81f4: #### bapi_device_site_id=3c7c05d0-413b-41bf-a8b7-bf40290a6d98",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 5b9b91d3-a1fa-4eeb-a88a-65b9f1b1a223 | cba5-b8b1-4edb-81f4: ####       bapi_group_id=",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 5b9b91d3-a1fa-4eeb-a88a-65b9f1b1a223 | cba5-b8b1-4edb-81f4: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "query_path_to_get_cd",
+                    "value": "/ConnectivityDomain?siteId=3c7c05d0-413b-41bf-a8b7-bf40290a6d98"
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "raw_response",
+                    "value": "\"{\\\"response\\\":[{\\\"id\\\":\\\"26bb2a7f-ae68-4a23-ad4e-41d40ae20f59\\\",\\\"instanceId\\\":55105,\\\"displayName\\\":\\\"f5ba231e[526be460-1325-4356-b123-356c0bdf874e]\\\",\\\"instanceCreatedOn\\\":1627482122831,\\\"instanceUpdatedOn\\\":1627482122831,\\\"instanceVersion\\\":20,\\\"createTime\\\":1627482122811,\\\"deployed\\\":false,\\\"isSeeded\\\":false,\\\"isStale\\\":false,\\\"lastUpdateTime\\\":1627558218668,\\\"name\\\":\\\"Cat9k-10.195.187.194\\\",\\\"namespace\\\":\\\"537c2840-ca8f-4024-9084-8fb768d430fe\\\",\\\"provisioningState\\\":\\\"DEFINED\\\",\\\"resourceVersion\\\":20,\\\"targetIdList\\\":[],\\\"type\\\":\\\"DeviceInfo\\\",\\\"cfsChangeInfo\\\":[],\\\"customProvisions\\\":[],\\\"anchoredManagedSites\\\":[],\\\"configs\\\":[],\\\"managedSites\\\":[],\\\"networkDeviceId\\\":\\\"526be460-1325-4356-b123-356c0bdf874e\\\",\\\"primaryManagedSites\\\":[],\\\"rlanList\\\":[],\\\"roles\\\":[\\\"EDGENODE\\\"],\\\"saveWanConnectivityDetailsOnly\\\":false,\\\"secondaryManagedSites\\\":[],\\\"siteId\\\":\\\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\\\",\\\"tertiaryManagedSites\\\":[],\\\"akcSettingsCfs\\\":[],\\\"deviceInterfaceGroupInfo\\\":[],\\\"deviceInterfaceInfo\\\":[{\\\"id\\\":\\\"29fbf106-a9df-4ecb-8778-3d23228eba70\\\",\\\"instanceId\\\":7157154,\\\"displayName\\\":\\\"8bc32999[e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e]\\\",\\\"instanceCreatedOn\\\":1627558218772,\\\"instanceUpdatedOn\\\":1627558218772,\\\"instanceVersion\\\":0,\\\"apManagementEnabled\\\":false,\\\"connectedDeviceType\\\":\\\"USER_DEVICE\\\",\\\"connectedToSubtendedNode\\\":false,\\\"description\\\":\\\"port assingnment descrption\\\",\\\"dhcpEnabled\\\":false,\\\"downloadBW\\\":0.0,\\\"interfaceId\\\":\\\"e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e\\\",\\\"interfaceName\\\":\\\"GigabitEthernet1/0/1\\\",\\\"ipAddressMask\\\":0,\\\"memberInterfaceList\\\":[],\\\"natEnabled\\\":false,\\\"portNum\\\":0,\\\"role\\\":\\\"LAN\\\",\\\"uploadBW\\\":0.0,\\\"authenticationProfile\\\":{\\\"id\\\":\\\"707e20f8-6b49-44b7-9af6-9aa272be5a7f\\\",\\\"instanceId\\\":3635636,\\\"displayName\\\":\\\"18123b3b[No Authentication,537c2840-ca8f-4024-9084-8fb768d430fe]\\\",\\\"instanceCreatedOn\\\":1627536196998,\\\"instanceUpdatedOn\\\":1627536196998,\\\"instanceVersion\\\":1,\\\"name\\\":\\\"No Authentication\\\",\\\"profileUuid\\\":\\\"537c2840-ca8f-4024-9084-8fb768d430fe\\\",\\\"profileVersion\\\":1,\\\"type\\\":\\\"WIRED_NOAUTH\\\",\\\"wakeOnLan\\\":false,\\\"webauthBypassMap\\\":[]},\\\"deviceInterfaceInfoSegmentMapping\\\":[],\\\"segment\\\":[{\\\"idRef\\\":\\\"85b2eba4-1c43-4cae-bde6-59e14dfa852b\\\"}]}],\\\"deviceInterfaceInfoContainer\\\":{\\\"idRef\\\":\\\"0c8b2291-272b-4260-a44d-c761ad413590\\\"},\\\"migrationStatus\\\":[],\\\"networkWideSettings\\\":{\\\"id\\\":\\\"2fccca33-ead8-4745-8a70-99d8fbd169b2\\\",\\\"instanceId\\\":3607613,\\\"displayName\\\":\\\"0\\\",\\\"instanceCreatedOn\\\":1627482122831,\\\"instanceUpdatedOn\\\":1627482122831,\\\"instanceVersion\\\":9,\\\"aaa\\\":[],\\\"cmx\\\":[],\\\"dhcp\\\":[{\\\"id\\\":\\\"fe3bc3a4-fb44-47ab-abc9-6bfdd05169f6\\\",\\\"ipAddress\\\":{\\\"id\\\":\\\"77cd74ba-af02-40f4-9721-06b08ce34384\\\",\\\"address\\\":\\\"1.1.1.1\\\"}}],\\\"dns\\\":[{\\\"id\\\":\\\"84ffb978-ba75-42aa-ba0d-4ecc827e5bbd\\\",\\\"domainName\\\":\\\"\\\",\\\"ip\\\":{\\\"id\\\":\\\"e423ffdd-6754-46ed-ba1a-ff6012bd5629\\\",\\\"address\\\":\\\"2.2.2.2\\\"}}],\\\"ipdtEnabled\\\":true,\\\"ldap\\\":[],\\\"nativeVlan\\\":[],\\\"netflow\\\":[],\\\"ntp\\\":[],\\\"snmp\\\":[],\\\"syslogs\\\":[]},\\\"otherDevice\\\":[],\\\"transitNetworks\\\":[],\\\"virtualNetwork\\\":[],\\\"wlan\\\":[]}],\\\"version\\\":\\\"1.0\\\"}\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuidba304cff",
+            "taskName": "Prepare Interface Info Call",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "f5d664d0-3927-482d-a217-bcba54774eeb",
+            "startTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "startTimeEpoch": 1627558231292,
+            "endTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "endTimeEpoch": 1627558231295,
+            "taskExecTime": 3,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.2265625,
+            "taskExternalExecTime": 3,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | f5d664d0-3927-482d-a217-bcba54774eeb | cba5-b8b1-4edb-81f4: ### bapi_network_device_instanceUuid:526be460-1325-4356-b123-356c0bdf874e",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | f5d664d0-3927-482d-a217-bcba54774eeb | cba5-b8b1-4edb-81f4: ### path:/network-device/526be460-1325-4356-b123-356c0bdf874e/interface-name?name=GigabitEthernet1/0/1",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | f5d664d0-3927-482d-a217-bcba54774eeb | cba5-b8b1-4edb-81f4: ### full_path:https://10.195.192.165/api/v1/interface/network-device//network-device/526be460-1325-4356-b123-356c0bdf874e/interface-name?name=GigabitEthernet1/0/1",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | f5d664d0-3927-482d-a217-bcba54774eeb | cba5-b8b1-4edb-81f4: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "path",
+                    "value": "/network-device/526be460-1325-4356-b123-356c0bdf874e/interface-name?name=GigabitEthernet1/0/1"
+                }
+            ],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuidbac2498b",
+            "taskName": "Invoke Intf API Call",
+            "taskType": "DNA_REST_SERVICE",
+            "taskExecutionId": "c6bde829-332f-4c4d-84ea-eff192b28867",
+            "startTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "startTimeEpoch": 1627558231295,
+            "endTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "endTimeEpoch": 1627558231320,
+            "taskExecTime": 25,
+            "status": "SUCCESS",
+            "memoryConsumed": 3.125,
+            "taskExternalExecTime": 22,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | c6bde829-332f-4c4d-84ea-eff192b28867 | cba5-b8b1-4edb-81f4: tokenType X_AUTH"
+            ],
+            "taskOutput": [
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Date",
+                    "value": "Thu, 29 Jul 2021 11:30:31 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS",
+                    "value": "{\"Transfer-Encoding\":\"chunked\",\"Keep-Alive\":\"timeout=20\",\"Connection\":\"keep-alive\",\"Set-Cookie\":\"JSESSIONID=FE8701D1365861A46C202EAD0F0B0103; Path=/apic-em-inventory-manager-service; HttpOnly\",\"Date\":\"Thu, 29 Jul 2021 11:30:31 GMT\",\"Content-Type\":\"application/json;charset=UTF-8\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Transfer-Encoding",
+                    "value": "chunked"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Keep-Alive",
+                    "value": "timeout=20"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_BODY",
+                    "value": "{\"response\":{\"description\":\"\",\"vlanId\":\"1\",\"adminStatus\":\"UP\",\"mtu\":\"1500\",\"ifIndex\":\"9\",\"owningEntityId\":\"180181_180181\",\"duplex\":\"AutoNegotiate\",\"interfaceType\":\"Physical\",\"ipv4Address\":null,\"ipv4Mask\":null,\"isisSupport\":\"false\",\"mappedPhysicalInterfaceId\":null,\"mappedPhysicalInterfaceName\":null,\"speed\":\"1000000\",\"mediaType\":null,\"className\":\"SwitchPort\",\"pid\":\"C9300-24P\",\"status\":\"down\",\"deviceId\":\"526be460-1325-4356-b123-356c0bdf874e\",\"portName\":\"GigabitEthernet1/0/1\",\"lastUpdated\":\"2021-07-28 14:53:26.247\",\"series\":\"Cisco Catalyst 9300 Series Switches\",\"nativeVlanId\":null,\"ospfSupport\":\"false\",\"portMode\":\"dynamic_auto\",\"portType\":\"Ethernet Port\",\"poweroverethernet\":0,\"serialNo\":\"FCW2241G08G\",\"voiceVlan\":null,\"macAddress\":\"34:f8:e7:f0:ee:81\",\"instanceTenantId\":\"60f926492198de42c1dc13d4\",\"instanceUuid\":\"e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e\",\"id\":\"e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e\"},\"version\":\"1.0\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Set-Cookie",
+                    "value": "JSESSIONID=FE8701D1365861A46C202EAD0F0B0103; Path=/apic-em-inventory-manager-service; HttpOnly"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Type",
+                    "value": "application/json;charset=UTF-8"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Connection",
+                    "value": "keep-alive"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_STATUSCODE",
+                    "value": "200"
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "headers",
+                    "value": "{\n  \"X-AUTH-TOKEN\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGY5MjY0YzIxOThkZTQyYzFkYzEzZDciLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNiJdLCJ0ZW5hbnRJZCI6IjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNCIsImV4cCI6MTYyNzU2MDExNCwiaWF0IjoxNjI3NTU2NTE0LCJqdGkiOiI0NmEwYmM0MC1iN2VhLTRhMGMtYjJkMS1kOTdmY2U0MjM3MGIiLCJ1c2VybmFtZSI6ImFkbWluIn0.T-LM2AcQTs-qzSp0DhapHY02bqjTcle0r-wK_1C-wZm_t3XGFe-t92XMP9oZAt1OW0W6oYZryTkAJsOdZy-1dubXQatE5StQLRhKFVTt2rCbb5HNI0CCWXA1gNnF4xxvI6B3IC_yEUyx2zwRhDZH-bIVqRTx47L4fkPzlTtXwY_8WeTKOV1j6G4lvHxC2qcXdzISiBaH1FmxbYphL2zphSr_8jJnjN-Fz8eKjq6665HKcnRXfh9DJOf6oGgXmrYs19K2T1WlOwQavDvlHRgACebJVfhlo6Ms4UxKrLFDElOzkmUkeNFQ3OfTquFiaXHzmYKho6dJxUenGralrm1rLg\"\n}"
+                },
+                {
+                    "name": "method",
+                    "value": "\"GET\""
+                },
+                {
+                    "name": "queryParams",
+                    "value": "{ }"
+                },
+                {
+                    "name": "body",
+                    "value": "\"\""
+                },
+                {
+                    "name": "url",
+                    "value": "\"http://apic-em-inventory-manager-service.fusion.svc.cluster.local:80/apic-em-inventory-manager-service/interface/network-device/526be460-1325-4356-b123-356c0bdf874e/interface-name?name=GigabitEthernet1/0/1\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid0b4f4dde",
+            "taskName": "Parse Interface Response",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "9cfd18f0-34df-4464-9b6f-61c0517d9c74",
+            "startTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "startTimeEpoch": 1627558231321,
+            "endTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "endTimeEpoch": 1627558231385,
+            "taskExecTime": 64,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.0,
+            "taskExternalExecTime": 64,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9cfd18f0-34df-4464-9b6f-61c0517d9c74 | cba5-b8b1-4edb-81f4: ### reponse_obj={\"response\":{\"description\":\"\",\"vlanId\":\"1\",\"adminStatus\":\"UP\",\"mtu\":\"1500\",\"ifIndex\":\"9\",\"owningEntityId\":\"180181_180181\",\"duplex\":\"AutoNegotiate\",\"interfaceType\":\"Physical\",\"ipv4Address\":null,\"ipv4Mask\":null,\"isisSupport\":\"false\",\"mappedPhysicalInterfaceId\":null,\"mappedPhysicalInterfaceName\":null,\"speed\":\"1000000\",\"mediaType\":null,\"className\":\"SwitchPort\",\"pid\":\"C9300-24P\",\"status\":\"down\",\"deviceId\":\"526be460-1325-4356-b123-356c0bdf874e\",\"portName\":\"GigabitEthernet1/0/1\",\"lastUpdated\":\"2021-07-28 14:53:26.247\",\"series\":\"Cisco Catalyst 9300 Series Switches\",\"nativeVlanId\":null,\"ospfSupport\":\"false\",\"portMode\":\"dynamic_auto\",\"portType\":\"Ethernet Port\",\"poweroverethernet\":0,\"serialNo\":\"FCW2241G08G\",\"voiceVlan\":null,\"macAddress\":\"34:f8:e7:f0:ee:81\",\"instanceTenantId\":\"60f926492198de42c1dc13d4\",\"instanceUuid\":\"e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e\",\"id\":\"e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e\"},\"version\":\"1.0\"}",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9cfd18f0-34df-4464-9b6f-61c0517d9c74 | cba5-b8b1-4edb-81f4: intf_instanceUuid=e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9cfd18f0-34df-4464-9b6f-61c0517d9c74 | cba5-b8b1-4edb-81f4: #### 1",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9cfd18f0-34df-4464-9b6f-61c0517d9c74 | cba5-b8b1-4edb-81f4: #### pos = 1012",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9cfd18f0-34df-4464-9b6f-61c0517d9c74 | cba5-b8b1-4edb-81f4: Found ==> Interface name provided in get request is assigned to any device.",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9cfd18f0-34df-4464-9b6f-61c0517d9c74 | cba5-b8b1-4edb-81f4: ###       tmp_intf_id=e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9cfd18f0-34df-4464-9b6f-61c0517d9c74 | cba5-b8b1-4edb-81f4: ### intf_instanceUuid=e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9cfd18f0-34df-4464-9b6f-61c0517d9c74 | cba5-b8b1-4edb-81f4: ### Found ==> Interface object found.",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9cfd18f0-34df-4464-9b6f-61c0517d9c74 | cba5-b8b1-4edb-81f4: #### int_obj={\"id\":\"29fbf106-a9df-4ecb-8778-3d23228eba70\",\"instanceId\":7157154,\"displayName\":\"8bc32999[e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e]\",\"instanceCreatedOn\":1627558218772,\"instanceUpdatedOn\":1627558218772,\"instanceVersion\":0,\"apManagementEnabled\":false,\"connectedDeviceType\":\"USER_DEVICE\",\"connectedToSubtendedNode\":false,\"description\":\"port assingnment descrption\",\"dhcpEnabled\":false,\"downloadBW\":0,\"interfaceId\":\"e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e\",\"interfaceName\":\"GigabitEthernet1/0/1\",\"ipAddressMask\":0,\"memberInterfaceList\":[],\"natEnabled\":false,\"portNum\":0,\"role\":\"LAN\",\"uploadBW\":0,\"authenticationProfile\":{\"id\":\"707e20f8-6b49-44b7-9af6-9aa272be5a7f\",\"instanceId\":3635636,\"displayName\":\"18123b3b[No Authentication,537c2840-ca8f-4024-9084-8fb768d430fe]\",\"instanceCreatedOn\":1627536196998,\"instanceUpdatedOn\":1627536196998,\"instanceVersion\":1,\"name\":\"No Authentication\",\"profileUuid\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"profileVersion\":1,\"type\":\"WIRED_NOAUTH\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},\"deviceInterfaceInfoSegmentMapping\":[],\"segment\":[{\"idRef\":\"85b2eba4-1c43-4cae-bde6-59e14dfa852b\"}]}",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9cfd18f0-34df-4464-9b6f-61c0517d9c74 | cba5-b8b1-4edb-81f4: #### bapi_interfaceId=e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9cfd18f0-34df-4464-9b6f-61c0517d9c74 | cba5-b8b1-4edb-81f4: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [],
+            "taskInput": [
+                {
+                    "name": "response",
+                    "value": "\"{\\\"response\\\":{\\\"description\\\":\\\"\\\",\\\"vlanId\\\":\\\"1\\\",\\\"adminStatus\\\":\\\"UP\\\",\\\"mtu\\\":\\\"1500\\\",\\\"ifIndex\\\":\\\"9\\\",\\\"owningEntityId\\\":\\\"180181_180181\\\",\\\"duplex\\\":\\\"AutoNegotiate\\\",\\\"interfaceType\\\":\\\"Physical\\\",\\\"ipv4Address\\\":null,\\\"ipv4Mask\\\":null,\\\"isisSupport\\\":\\\"false\\\",\\\"mappedPhysicalInterfaceId\\\":null,\\\"mappedPhysicalInterfaceName\\\":null,\\\"speed\\\":\\\"1000000\\\",\\\"mediaType\\\":null,\\\"className\\\":\\\"SwitchPort\\\",\\\"pid\\\":\\\"C9300-24P\\\",\\\"status\\\":\\\"down\\\",\\\"deviceId\\\":\\\"526be460-1325-4356-b123-356c0bdf874e\\\",\\\"portName\\\":\\\"GigabitEthernet1/0/1\\\",\\\"lastUpdated\\\":\\\"2021-07-28 14:53:26.247\\\",\\\"series\\\":\\\"Cisco Catalyst 9300 Series Switches\\\",\\\"nativeVlanId\\\":null,\\\"ospfSupport\\\":\\\"false\\\",\\\"portMode\\\":\\\"dynamic_auto\\\",\\\"portType\\\":\\\"Ethernet Port\\\",\\\"poweroverethernet\\\":0,\\\"serialNo\\\":\\\"FCW2241G08G\\\",\\\"voiceVlan\\\":null,\\\"macAddress\\\":\\\"34:f8:e7:f0:ee:81\\\",\\\"instanceTenantId\\\":\\\"60f926492198de42c1dc13d4\\\",\\\"instanceUuid\\\":\\\"e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e\\\",\\\"id\\\":\\\"e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e\\\"},\\\"version\\\":\\\"1.0\\\"}\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuidfa524598",
+            "taskName": "Prepare Device Info API Call",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "d224c827-4ba0-4fb5-8a36-4246837a42be",
+            "startTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "startTimeEpoch": 1627558231386,
+            "endTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "endTimeEpoch": 1627558231397,
+            "taskExecTime": 11,
+            "status": "SUCCESS",
+            "memoryConsumed": 3.375,
+            "taskExternalExecTime": 11,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: ### device_info_data={\"id\":\"26bb2a7f-ae68-4a23-ad4e-41d40ae20f59\",\"instanceId\":55105,\"displayName\":\"f5ba231e[526be460-1325-4356-b123-356c0bdf874e]\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":20,\"createTime\":1627482122811,\"deployed\":false,\"isSeeded\":false,\"isStale\":false,\"lastUpdateTime\":1627558218668,\"name\":\"Cat9k-10.195.187.194\",\"namespace\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"provisioningState\":\"DEFINED\",\"resourceVersion\":20,\"targetIdList\":[],\"type\":\"DeviceInfo\",\"cfsChangeInfo\":[],\"customProvisions\":[],\"anchoredManagedSites\":[],\"configs\":[],\"managedSites\":[],\"networkDeviceId\":\"526be460-1325-4356-b123-356c0bdf874e\",\"primaryManagedSites\":[],\"rlanList\":[],\"roles\":[\"EDGENODE\"],\"saveWanConnectivityDetailsOnly\":false,\"secondaryManagedSites\":[],\"siteId\":\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\",\"tertiaryManagedSites\":[],\"akcSettingsCfs\":[],\"deviceInterfaceGroupInfo\":[],\"deviceInterfaceInfo\":[{\"id\":\"29fbf106-a9df-4ecb-8778-3d23228eba70\",\"instanceId\":7157154,\"displayName\":\"8bc32999[e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e]\",\"instanceCreatedOn\":1627558218772,\"instanceUpdatedOn\":1627558218772,\"instanceVersion\":0,\"apManagementEnabled\":false,\"connectedDeviceType\":\"USER_DEVICE\",\"connectedToSubtendedNode\":false,\"description\":\"port assingnment descrption\",\"dhcpEnabled\":false,\"downloadBW\":0,\"interfaceId\":\"e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e\",\"interfaceName\":\"GigabitEthernet1/0/1\",\"ipAddressMask\":0,\"memberInterfaceList\":[],\"natEnabled\":false,\"portNum\":0,\"role\":\"LAN\",\"uploadBW\":0,\"authenticationProfile\":{\"id\":\"707e20f8-6b49-44b7-9af6-9aa272be5a7f\",\"instanceId\":3635636,\"displayName\":\"18123b3b[No Authentication,537c2840-ca8f-4024-9084-8fb768d430fe]\",\"instanceCreatedOn\":1627536196998,\"instanceUpdatedOn\":1627536196998,\"instanceVersion\":1,\"name\":\"No Authentication\",\"profileUuid\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"profileVersion\":1,\"type\":\"WIRED_NOAUTH\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},\"deviceInterfaceInfoSegmentMapping\":[],\"segment\":[{\"idRef\":\"85b2eba4-1c43-4cae-bde6-59e14dfa852b\"}]}],\"deviceInterfaceInfoContainer\":{\"idRef\":\"0c8b2291-272b-4260-a44d-c761ad413590\"},\"migrationStatus\":[],\"networkWideSettings\":{\"id\":\"2fccca33-ead8-4745-8a70-99d8fbd169b2\",\"instanceId\":3607613,\"displayName\":\"0\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":9,\"aaa\":[],\"cmx\":[],\"dhcp\":[{\"id\":\"fe3bc3a4-fb44-47ab-abc9-6bfdd05169f6\",\"ipAddress\":{\"id\":\"77cd74ba-af02-40f4-9721-06b08ce34384\",\"address\":\"1.1.1.1\"}}],\"dns\":[{\"id\":\"84ffb978-ba75-42aa-ba0d-4ecc827e5bbd\",\"domainName\":\"\",\"ip\":{\"id\":\"e423ffdd-6754-46ed-ba1a-ff6012bd5629\",\"address\":\"2.2.2.2\"}}],\"ipdtEnabled\":true,\"ldap\":[],\"nativeVlan\":[],\"netflow\":[],\"ntp\":[],\"snmp\":[],\"syslogs\":[]},\"otherDevice\":[],\"transitNetworks\":[],\"virtualNetwork\":[],\"wlan\":[]}",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: ### Current resourceVersion=20",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: ### New resourceVersion=20",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: ###  bapi_intf_instanceUuid=e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: ### before delete intf length =1",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: ### before delete intf =[{\"id\":\"29fbf106-a9df-4ecb-8778-3d23228eba70\",\"instanceId\":7157154,\"displayName\":\"8bc32999[e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e]\",\"instanceCreatedOn\":1627558218772,\"instanceUpdatedOn\":1627558218772,\"instanceVersion\":0,\"apManagementEnabled\":false,\"connectedDeviceType\":\"USER_DEVICE\",\"connectedToSubtendedNode\":false,\"description\":\"port assingnment descrption\",\"dhcpEnabled\":false,\"downloadBW\":0,\"interfaceId\":\"e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e\",\"interfaceName\":\"GigabitEthernet1/0/1\",\"ipAddressMask\":0,\"memberInterfaceList\":[],\"natEnabled\":false,\"portNum\":0,\"role\":\"LAN\",\"uploadBW\":0,\"authenticationProfile\":{\"id\":\"707e20f8-6b49-44b7-9af6-9aa272be5a7f\",\"instanceId\":3635636,\"displayName\":\"18123b3b[No Authentication,537c2840-ca8f-4024-9084-8fb768d430fe]\",\"instanceCreatedOn\":1627536196998,\"instanceUpdatedOn\":1627536196998,\"instanceVersion\":1,\"name\":\"No Authentication\",\"profileUuid\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"profileVersion\":1,\"type\":\"WIRED_NOAUTH\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},\"deviceInterfaceInfoSegmentMapping\":[],\"segment\":[{\"idRef\":\"85b2eba4-1c43-4cae-bde6-59e14dfa852b\"}]}]",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: ###               intf_id =e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: ### bapi_intf_instanceUuid=e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: ###  intf_id found and deleted=e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: ### after delete segments length =0",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: ### after delete segments =[]",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: ### put_req_data={\"id\":\"26bb2a7f-ae68-4a23-ad4e-41d40ae20f59\",\"instanceId\":55105,\"displayName\":\"f5ba231e[526be460-1325-4356-b123-356c0bdf874e]\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":20,\"createTime\":1627482122811,\"deployed\":false,\"isSeeded\":false,\"isStale\":false,\"lastUpdateTime\":1627558218668,\"name\":\"Cat9k-10.195.187.194\",\"namespace\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"provisioningState\":\"DEFINED\",\"resourceVersion\":\"20\",\"targetIdList\":[],\"type\":\"DeviceInfo\",\"cfsChangeInfo\":[],\"customProvisions\":[],\"anchoredManagedSites\":[],\"configs\":[],\"managedSites\":[],\"networkDeviceId\":\"526be460-1325-4356-b123-356c0bdf874e\",\"primaryManagedSites\":[],\"rlanList\":[],\"roles\":[\"EDGENODE\"],\"saveWanConnectivityDetailsOnly\":false,\"secondaryManagedSites\":[],\"siteId\":\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\",\"tertiaryManagedSites\":[],\"akcSettingsCfs\":[],\"deviceInterfaceGroupInfo\":[],\"deviceInterfaceInfo\":[],\"deviceInterfaceInfoContainer\":{\"idRef\":\"0c8b2291-272b-4260-a44d-c761ad413590\"},\"migrationStatus\":[],\"networkWideSettings\":{\"id\":\"2fccca33-ead8-4745-8a70-99d8fbd169b2\",\"instanceId\":3607613,\"displayName\":\"0\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":9,\"aaa\":[],\"cmx\":[],\"dhcp\":[{\"id\":\"fe3bc3a4-fb44-47ab-abc9-6bfdd05169f6\",\"ipAddress\":{\"id\":\"77cd74ba-af02-40f4-9721-06b08ce34384\",\"address\":\"1.1.1.1\"}}],\"dns\":[{\"id\":\"84ffb978-ba75-42aa-ba0d-4ecc827e5bbd\",\"domainName\":\"\",\"ip\":{\"id\":\"e423ffdd-6754-46ed-ba1a-ff6012bd5629\",\"address\":\"2.2.2.2\"}}],\"ipdtEnabled\":true,\"ldap\":[],\"nativeVlan\":[],\"netflow\":[],\"ntp\":[],\"snmp\":[],\"syslogs\":[]},\"otherDevice\":[],\"transitNetworks\":[],\"virtualNetwork\":[],\"wlan\":[]}",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: ### put_req_json=[{\"id\":\"26bb2a7f-ae68-4a23-ad4e-41d40ae20f59\",\"instanceId\":55105,\"displayName\":\"f5ba231e[526be460-1325-4356-b123-356c0bdf874e]\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":20,\"createTime\":1627482122811,\"deployed\":false,\"isSeeded\":false,\"isStale\":false,\"lastUpdateTime\":1627558218668,\"name\":\"Cat9k-10.195.187.194\",\"namespace\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"provisioningState\":\"DEFINED\",\"resourceVersion\":\"20\",\"targetIdList\":[],\"type\":\"DeviceInfo\",\"cfsChangeInfo\":[],\"customProvisions\":[],\"anchoredManagedSites\":[],\"configs\":[],\"managedSites\":[],\"networkDeviceId\":\"526be460-1325-4356-b123-356c0bdf874e\",\"primaryManagedSites\":[],\"rlanList\":[],\"roles\":[\"EDGENODE\"],\"saveWanConnectivityDetailsOnly\":false,\"secondaryManagedSites\":[],\"siteId\":\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\",\"tertiaryManagedSites\":[],\"akcSettingsCfs\":[],\"deviceInterfaceGroupInfo\":[],\"deviceInterfaceInfo\":[],\"deviceInterfaceInfoContainer\":{\"idRef\":\"0c8b2291-272b-4260-a44d-c761ad413590\"},\"migrationStatus\":[],\"networkWideSettings\":{\"id\":\"2fccca33-ead8-4745-8a70-99d8fbd169b2\",\"instanceId\":3607613,\"displayName\":\"0\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":9,\"aaa\":[],\"cmx\":[],\"dhcp\":[{\"id\":\"fe3bc3a4-fb44-47ab-abc9-6bfdd05169f6\",\"ipAddress\":{\"id\":\"77cd74ba-af02-40f4-9721-06b08ce34384\",\"address\":\"1.1.1.1\"}}],\"dns\":[{\"id\":\"84ffb978-ba75-42aa-ba0d-4ecc827e5bbd\",\"domainName\":\"\",\"ip\":{\"id\":\"e423ffdd-6754-46ed-ba1a-ff6012bd5629\",\"address\":\"2.2.2.2\"}}],\"ipdtEnabled\":true,\"ldap\":[],\"nativeVlan\":[],\"netflow\":[],\"ntp\":[],\"snmp\":[],\"syslogs\":[]},\"otherDevice\":[],\"transitNetworks\":[],\"virtualNetwork\":[],\"wlan\":[]}]",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: ### complete_path=https://10.195.192.165/api/v2/data/customer-facing-service/DeviceInfo",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d224c827-4ba0-4fb5-8a36-4246837a42be | cba5-b8b1-4edb-81f4: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "path",
+                    "value": "/DeviceInfo"
+                },
+                {
+                    "name": "req_json_body",
+                    "value": "[{\"id\":\"26bb2a7f-ae68-4a23-ad4e-41d40ae20f59\",\"instanceId\":55105,\"displayName\":\"f5ba231e[526be460-1325-4356-b123-356c0bdf874e]\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":20,\"createTime\":1627482122811,\"deployed\":false,\"isSeeded\":false,\"isStale\":false,\"lastUpdateTime\":1627558218668,\"name\":\"Cat9k-10.195.187.194\",\"namespace\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"provisioningState\":\"DEFINED\",\"resourceVersion\":\"20\",\"targetIdList\":[],\"type\":\"DeviceInfo\",\"cfsChangeInfo\":[],\"customProvisions\":[],\"anchoredManagedSites\":[],\"configs\":[],\"managedSites\":[],\"networkDeviceId\":\"526be460-1325-4356-b123-356c0bdf874e\",\"primaryManagedSites\":[],\"rlanList\":[],\"roles\":[\"EDGENODE\"],\"saveWanConnectivityDetailsOnly\":false,\"secondaryManagedSites\":[],\"siteId\":\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\",\"tertiaryManagedSites\":[],\"akcSettingsCfs\":[],\"deviceInterfaceGroupInfo\":[],\"deviceInterfaceInfo\":[],\"deviceInterfaceInfoContainer\":{\"idRef\":\"0c8b2291-272b-4260-a44d-c761ad413590\"},\"migrationStatus\":[],\"networkWideSettings\":{\"id\":\"2fccca33-ead8-4745-8a70-99d8fbd169b2\",\"instanceId\":3607613,\"displayName\":\"0\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":9,\"aaa\":[],\"cmx\":[],\"dhcp\":[{\"id\":\"fe3bc3a4-fb44-47ab-abc9-6bfdd05169f6\",\"ipAddress\":{\"id\":\"77cd74ba-af02-40f4-9721-06b08ce34384\",\"address\":\"1.1.1.1\"}}],\"dns\":[{\"id\":\"84ffb978-ba75-42aa-ba0d-4ecc827e5bbd\",\"domainName\":\"\",\"ip\":{\"id\":\"e423ffdd-6754-46ed-ba1a-ff6012bd5629\",\"address\":\"2.2.2.2\"}}],\"ipdtEnabled\":true,\"ldap\":[],\"nativeVlan\":[],\"netflow\":[],\"ntp\":[],\"snmp\":[],\"syslogs\":[]},\"otherDevice\":[],\"transitNetworks\":[],\"virtualNetwork\":[],\"wlan\":[]}]"
+                }
+            ],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuidfbf84cd0",
+            "taskName": "Invoke Device Info API Call",
+            "taskType": "DNA_REST_SERVICE",
+            "taskExecutionId": "d28c7439-1b87-4ef1-b3d2-4fbd2f6dff3e",
+            "startTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "startTimeEpoch": 1627558231397,
+            "endTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "endTimeEpoch": 1627558231470,
+            "taskExecTime": 73,
+            "status": "SUCCESS",
+            "memoryConsumed": 1.5,
+            "taskExternalExecTime": 70,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | d28c7439-1b87-4ef1-b3d2-4fbd2f6dff3e | cba5-b8b1-4edb-81f4: tokenType X_AUTH"
+            ],
+            "taskOutput": [
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_STATUSCODE",
+                    "value": "202"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Transfer-Encoding",
+                    "value": "chunked"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONE_STATUSCODE",
+                    "value": "202"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Expires",
+                    "value": "Thu, 01 Jan 1970 00:00:00 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Type",
+                    "value": "application/json;charset=utf-8"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Set-Cookie",
+                    "value": "JSESSIONID=1bekoq8p4x7xepgculp8iyngt;Path=/"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Date",
+                    "value": "Thu, 29 Jul 2021 11:30:31 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Server",
+                    "value": "Jetty(9.3.z-SNAPSHOT)"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_BODY",
+                    "value": "{\"response\":{\"taskId\":\"057e4b16-a945-43ff-9772-59876b0468d6\",\"url\":\"/api/v1/task/057e4b16-a945-43ff-9772-59876b0468d6\"},\"version\":\"1.0\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS",
+                    "value": "{\"Transfer-Encoding\":\"chunked\",\"Server\":\"Jetty(9.3.z-SNAPSHOT)\",\"Set-Cookie\":\"JSESSIONID=1bekoq8p4x7xepgculp8iyngt;Path=/\",\"Expires\":\"Thu, 01 Jan 1970 00:00:00 GMT\",\"Date\":\"Thu, 29 Jul 2021 11:30:31 GMT\",\"Content-Type\":\"application/json;charset=utf-8\"}"
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "headers",
+                    "value": "{\n  \"X-AUTH-TOKEN\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGY5MjY0YzIxOThkZTQyYzFkYzEzZDciLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNiJdLCJ0ZW5hbnRJZCI6IjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNCIsImV4cCI6MTYyNzU2MDExNCwiaWF0IjoxNjI3NTU2NTE0LCJqdGkiOiI0NmEwYmM0MC1iN2VhLTRhMGMtYjJkMS1kOTdmY2U0MjM3MGIiLCJ1c2VybmFtZSI6ImFkbWluIn0.T-LM2AcQTs-qzSp0DhapHY02bqjTcle0r-wK_1C-wZm_t3XGFe-t92XMP9oZAt1OW0W6oYZryTkAJsOdZy-1dubXQatE5StQLRhKFVTt2rCbb5HNI0CCWXA1gNnF4xxvI6B3IC_yEUyx2zwRhDZH-bIVqRTx47L4fkPzlTtXwY_8WeTKOV1j6G4lvHxC2qcXdzISiBaH1FmxbYphL2zphSr_8jJnjN-Fz8eKjq6665HKcnRXfh9DJOf6oGgXmrYs19K2T1WlOwQavDvlHRgACebJVfhlo6Ms4UxKrLFDElOzkmUkeNFQ3OfTquFiaXHzmYKho6dJxUenGralrm1rLg\"\n}"
+                },
+                {
+                    "name": "method",
+                    "value": "\"PUT\""
+                },
+                {
+                    "name": "queryParams",
+                    "value": "{ }"
+                },
+                {
+                    "name": "body",
+                    "value": "\"[{\\\"id\\\":\\\"26bb2a7f-ae68-4a23-ad4e-41d40ae20f59\\\",\\\"instanceId\\\":55105,\\\"displayName\\\":\\\"f5ba231e[526be460-1325-4356-b123-356c0bdf874e]\\\",\\\"instanceCreatedOn\\\":1627482122831,\\\"instanceUpdatedOn\\\":1627482122831,\\\"instanceVersion\\\":20,\\\"createTime\\\":1627482122811,\\\"deployed\\\":false,\\\"isSeeded\\\":false,\\\"isStale\\\":false,\\\"lastUpdateTime\\\":1627558218668,\\\"name\\\":\\\"Cat9k-10.195.187.194\\\",\\\"namespace\\\":\\\"537c2840-ca8f-4024-9084-8fb768d430fe\\\",\\\"provisioningState\\\":\\\"DEFINED\\\",\\\"resourceVersion\\\":\\\"20\\\",\\\"targetIdList\\\":[],\\\"type\\\":\\\"DeviceInfo\\\",\\\"cfsChangeInfo\\\":[],\\\"customProvisions\\\":[],\\\"anchoredManagedSites\\\":[],\\\"configs\\\":[],\\\"managedSites\\\":[],\\\"networkDeviceId\\\":\\\"526be460-1325-4356-b123-356c0bdf874e\\\",\\\"primaryManagedSites\\\":[],\\\"rlanList\\\":[],\\\"roles\\\":[\\\"EDGENODE\\\"],\\\"saveWanConnectivityDetailsOnly\\\":false,\\\"secondaryManagedSites\\\":[],\\\"siteId\\\":\\\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\\\",\\\"tertiaryManagedSites\\\":[],\\\"akcSettingsCfs\\\":[],\\\"deviceInterfaceGroupInfo\\\":[],\\\"deviceInterfaceInfo\\\":[],\\\"deviceInterfaceInfoContainer\\\":{\\\"idRef\\\":\\\"0c8b2291-272b-4260-a44d-c761ad413590\\\"},\\\"migrationStatus\\\":[],\\\"networkWideSettings\\\":{\\\"id\\\":\\\"2fccca33-ead8-4745-8a70-99d8fbd169b2\\\",\\\"instanceId\\\":3607613,\\\"displayName\\\":\\\"0\\\",\\\"instanceCreatedOn\\\":1627482122831,\\\"instanceUpdatedOn\\\":1627482122831,\\\"instanceVersion\\\":9,\\\"aaa\\\":[],\\\"cmx\\\":[],\\\"dhcp\\\":[{\\\"id\\\":\\\"fe3bc3a4-fb44-47ab-abc9-6bfdd05169f6\\\",\\\"ipAddress\\\":{\\\"id\\\":\\\"77cd74ba-af02-40f4-9721-06b08ce34384\\\",\\\"address\\\":\\\"1.1.1.1\\\"}}],\\\"dns\\\":[{\\\"id\\\":\\\"84ffb978-ba75-42aa-ba0d-4ecc827e5bbd\\\",\\\"domainName\\\":\\\"\\\",\\\"ip\\\":{\\\"id\\\":\\\"e423ffdd-6754-46ed-ba1a-ff6012bd5629\\\",\\\"address\\\":\\\"2.2.2.2\\\"}}],\\\"ipdtEnabled\\\":true,\\\"ldap\\\":[],\\\"nativeVlan\\\":[],\\\"netflow\\\":[],\\\"ntp\\\":[],\\\"snmp\\\":[],\\\"syslogs\\\":[]},\\\"otherDevice\\\":[],\\\"transitNetworks\\\":[],\\\"virtualNetwork\\\":[],\\\"wlan\\\":[]}]\""
+                },
+                {
+                    "name": "url",
+                    "value": "\"http://spf-service-manager-service.fusion.svc.cluster.local:9201/data/customer-facing-service/DeviceInfo\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid29ca4c45",
+            "taskName": "Parse Device Info API Response",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "eda9ac0a-1476-432f-8156-aae319002cbf",
+            "startTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "startTimeEpoch": 1627558231470,
+            "endTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "endTimeEpoch": 1627558231473,
+            "taskExecTime": 3,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.0,
+            "taskExternalExecTime": 3,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | eda9ac0a-1476-432f-8156-aae319002cbf | cba5-b8b1-4edb-81f4: add_info_response_obj= {\"response\":{\"taskId\":\"057e4b16-a945-43ff-9772-59876b0468d6\",\"url\":\"/api/v1/task/057e4b16-a945-43ff-9772-59876b0468d6\"},\"version\":\"1.0\"}",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | eda9ac0a-1476-432f-8156-aae319002cbf | cba5-b8b1-4edb-81f4: errorCode=undefined",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | eda9ac0a-1476-432f-8156-aae319002cbf | cba5-b8b1-4edb-81f4: request submitted successfully.. check the task status now.",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | eda9ac0a-1476-432f-8156-aae319002cbf | cba5-b8b1-4edb-81f4: bapi_taskId=057e4b16-a945-43ff-9772-59876b0468d6",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | eda9ac0a-1476-432f-8156-aae319002cbf | cba5-b8b1-4edb-81f4: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "output_response",
+                    "value": null
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "raw_response",
+                    "value": "\"{\\\"response\\\":{\\\"taskId\\\":\\\"057e4b16-a945-43ff-9772-59876b0468d6\\\",\\\"url\\\":\\\"/api/v1/task/057e4b16-a945-43ff-9772-59876b0468d6\\\"},\\\"version\\\":\\\"1.0\\\"}\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid1bdc4af4",
+            "taskName": "Prepare Task Status API Call",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "8b4d0a8b-7aeb-45e7-8770-1ee61ab0ac6d",
+            "startTime": "Thu Jul 29 11:30:31 UTC 2021",
+            "startTimeEpoch": 1627558231474,
+            "endTime": "Thu Jul 29 11:30:34 UTC 2021",
+            "endTimeEpoch": 1627558234489,
+            "taskExecTime": 3015,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.1171875,
+            "taskExternalExecTime": 3015,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 8b4d0a8b-7aeb-45e7-8770-1ee61ab0ac6d | cba5-b8b1-4edb-81f4: ### bapi_taskId=057e4b16-a945-43ff-9772-59876b0468d6",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 8b4d0a8b-7aeb-45e7-8770-1ee61ab0ac6d | cba5-b8b1-4edb-81f4: ### path=/057e4b16-a945-43ff-9772-59876b0468d6",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 8b4d0a8b-7aeb-45e7-8770-1ee61ab0ac6d | cba5-b8b1-4edb-81f4: ### complete-path=https://10.195.192.165/api/v1/task/057e4b16-a945-43ff-9772-59876b0468d6",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 8b4d0a8b-7aeb-45e7-8770-1ee61ab0ac6d | cba5-b8b1-4edb-81f4: ### bapi_taskId_status_url=https://10.195.192.178/api/v1/task/057e4b16-a945-43ff-9772-59876b0468d6",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 8b4d0a8b-7aeb-45e7-8770-1ee61ab0ac6d | cba5-b8b1-4edb-81f4: ### sleep = 2 seconds",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 8b4d0a8b-7aeb-45e7-8770-1ee61ab0ac6d | cba5-b8b1-4edb-81f4: ### sleep start = 1627558231483",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 8b4d0a8b-7aeb-45e7-8770-1ee61ab0ac6d | cba5-b8b1-4edb-81f4: ### sleep end  = 1627558234488",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 8b4d0a8b-7aeb-45e7-8770-1ee61ab0ac6d | cba5-b8b1-4edb-81f4: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "path",
+                    "value": "/057e4b16-a945-43ff-9772-59876b0468d6"
+                }
+            ],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuidfbb54068",
+            "taskName": "Invoke Get Task Status API Call",
+            "taskType": "DNA_REST_SERVICE",
+            "taskExecutionId": "ed407a00-1fc5-4aa6-824a-e8b149e92447",
+            "startTime": "Thu Jul 29 11:30:34 UTC 2021",
+            "startTimeEpoch": 1627558234490,
+            "endTime": "Thu Jul 29 11:30:34 UTC 2021",
+            "endTimeEpoch": 1627558234499,
+            "taskExecTime": 9,
+            "status": "SUCCESS",
+            "memoryConsumed": 2.1875,
+            "taskExternalExecTime": 8,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | ed407a00-1fc5-4aa6-824a-e8b149e92447 | cba5-b8b1-4edb-81f4: tokenType X_AUTH"
+            ],
+            "taskOutput": [
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Date",
+                    "value": "Thu, 29 Jul 2021 11:30:34 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Content-Type",
+                    "value": "application/json;charset=utf-8"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Expires",
+                    "value": "Thu, 01 Jan 1970 00:00:00 GMT"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_BODY",
+                    "value": "{\"response\":{\"version\":1627558231724,\"startTime\":1627558231416,\"data\":\"workflow_id=7ab09332-f996-4e0d-be14-b70063798c10;cfs_id=0;rollback_status=not_supported;rollback_taskid=0;failure_task=NA;processcfs_complete=false\",\"progress\":\"TASK_MODIFY_PUT\",\"lastUpdate\":1627558231724,\"isError\":false,\"serviceType\":\"NCSP\",\"username\":\"\",\"rootId\":\"057e4b16-a945-43ff-9772-59876b0468d6\",\"instanceTenantId\":\"60f926492198de42c1dc13d4\",\"id\":\"057e4b16-a945-43ff-9772-59876b0468d6\"},\"version\":\"1.0\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Server",
+                    "value": "Jetty(9.3.z-SNAPSHOT)"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONE_STATUSCODE",
+                    "value": "200"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Set-Cookie",
+                    "value": "JSESSIONID=1cz5856kgs30u1gb0oub8e47cu;Path=/"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS",
+                    "value": "{\"Transfer-Encoding\":\"chunked\",\"Server\":\"Jetty(9.3.z-SNAPSHOT)\",\"Set-Cookie\":\"JSESSIONID=1cz5856kgs30u1gb0oub8e47cu;Path=/\",\"Expires\":\"Thu, 01 Jan 1970 00:00:00 GMT\",\"Date\":\"Thu, 29 Jul 2021 11:30:34 GMT\",\"Content-Type\":\"application/json;charset=utf-8\"}"
+                },
+                {
+                    "name": "__DNA_REST_SERVICE_RESPONSE_HEADERS.Transfer-Encoding",
+                    "value": "chunked"
+                }
+            ],
+            "taskInput": [
+                {
+                    "name": "headers",
+                    "value": "{\n  \"X-AUTH-TOKEN\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGY5MjY0YzIxOThkZTQyYzFkYzEzZDciLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNiJdLCJ0ZW5hbnRJZCI6IjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNCIsImV4cCI6MTYyNzU2MDExNCwiaWF0IjoxNjI3NTU2NTE0LCJqdGkiOiI0NmEwYmM0MC1iN2VhLTRhMGMtYjJkMS1kOTdmY2U0MjM3MGIiLCJ1c2VybmFtZSI6ImFkbWluIn0.T-LM2AcQTs-qzSp0DhapHY02bqjTcle0r-wK_1C-wZm_t3XGFe-t92XMP9oZAt1OW0W6oYZryTkAJsOdZy-1dubXQatE5StQLRhKFVTt2rCbb5HNI0CCWXA1gNnF4xxvI6B3IC_yEUyx2zwRhDZH-bIVqRTx47L4fkPzlTtXwY_8WeTKOV1j6G4lvHxC2qcXdzISiBaH1FmxbYphL2zphSr_8jJnjN-Fz8eKjq6665HKcnRXfh9DJOf6oGgXmrYs19K2T1WlOwQavDvlHRgACebJVfhlo6Ms4UxKrLFDElOzkmUkeNFQ3OfTquFiaXHzmYKho6dJxUenGralrm1rLg\"\n}"
+                },
+                {
+                    "name": "method",
+                    "value": "\"GET\""
+                },
+                {
+                    "name": "queryParams",
+                    "value": "{ }"
+                },
+                {
+                    "name": "body",
+                    "value": "\"\""
+                },
+                {
+                    "name": "url",
+                    "value": "\"http://task-service.fusion.svc.cluster.local:17009/task/057e4b16-a945-43ff-9772-59876b0468d6\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuid08c94ab1",
+            "taskName": "Parse Task Status Response",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "f3b9aee2-8fea-41ed-bd61-8c467ec71a9e",
+            "startTime": "Thu Jul 29 11:30:34 UTC 2021",
+            "startTimeEpoch": 1627558234499,
+            "endTime": "Thu Jul 29 11:30:34 UTC 2021",
+            "endTimeEpoch": 1627558234503,
+            "taskExecTime": 4,
+            "status": "FAILURE",
+            "memoryConsumed": 0.0,
+            "taskExternalExecTime": 0,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | f3b9aee2-8fea-41ed-bd61-8c467ec71a9e | cba5-b8b1-4edb-81f4: ###  status raw_response={\"response\":{\"version\":1627558231724,\"startTime\":1627558231416,\"data\":\"workflow_id=7ab09332-f996-4e0d-be14-b70063798c10;cfs_id=0;rollback_status=not_supported;rollback_taskid=0;failure_task=NA;processcfs_complete=false\",\"progress\":\"TASK_MODIFY_PUT\",\"lastUpdate\":1627558231724,\"isError\":false,\"serviceType\":\"NCSP\",\"username\":\"\",\"rootId\":\"057e4b16-a945-43ff-9772-59876b0468d6\",\"instanceTenantId\":\"60f926492198de42c1dc13d4\",\"id\":\"057e4b16-a945-43ff-9772-59876b0468d6\"},\"version\":\"1.0\"}",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | f3b9aee2-8fea-41ed-bd61-8c467ec71a9e | cba5-b8b1-4edb-81f4: ### Error occured during segment creation."
+            ],
+            "taskOutput": [],
+            "taskInput": [
+                {
+                    "name": "raw_response",
+                    "value": "\"{\\\"response\\\":{\\\"version\\\":1627558231724,\\\"startTime\\\":1627558231416,\\\"data\\\":\\\"workflow_id=7ab09332-f996-4e0d-be14-b70063798c10;cfs_id=0;rollback_status=not_supported;rollback_taskid=0;failure_task=NA;processcfs_complete=false\\\",\\\"progress\\\":\\\"TASK_MODIFY_PUT\\\",\\\"lastUpdate\\\":1627558231724,\\\"isError\\\":false,\\\"serviceType\\\":\\\"NCSP\\\",\\\"username\\\":\\\"\\\",\\\"rootId\\\":\\\"057e4b16-a945-43ff-9772-59876b0468d6\\\",\\\"instanceTenantId\\\":\\\"60f926492198de42c1dc13d4\\\",\\\"id\\\":\\\"057e4b16-a945-43ff-9772-59876b0468d6\\\"},\\\"version\\\":\\\"1.0\\\"}\""
+                }
+            ]
+        },
+        {
+            "taskId": "uuidfa954dbe",
+            "taskName": "Exception Handler for SDA POST Border Device",
+            "taskType": "EXCEPTION",
+            "taskExecutionId": "9b4e1219-32ee-4a57-8d06-6a1d77edbbdb",
+            "startTime": "Thu Jul 29 11:30:34 UTC 2021",
+            "startTimeEpoch": 1627558234503,
+            "endTime": "Thu Jul 29 11:30:34 UTC 2021",
+            "endTimeEpoch": 1627558234504,
+            "taskExecTime": 1,
+            "status": "SUCCESS",
+            "memoryConsumed": 1.96875,
+            "taskExternalExecTime": 0,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9b4e1219-32ee-4a57-8d06-6a1d77edbbdb | cba5-b8b1-4edb-81f4: errorCode = 500",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9b4e1219-32ee-4a57-8d06-6a1d77edbbdb | cba5-b8b1-4edb-81f4: errorDescription = 22a96d34-36da-4a81-b0c6-5cc4e88935b0 | f3b9aee2-8fea-41ed-bd61-8c467ec71a9e | cba5-b8b1-4edb-81f4 : ScriptProcessor Execution Failed with error: exit in <eval>  at line number : 26  at column number 4",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9b4e1219-32ee-4a57-8d06-6a1d77edbbdb | cba5-b8b1-4edb-81f4: failedTaskInputParams = {\n  \"raw_response\" : \"{\\\"response\\\":{\\\"version\\\":1627558231724,\\\"startTime\\\":1627558231416,\\\"data\\\":\\\"workflow_id=7ab09332-f996-4e0d-be14-b70063798c10;cfs_id=0;rollback_status=not_supported;rollback_taskid=0;failure_task=NA;processcfs_complete=false\\\",\\\"progress\\\":\\\"TASK_MODIFY_PUT\\\",\\\"lastUpdate\\\":1627558231724,\\\"isError\\\":false,\\\"serviceType\\\":\\\"NCSP\\\",\\\"username\\\":\\\"\\\",\\\"rootId\\\":\\\"057e4b16-a945-43ff-9772-59876b0468d6\\\",\\\"instanceTenantId\\\":\\\"60f926492198de42c1dc13d4\\\",\\\"id\\\":\\\"057e4b16-a945-43ff-9772-59876b0468d6\\\"},\\\"version\\\":\\\"1.0\\\"}\"\n}",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9b4e1219-32ee-4a57-8d06-6a1d77edbbdb | cba5-b8b1-4edb-81f4: failedTaskId = uuid08c94ab1",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9b4e1219-32ee-4a57-8d06-6a1d77edbbdb | cba5-b8b1-4edb-81f4: failedTaskName = Parse Task Status Response",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9b4e1219-32ee-4a57-8d06-6a1d77edbbdb | cba5-b8b1-4edb-81f4: failedTaskType = JAVASCRIPT_TRANSFORM",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9b4e1219-32ee-4a57-8d06-6a1d77edbbdb | cba5-b8b1-4edb-81f4: failedTaskDescription = Parse Task Status Response",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | 9b4e1219-32ee-4a57-8d06-6a1d77edbbdb | cba5-b8b1-4edb-81f4: failedTaskOutputParams = { }"
+            ],
+            "taskOutput": [
+                {
+                    "name": "failedTaskInputParams",
+                    "value": "{\n  \"raw_response\" : \"{\\\"response\\\":{\\\"version\\\":1627558231724,\\\"startTime\\\":1627558231416,\\\"data\\\":\\\"workflow_id=7ab09332-f996-4e0d-be14-b70063798c10;cfs_id=0;rollback_status=not_supported;rollback_taskid=0;failure_task=NA;processcfs_complete=false\\\",\\\"progress\\\":\\\"TASK_MODIFY_PUT\\\",\\\"lastUpdate\\\":1627558231724,\\\"isError\\\":false,\\\"serviceType\\\":\\\"NCSP\\\",\\\"username\\\":\\\"\\\",\\\"rootId\\\":\\\"057e4b16-a945-43ff-9772-59876b0468d6\\\",\\\"instanceTenantId\\\":\\\"60f926492198de42c1dc13d4\\\",\\\"id\\\":\\\"057e4b16-a945-43ff-9772-59876b0468d6\\\"},\\\"version\\\":\\\"1.0\\\"}\"\n}"
+                },
+                {
+                    "name": "failedTaskOutputParams",
+                    "value": "{ }"
+                },
+                {
+                    "name": "failedTaskDescription",
+                    "value": "Parse Task Status Response"
+                },
+                {
+                    "name": "errorDescription",
+                    "value": "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | f3b9aee2-8fea-41ed-bd61-8c467ec71a9e | cba5-b8b1-4edb-81f4 : ScriptProcessor Execution Failed with error: exit in <eval>  at line number : 26  at column number 4"
+                },
+                {
+                    "name": "failedTaskId",
+                    "value": "uuid08c94ab1"
+                },
+                {
+                    "name": "failedTaskType",
+                    "value": "JAVASCRIPT_TRANSFORM"
+                },
+                {
+                    "name": "errorCode",
+                    "value": "500"
+                },
+                {
+                    "name": "failedTaskName",
+                    "value": "Parse Task Status Response"
+                }
+            ],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuidbb2f45a3",
+            "taskName": "Parse Exception Handler response",
+            "taskType": "JAVASCRIPT_TRANSFORM",
+            "taskExecutionId": "c07f69e0-154b-4773-b18a-80a1e097a9e9",
+            "startTime": "Thu Jul 29 11:30:34 UTC 2021",
+            "startTimeEpoch": 1627558234504,
+            "endTime": "Thu Jul 29 11:30:34 UTC 2021",
+            "endTimeEpoch": 1627558234582,
+            "taskExecTime": 78,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.703125,
+            "taskExternalExecTime": 78,
+            "taskLogs": [
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | c07f69e0-154b-4773-b18a-80a1e097a9e9 | cba5-b8b1-4edb-81f4: ### calling response-template ... ",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | c07f69e0-154b-4773-b18a-80a1e097a9e9 | cba5-b8b1-4edb-81f4: ### full path = null/dna/intent/api/v1/business/sda/utils/response-template",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | c07f69e0-154b-4773-b18a-80a1e097a9e9 | cba5-b8b1-4edb-81f4: ### sda_response_template_json_body = {\"sda_status\":null,\"sda_description\":\"API execution is in progress.\",\"sda_task_id\":\"057e4b16-a945-43ff-9772-59876b0468d6\",\"sda_execution_id\":\"22a96d34-36da-4a81-b0c6-5cc4e88935b0\",\"sda_api_method\":\"add\"}",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | c07f69e0-154b-4773-b18a-80a1e097a9e9 | cba5-b8b1-4edb-81f4: response-template = {\n  \"status\" : null,\n  \"description\" : \"API execution is in progress.\",\n  \"taskId\" : \"057e4b16-a945-43ff-9772-59876b0468d6\",\n  \"taskStatusUrl\" : \"/dna/intent/api/v1/task/057e4b16-a945-43ff-9772-59876b0468d6\",\n  \"executionStatusUrl\" : \"/dna/intent/api/v1/execution-status/22a96d34-36da-4a81-b0c6-5cc4e88935b0\",\n  \"executionId\" : \"22a96d34-36da-4a81-b0c6-5cc4e88935b0\"\n}",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | c07f69e0-154b-4773-b18a-80a1e097a9e9 | cba5-b8b1-4edb-81f4: all done",
+                "22a96d34-36da-4a81-b0c6-5cc4e88935b0 | c07f69e0-154b-4773-b18a-80a1e097a9e9 | cba5-b8b1-4edb-81f4: JavaScriptProcessor process completed successfully."
+            ],
+            "taskOutput": [
+                {
+                    "name": "response_data",
+                    "value": "{\"status\":null,\"description\":\"API execution is in progress.\",\"taskId\":\"057e4b16-a945-43ff-9772-59876b0468d6\",\"taskStatusUrl\":\"/dna/intent/api/v1/task/057e4b16-a945-43ff-9772-59876b0468d6\",\"executionStatusUrl\":\"/dna/intent/api/v1/execution-status/22a96d34-36da-4a81-b0c6-5cc4e88935b0\",\"executionId\":\"22a96d34-36da-4a81-b0c6-5cc4e88935b0\"}"
+                }
+            ],
+            "taskInput": []
+        },
+        {
+            "taskId": "uuid9a4643ce",
+            "taskName": "Delete Port Assignment ",
+            "taskType": "REST_SERVER",
+            "taskExecutionId": "e905718c-3318-4107-bf41-ecaf9d0ce13d",
+            "startTime": "Thu Jul 29 11:30:30 UTC 2021",
+            "startTimeEpoch": 1627558230000,
+            "endTime": "Thu Jul 29 11:30:30 UTC 2021",
+            "endTimeEpoch": 1627558230000,
+            "taskExecTime": 0,
+            "status": "SUCCESS",
+            "memoryConsumed": 0.0,
+            "taskExternalExecTime": 0,
+            "taskLogs": [],
+            "taskOutput": [
+                {
+                    "name": "header.X-Consumer-ID",
+                    "value": "d8d08c7c-dc11-41c4-90b5-0b8c2fa1c261"
+                },
+                {
+                    "name": "type",
+                    "value": "REST_SERVER"
+                },
+                {
+                    "name": "header.Accept-Encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "header.X-Forwarded-Port",
+                    "value": "443"
+                },
+                {
+                    "name": "header.X-Consumer-Username",
+                    "value": "TNT0"
+                },
+                {
+                    "name": "header.User-Agent",
+                    "value": "PostmanRuntime/7.28.2"
+                },
+                {
+                    "name": "header.X-Request-Id",
+                    "value": "3bf2c501cf048ab2e0d41e12c011959c"
+                },
+                {
+                    "name": "header.X-Forwarded-Host",
+                    "value": "10.195.192.178"
+                },
+                {
+                    "name": "header.Cookie",
+                    "value": "X-JWT-ACCESS-TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGY5MjY0YzIxOThkZTQyYzFkYzEzZDciLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNiJdLCJ0ZW5hbnRJZCI6IjYwZjkyNjQ5MjE5OGRlNDJjMWRjMTNkNCIsImV4cCI6MTYyNzU2MDExNCwiaWF0IjoxNjI3NTU2NTE0LCJqdGkiOiI0NmEwYmM0MC1iN2VhLTRhMGMtYjJkMS1kOTdmY2U0MjM3MGIiLCJ1c2VybmFtZSI6ImFkbWluIn0.T-LM2AcQTs-qzSp0DhapHY02bqjTcle0r-wK_1C-wZm_t3XGFe-t92XMP9oZAt1OW0W6oYZryTkAJsOdZy-1dubXQatE5StQLRhKFVTt2rCbb5HNI0CCWXA1gNnF4xxvI6B3IC_yEUyx2zwRhDZH-bIVqRTx47L4fkPzlTtXwY_8WeTKOV1j6G4lvHxC2qcXdzISiBaH1FmxbYphL2zphSr_8jJnjN-Fz8eKjq6665HKcnRXfh9DJOf6oGgXmrYs19K2T1WlOwQavDvlHRgACebJVfhlo6Ms4UxKrLFDElOzkmUkeNFQ3OfTquFiaXHzmYKho6dJxUenGralrm1rLg"
+                },
+                {
+                    "name": "queryParam.device-ip",
+                    "value": "10.195.187.194"
+                },
+                {
+                    "name": "header.X-Forwarded-For",
+                    "value": "10.75.237.31"
+                },
+                {
+                    "name": "path",
+                    "value": "/dnacaap/core/v1/business/sda/hostonboarding/user-device"
+                },
+                {
+                    "name": "header.Host",
+                    "value": "dnacaap-runtime.dnacaap.svc.cluster.local:8095"
+                },
+                {
+                    "name": "header.X-Forwarded-Proto",
+                    "value": "https"
+                },
+                {
+                    "name": "header.Connection",
+                    "value": "close"
+                },
+                {
+                    "name": "header.Postman-Token",
+                    "value": "36415b9f-454b-476f-9f4b-41ed4962da3f"
+                },
+                {
+                    "name": "header.X-Real-Ip",
+                    "value": "10.75.237.31"
+                },
+                {
+                    "name": "header.Timeout-Access",
+                    "value": "<function1>"
+                },
+                {
+                    "name": "queryParam.interfaceName",
+                    "value": "GigabitEthernet1/0/1"
+                },
+                {
+                    "name": "body",
+                    "value": ""
+                },
+                {
+                    "name": "header.Accept",
+                    "value": "*/*"
+                }
+            ],
+            "taskInput": []
+        }
+    ],
+    "bapiParameters": [
+        {
+            "name": "bapi_external_Connectity_ip_pool_id",
+            "value": ""
+        },
+        {
+            "name": "bap_siteNameHierarchy",
+            "value": ""
+        },
+        {
+            "name": "bapi_externalDomainRoutingProtocolName",
+            "value": ""
+        },
+        {
+            "name": "bapi_extASN",
+            "value": ""
+        },
+        {
+            "name": "bapi_bapi_status",
+            "value": "pending"
+        },
+        {
+            "name": "bapi_scalableGroupName",
+            "value": ""
+        },
+        {
+            "name": "bapi_externalConnectivityIpPoolName",
+            "value": ""
+        },
+        {
+            "name": "bapi_orig_request_data",
+            "value": ""
+        },
+        {
+            "name": "bapi_ip_ransit_id",
+            "value": ""
+        },
+        {
+            "name": "bapi_externalDomainRoutingProtocol",
+            "value": ""
+        },
+        {
+            "name": "bapi_siteHierarchy",
+            "value": "Global"
+        },
+        {
+            "name": "bapi_param_border_device_id",
+            "value": "26bb2a7f-ae68-4a23-ad4e-41d40ae20f59"
+        },
+        {
+            "name": "bapi_error_message",
+            "value": "API execution is in progress."
+        },
+        {
+            "name": "bapi_vn_idRef",
+            "value": ""
+        },
+        {
+            "name": "bapi_interfaceName",
+            "value": "GigabitEthernet1/0/1"
+        },
+        {
+            "name": "bapi_taskId_status_url",
+            "value": "https://10.195.192.178/api/v1/task/057e4b16-a945-43ff-9772-59876b0468d6"
+        },
+        {
+            "name": "bapi_intf_instanceUuid",
+            "value": "e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e"
+        },
+        {
+            "name": "bapi_siteProfileUuid",
+            "value": ""
+        },
+        {
+            "name": "bapi_interfaceId",
+            "value": "e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e"
+        },
+        {
+            "name": "bapi_data_ipPoolId",
+            "value": ""
+        },
+        {
+            "name": "bapi_virtualNetworkName",
+            "value": ""
+        },
+        {
+            "name": "bapi_dataIpAddressPoolName",
+            "value": ""
+        },
+        {
+            "name": "bapi_internalAutonomouSystemNumber",
+            "value": ""
+        },
+        {
+            "name": "bapi_param_cd_data",
+            "value": ""
+        },
+        {
+            "name": "bapi_device_site_id",
+            "value": "3c7c05d0-413b-41bf-a8b7-bf40290a6d98"
+        },
+        {
+            "name": "bapi_network_device_instanceUuid",
+            "value": "526be460-1325-4356-b123-356c0bdf874e"
+        },
+        {
+            "name": "bapi_borderSessionType",
+            "value": ""
+        },
+        {
+            "name": "bapi_param_border_device_ip_address",
+            "value": "10.195.187.194"
+        },
+        {
+            "name": "bapi_param_device_info_data",
+            "value": "{\"id\":\"26bb2a7f-ae68-4a23-ad4e-41d40ae20f59\",\"instanceId\":55105,\"displayName\":\"f5ba231e[526be460-1325-4356-b123-356c0bdf874e]\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":20,\"createTime\":1627482122811,\"deployed\":false,\"isSeeded\":false,\"isStale\":false,\"lastUpdateTime\":1627558218668,\"name\":\"Cat9k-10.195.187.194\",\"namespace\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"provisioningState\":\"DEFINED\",\"resourceVersion\":20,\"targetIdList\":[],\"type\":\"DeviceInfo\",\"cfsChangeInfo\":[],\"customProvisions\":[],\"anchoredManagedSites\":[],\"configs\":[],\"managedSites\":[],\"networkDeviceId\":\"526be460-1325-4356-b123-356c0bdf874e\",\"primaryManagedSites\":[],\"rlanList\":[],\"roles\":[\"EDGENODE\"],\"saveWanConnectivityDetailsOnly\":false,\"secondaryManagedSites\":[],\"siteId\":\"3c7c05d0-413b-41bf-a8b7-bf40290a6d98\",\"tertiaryManagedSites\":[],\"akcSettingsCfs\":[],\"deviceInterfaceGroupInfo\":[],\"deviceInterfaceInfo\":[{\"id\":\"29fbf106-a9df-4ecb-8778-3d23228eba70\",\"instanceId\":7157154,\"displayName\":\"8bc32999[e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e]\",\"instanceCreatedOn\":1627558218772,\"instanceUpdatedOn\":1627558218772,\"instanceVersion\":0,\"apManagementEnabled\":false,\"connectedDeviceType\":\"USER_DEVICE\",\"connectedToSubtendedNode\":false,\"description\":\"port assingnment descrption\",\"dhcpEnabled\":false,\"downloadBW\":0,\"interfaceId\":\"e9e9ba18-a47b-495d-b948-2a6d5eb8cf4e\",\"interfaceName\":\"GigabitEthernet1/0/1\",\"ipAddressMask\":0,\"memberInterfaceList\":[],\"natEnabled\":false,\"portNum\":0,\"role\":\"LAN\",\"uploadBW\":0,\"authenticationProfile\":{\"id\":\"707e20f8-6b49-44b7-9af6-9aa272be5a7f\",\"instanceId\":3635636,\"displayName\":\"18123b3b[No Authentication,537c2840-ca8f-4024-9084-8fb768d430fe]\",\"instanceCreatedOn\":1627536196998,\"instanceUpdatedOn\":1627536196998,\"instanceVersion\":1,\"name\":\"No Authentication\",\"profileUuid\":\"537c2840-ca8f-4024-9084-8fb768d430fe\",\"profileVersion\":1,\"type\":\"WIRED_NOAUTH\",\"wakeOnLan\":false,\"webauthBypassMap\":[]},\"deviceInterfaceInfoSegmentMapping\":[],\"segment\":[{\"idRef\":\"85b2eba4-1c43-4cae-bde6-59e14dfa852b\"}]}],\"deviceInterfaceInfoContainer\":{\"idRef\":\"0c8b2291-272b-4260-a44d-c761ad413590\"},\"migrationStatus\":[],\"networkWideSettings\":{\"id\":\"2fccca33-ead8-4745-8a70-99d8fbd169b2\",\"instanceId\":3607613,\"displayName\":\"0\",\"instanceCreatedOn\":1627482122831,\"instanceUpdatedOn\":1627482122831,\"instanceVersion\":9,\"aaa\":[],\"cmx\":[],\"dhcp\":[{\"id\":\"fe3bc3a4-fb44-47ab-abc9-6bfdd05169f6\",\"ipAddress\":{\"id\":\"77cd74ba-af02-40f4-9721-06b08ce34384\",\"address\":\"1.1.1.1\"}}],\"dns\":[{\"id\":\"84ffb978-ba75-42aa-ba0d-4ecc827e5bbd\",\"domainName\":\"\",\"ip\":{\"id\":\"e423ffdd-6754-46ed-ba1a-ff6012bd5629\",\"address\":\"2.2.2.2\"}}],\"ipdtEnabled\":true,\"ldap\":[],\"nativeVlan\":[],\"netflow\":[],\"ntp\":[],\"snmp\":[],\"syslogs\":[]},\"otherDevice\":[],\"transitNetworks\":[],\"virtualNetwork\":[],\"wlan\":[]}"
+        },
+        {
+            "name": "bapi_voiceIpAddressPoolName",
+            "value": ""
+        },
+        {
+            "name": "bapi_ipPoolId",
+            "value": ""
+        },
+        {
+            "name": "bapi_deviceManagementIpAddress",
+            "value": "10.195.187.194"
+        },
+        {
+            "name": "bapi_authenticationProfileId",
+            "value": ""
+        },
+        {
+            "name": "bapi_group_id",
+            "value": ""
+        },
+        {
+            "name": "bapi_taskId",
+            "value": "057e4b16-a945-43ff-9772-59876b0468d6"
+        },
+        {
+            "name": "bapi_add_device_info_response_data",
+            "value": ""
+        },
+        {
+            "name": "bapi_connectedToInternet",
+            "value": "false"
+        },
+        {
+            "name": "bapi_siteNameHierarchy",
+            "value": ""
+        },
+        {
+            "name": "bapi_error_code",
+            "value": "99"
+        },
+        {
+            "name": "bapi_authenticateTemplateName",
+            "value": ""
+        },
+        {
+            "name": "bapi_data_segment_id",
+            "value": ""
+        }
+    ],
+    "bapiSubmitAttempt": []
+}

@@ -1,0 +1,24 @@
+conf t
+interface range gigabitEthernet 1/0/1-24
+shut
+end
+conf t
+hostname sda-9k-147
+ip routing
+interface GigabitEthernet1/0/3
+no switchport
+ip address 10.195.244.232 255.255.255.0
+no shut
+exit
+username cisco privilege 15 password uci123!
+enable password lab
+snmp-server community public rw
+line vty 0 4
+login local
+exit
+interface Loopback0
+ip address 11.1.9.232 255.255.255.255
+ip route 0.0.0.0 0.0.0.0 10.195.244.1
+end
+
+write memory
